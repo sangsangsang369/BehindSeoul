@@ -25,7 +25,7 @@ public class MyPageManager : MonoBehaviour
     }
 
     public void LogoutBtnFunc()
-    {
+    {//
         FirebaseAuth.DefaultInstance.SignOut();
         SceneManager.LoadScene("ReadyScene"); 
     }
