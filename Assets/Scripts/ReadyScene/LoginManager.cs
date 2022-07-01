@@ -34,7 +34,6 @@ public class LoginManager : MonoBehaviour
         Debug.Log("email: " + lg_emailValue + ", password: " + lg_PWValue);
  
         LoginUser();
-        SceneManager.LoadScene("MainScene");
     }
 
     void LoginUser()
@@ -57,6 +56,7 @@ public class LoginManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
             GetUserInfoFromDB(newUser.UserId);
+            SceneManager.LoadScene("MainScene");
         });
     }
 
