@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UndoBtn : MonoBehaviour
 {
+    //뒤로가기 버튼
+
     [SerializeField]
     GameObject prePage, thisPage;
 

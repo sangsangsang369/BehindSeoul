@@ -5,6 +5,8 @@ using UnityEngine.Video;
 
 public class IntroManager : MonoBehaviour
 {
+    //인트로 영상 재생 제어
+
     [SerializeField]
     VideoPlayer videoPlayer;
     [SerializeField]

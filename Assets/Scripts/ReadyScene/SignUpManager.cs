@@ -1,16 +1,28 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using TMPro;
 using Firebase.Auth;
 using Firebase.Firestore;
 
 public class SignUpManager : MonoBehaviour
 {
+    //회원가입 제어
+
     [SerializeField]
-    GameObject enter, Login_Email_PW,signUp1_Email, signUp2_Password, signUp3_Nickname, signUp4_GetStarted;
+    GameObject enter, 
+               Login_Email_PW,
+               signUp1_Email, 
+               signUp2_Password, 
+               signUp3_Nickname, 
+               signUp4_GetStarted;
     [SerializeField]
-    GameObject emailInput, PWInput, re_PWInput, nicknameInput;
-    public string emailValue, PWValue, re_PWValue, nicknameValue;
+    GameObject emailInput, 
+               PWInput, 
+               re_PWInput, 
+               nicknameInput;
+    public string emailValue, 
+                  PWValue, 
+                  re_PWValue, 
+                  nicknameValue;
     [SerializeField]
     TMP_Text getStarted_insertName;
     FirebaseAuth auth;
@@ -26,41 +38,55 @@ public class SignUpManager : MonoBehaviour
         //뒤로가기 했을 때 값 초기화
     }
 
+    //회원가입하기 버튼 함수
     public void SignUpBtnFunc()
     {
         enter.SetActive(false);
         signUp1_Email.SetActive(true);
     }
-
+    //로그인하기 버튼 함수
     public void LoginBtnFunc()
     {
         enter.SetActive(false);
         Login_Email_PW.SetActive(true);
     }
-
+    //이메일 입력 제출 버튼
     public void EmailSubmitBtnFunc()
     {
         emailValue = emailInput.GetComponent<TMP_InputField>().text;
-        signUp1_Email.SetActive(false);
-        signUp2_Password.SetActive(true);
+        if(emailValue.Length < 1)
+        {
+            //이메일이 비어있음
+        }
+        else
+        {
+            signUp1_Email.SetActive(false);
+            signUp2_Password.SetActive(true);
+        }
     }
-
+    //비밀번호 입력 제출 버튼
     public void PWSubmitBtnFunc()
     {
         PWValue = PWInput.GetComponent<TMP_InputField>().text;
         re_PWValue = re_PWInput.GetComponent<TMP_InputField>().text;
-
-        if(PWValue != re_PWValue)                                                                                     
+        if(PWValue.Length < 5)
         {
-            //비밀번호 잘 못 재입력 했을 때
+            //비밀번호 6자리 이상 입력바람
         }
-        else if(PWValue == re_PWValue)
+        else
         {
-            signUp2_Password.SetActive(false);
-            signUp3_Nickname.SetActive(true);
+            if(PWValue != re_PWValue)                                                                                     
+            {
+                //비밀번호 잘 못 재입력 했을 때
+            }
+            else if(PWValue == re_PWValue)
+            {
+                signUp2_Password.SetActive(false);
+                signUp3_Nickname.SetActive(true);
+            }
         }
     }
-
+    //닉네임 입력 제출 버튼
     public void NicknameSubmitBtnFunc()
     {
         nicknameValue = nicknameInput.GetComponent<TMP_InputField>().text;
@@ -70,14 +96,12 @@ public class SignUpManager : MonoBehaviour
 
         CreateUser();
     }
-
+    //시작하기 버튼
     public void GetStartedBtnFunc()
     {
-        //시작하기 눌렀을 때 db로 보낸 정보들 변수에 따로 저장하기
-        SceneManager.LoadScene("MainScene");
-    }
-          
-
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
+    }  
+    //유저 생성 함수
     void CreateUser()                                                                         
     {                                                                                           
         auth.CreateUserWithEmailAndPasswordAsync(emailValue, PWValue).ContinueWith(task => {  
@@ -99,7 +123,7 @@ public class SignUpManager : MonoBehaviour
             InsertUserInfoInDB(newUser.UserId);
         });
     }
-
+    //db에도 유저 생성
     void InsertUserInfoInDB(string userUIDValue)
     {
         var userInfo = new UserInfo
@@ -113,7 +137,7 @@ public class SignUpManager : MonoBehaviour
         var firestore = FirebaseFirestore.DefaultInstance;
         firestore.Collection("Users").Document(userUIDValue).SetAsync(userInfo);
     }
-
+    //로컬에 유저 정보 저장
     void SetLocalUserInfo()
     {
         LocalUserInfo.Instance.lc_nickname = nicknameValue;
