@@ -15,6 +15,7 @@ public class LoginManager : MonoBehaviour
     GameObject lg_emailInput, lg_PWInput;
     string lg_emailValue, lg_PWValue;
     FirebaseAuth auth;
+    bool isUserLogin = false;
 
     void Awake()
     {
@@ -24,23 +25,16 @@ public class LoginManager : MonoBehaviour
 
     void Start()
     {
-        //auth.StateChanged += HandleAuthStateCahnged;
         CheckUser();
     }
     
-    /* 
-    //계정 로그인에 어떠한 변경점이 발생시 진입
-    void HandleAuthStateCahnged(object sender, EventArgs e)
+    private void Update() 
     {
-        CheckUser();
+        if(isUserLogin)
+        {
+            SceneManager.LoadScene("MainScene");
+        }    
     }
-
-    //오브젝트가 삭제되기 직전에 실행하는 함수
-    void OnDestroy() 
-    {
-        //유저의 로그인 정보에 변경점이 생기면 실행되게 이벤트를 걸어줌
-        FirebaseAuth.DefaultInstance.StateChanged -= HandleAuthStateCahnged;    
-    }*/
 
     //로그인 되어있는지 체크하는 함수
     void CheckUser()
@@ -53,12 +47,6 @@ public class LoginManager : MonoBehaviour
             //db에서 로그인된 사용자 정보 갖고오기
             GetUserInfoFromDB(FirebaseAuth.DefaultInstance.CurrentUser.UserId);
         }
-        /*
-        //로그인한 유저 있고 && 씬이 메인씬일 때
-        else if(FirebaseAuth.DefaultInstance.CurrentUser != null && SceneManager.GetActiveScene().name == "MainScene")
-        {
-            GetUserInfoFromDB(FirebaseAuth.DefaultInstance.CurrentUser.UserId);
-        }*/
     }
 
     //뒤로가기 했을 때 값 초기화
@@ -67,19 +55,16 @@ public class LoginManager : MonoBehaviour
         lg_emailInput.GetComponent<TMP_InputField>().text = null;
         lg_PWInput.GetComponent<TMP_InputField>().text = null;
     }
+    
     //이메일 비번 입력 제출 버튼
     public void LoginSubmitBtnFunc()
     {
         lg_emailValue = lg_emailInput.GetComponent<TMP_InputField>().text;
         lg_PWValue = lg_PWInput.GetComponent<TMP_InputField>().text;
 
-        if(lg_emailValue.Length < 1 || lg_PWValue.Length < 1)
+        if(lg_emailValue.Length > 0 && lg_PWValue.Length > 0)
         {
-            //입력 없음
-        }
-        else
-        {
-            Debug.Log("email: " + lg_emailValue + ", password: " + lg_PWValue);
+            //Debug.Log("email: " + lg_emailValue + ", password: " + lg_PWValue);
             LoginUser();
         }
     }
@@ -100,13 +85,10 @@ public class LoginManager : MonoBehaviour
                 //loginResult.text = "로그인 실패";               
                 return;
             }
-
             Firebase.Auth.FirebaseUser newUser = task.Result;
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
-                newUser.DisplayName, newUser.UserId);
             GetUserInfoFromDB(newUser.UserId);
-
-            SceneManager.LoadScene("MainScene");
+            Debug.LogFormat("User signed in successfully: {0} ({1})" ,newUser.DisplayName, newUser.UserId);
+            isUserLogin = true;
         });
     }
 

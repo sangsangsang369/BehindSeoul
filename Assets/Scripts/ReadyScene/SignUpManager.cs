@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 using Firebase.Auth;
 using Firebase.Firestore;
@@ -99,7 +100,7 @@ public class SignUpManager : MonoBehaviour
     //시작하기 버튼
     public void GetStartedBtnFunc()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("MainScene");
     }  
     //유저 생성 함수
     void CreateUser()                                                                         
