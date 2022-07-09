@@ -30,6 +30,8 @@ public class LoginManager : MonoBehaviour
     
     private void Update() 
     {
+        //원래 loginUser()맨 마지막 줄에서 씬 바꿔줘야하는데 딜레이 때문인지 씬 전환이 안됨
+        //그래서 일단 불값으로 응급처치
         if(isUserLogin)
         {
             SceneManager.LoadScene("MainScene");
