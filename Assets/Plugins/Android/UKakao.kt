@@ -10,7 +10,7 @@ import com.unity3d.player.UnityPlayer
 class UKakao
 {
     val context = UnityPlayer.currentActivity
-    fun kakaologin() {
+    fun KakaoLogin() {
         // 로그인 공통 callback 구성
         val callback: (OAuthToken?, Throwable?) -> Unit = { token, error ->
             if (error != null) {

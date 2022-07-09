@@ -13,6 +13,6 @@ public class KakaoSystem : MonoBehaviour
 
     public void login()
     {
-        ajo.Call( "kakaologin" );
+        ajo.Call( "KakaoLogin" );
     }
 }

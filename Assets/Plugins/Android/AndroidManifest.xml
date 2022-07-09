@@ -10,14 +10,13 @@
   <application android:name="com.DefaultCompany.BehindSeoul.GlobalApplication">
 
     <activity android:name="com.DefaultCompany.BehindSeoul.UKakao">
-    </activity>
-
-    <activity android:name="com.unity3d.player.UnityPlayerActivity" android:theme="@style/UnityThemeSelector">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
+    </activity>
 
+    <activity android:name="com.unity3d.player.UnityPlayerActivity" android:theme="@style/UnityThemeSelector">
       <meta-data android:name="com.kakao.sdk.AppKey" android:value="1c96c6697328d426ad301842bac41f7a" />
       <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
     </activity>
