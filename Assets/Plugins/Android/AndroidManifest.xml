@@ -9,6 +9,9 @@
 
   <application android:name="com.DefaultCompany.BehindSeoul.GlobalApplication">
 
+    <activity android:name="com.DefaultCompany.BehindSeoul.UKakao">
+    </activity>
+
     <activity android:name="com.unity3d.player.UnityPlayerActivity" android:theme="@style/UnityThemeSelector">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
