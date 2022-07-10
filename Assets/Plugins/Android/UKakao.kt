@@ -6,8 +6,9 @@ import com.kakao.sdk.common.model.ClientError
 import com.kakao.sdk.common.model.ClientErrorCause
 import com.kakao.sdk.user.UserApiClient
 import com.unity3d.player.UnityPlayer
+import com.unity3d.player.UnityPlayerActivity
 
-class UKakao
+class UKakao : UnityPlayerActivity()
 {
     val context = UnityPlayer.currentActivity
     fun KakaoLogin() {

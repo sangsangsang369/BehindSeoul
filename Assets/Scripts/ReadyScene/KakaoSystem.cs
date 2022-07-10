@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class KakaoSystem : MonoBehaviour
 {
-    private AndroidJavaObject ajo;
+    
 
-    void Start()
+    void awake()
     {
-        ajo = new AndroidJavaObject( "com.DefaultCompany.BehindSeoul.UKakao" );
+        
     }
 
     public void login()
     {
+        AndroidJavaObject ajo = new AndroidJavaObject( "com.DefaultCompany.BehindSeoul.UKakao" );
         ajo.Call( "KakaoLogin" );
     }
 }
