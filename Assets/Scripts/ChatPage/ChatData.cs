@@ -37,7 +37,17 @@ public class ChatData : MonoBehaviour
         chatDatas.Add(21, new string[] { "나한테 맡겨줘!"});
         //2nn = 지원도깨비에서 이어지는 부분
         chatDatas.Add(202, new string[] { "내가 도술로 수류견이 불태우고 간 장소들의 위치를 활성화시켰어!",
-                                         "글자들이 흩어진 장소들을 방문해서 덕수궁의 옛이름을 돌려놔줘"});
+                                          "글자들이 흩어진 장소들을 방문해서 덕수궁의 옛이름을 돌려놔줘"});
+        chatDatas.Add(206, new string[] { "여기까지 잘찾아왔어! /n /n 여기는 전통 재래시장인 통인시장이야. /n독특하게 현대 화폐를 엽전으로 바꿔서 이용할 수 있어!",
+                                          "수류견은 이곳을 거쳐서 다른 곳으로 이미 가버린 것 같아.."});
+        chatDatas.Add(207, new string[] { "우리가 늦었네.."});
+        chatDatas.Add(208, new string[] { "그치만 걱정마! 우리에게 매번 관광정보를 주던 ‘정보도깨비’가 이곳에 살고있어! /n시장에서 사람들과 섞여 살면서 인간들의 정보를 쉽게 얻는다나봐",
+                                          "문제는.. 정보 도깨비가 있는 곳을 모르겠네../n워낙 모습을 드러내지 않는 도깨비라 도깨비들도 이 정도밖에 몰라",
+                                          "우리의 존재가 드러난 장소에 있다는 것"});
+        chatDatas.Add(209, new string[] { "거기가 대체 어디지?"});    
+        chatDatas.Add(210, new string[] { "예전에 내가 물어봤을 때 정보도깨비가 줬던 힌트는 통인시장 주변의 간판을 잘 보고 다니라고 한 거였어",
+                                          "통인시장을 잘 살펴보자!"});
+
     }
 
     public string GetChatDialogue(int id, int chatDatasIndex)

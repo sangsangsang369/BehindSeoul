@@ -8,35 +8,6 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:996191516088:android:3f410662931050afa00b4d",
-        "android_client_info": {
-          "package_name": "com.DefaultCompany.BehindSeoul"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "996191516088-lrlrr21k9guarmute4m8o66u9bpg84kt.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCHMEsL8zVq7QZAEZA9IB9Ih8-sYwzh1b0"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "996191516088-lrlrr21k9guarmute4m8o66u9bpg84kt.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
         "mobilesdk_app_id": "1:996191516088:android:c74a845ec67df62ea00b4d",
         "android_client_info": {
           "package_name": "com.DefaultCompany.Behind_Seoul"

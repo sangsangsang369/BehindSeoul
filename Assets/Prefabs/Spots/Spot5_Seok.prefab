@@ -124,8 +124,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5124291875917492428}
-        m_TargetAssemblyTypeName: SungSpot, Assembly-CSharp
-        m_MethodName: StartSungPage
+        m_TargetAssemblyTypeName: Spots, Assembly-CSharp
+        m_MethodName: StartSeokPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

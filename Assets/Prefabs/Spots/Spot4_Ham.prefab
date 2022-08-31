@@ -122,9 +122,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3852285406723554427}
-        m_TargetAssemblyTypeName: SungSpot, Assembly-CSharp
-        m_MethodName: 
+      - m_Target: {fileID: 5283154913590609231}
+        m_TargetAssemblyTypeName: Spots, Assembly-CSharp
+        m_MethodName: StartHamPage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

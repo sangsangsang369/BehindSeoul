@@ -64,6 +64,25 @@ public class Spots : MonoBehaviour
         gameMng.mapScene.SetActive(false);
         gameMng.jungPage.SetActive(true);
     }
+    public void StartIsangPage()
+    {
+        gameMng.canvasCam.SetActive(true);
+        gameMng.mapScene.SetActive(false);
+        gameMng.isangPage.SetActive(true);
+    }
+    public void StartTongInPage()
+    {
+        gameMng.canvasCam.SetActive(true);
+        gameMng.mapScene.SetActive(false);
+        gameMng.tongInPage.SetActive(true);
+    }
+    public void StartParkNoSuPage()
+    {
+        gameMng.canvasCam.SetActive(true);
+        gameMng.mapScene.SetActive(false);
+        gameMng.parkNoSuPage.SetActive(true);
+    }
+    
     public void RestSpotsOff()
     {
         for (int i = 2; i < 8; i++)

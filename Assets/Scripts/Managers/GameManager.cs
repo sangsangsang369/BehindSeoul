@@ -13,7 +13,9 @@ public class GameManager : MonoBehaviour
                         zukPage,
                         junPage,
                         jungPage,
-
+                        isangPage,
+                        tongInPage,
+                        parkNoSuPage,
                         canvasCam,
                         mapScene,
                         upperBarBtns,

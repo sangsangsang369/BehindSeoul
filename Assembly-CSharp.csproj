@@ -424,6 +424,9 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\DeviceLocationProviderAndroidNative.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\ImageDataFetcher.cs" />
+     <Compile Include="Assets\Scripts\Managers\SixSpotsManager.cs" />
+     <Compile Include="Assets\Scripts\Managers\IsangHomePage.cs" />
+     <Compile Include="Assets\Scripts\Managers\TongInManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
