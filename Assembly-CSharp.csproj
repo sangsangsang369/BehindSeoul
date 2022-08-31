@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{94eae722-c7ad-3efa-b68c-14d2f160a1d1}</ProjectGuid>
+    <ProjectGuid>{d845308c-df36-0805-d2f2-653d7008c490}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -54,6 +54,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\SQLiteCache\Tilesets.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerStyle.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyleAtlas.cs" />
+     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\PoiLabelTextSetter.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\ObjectPool.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\TileProcessFinishedEventArgs.cs" />
@@ -136,6 +137,7 @@
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerLightStyle.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\TextureSideWallModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\StyleSearchAttribute.cs" />
+     <Compile Include="Assets\Scripts\ChatPage\SetChatDatas.cs" />
      <Compile Include="Assets\Mapbox\Unity\Telemetry\TelemetryDummy.cs" />
      <Compile Include="Assets\Mapbox\Examples\5_Playground\Scripts\ForwardGeocoderExample.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\MapboxLocationServiceUnityWrapper.cs" />
@@ -217,6 +219,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\SQLite\SQLite.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\AbstractTileProvider.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\IObservable.cs" />
+     <Compile Include="Assets\Scripts\ChatPage\ChatAlarm.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Strategies\MapScalingAtUnityScaleStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Filters\FilterBase.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\IFileSource.cs" />
@@ -235,6 +238,7 @@
      <Compile Include="Assets\Mapbox\Examples\3_POIPlacement\POIPlacementScriptExample.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Components\VertexDebugger.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Filters\HeightFilter.cs" />
+     <Compile Include="Assets\Scripts\HintPage\SetHintDatas.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\IReplacementCriteria.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MergedModifierStack.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\GeometryMaterialOptions.cs" />
@@ -298,6 +302,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\DirectionsResponse.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\MapboxDefaultElevation.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\UnifiedMapOptions.cs" />
+     <Compile Include="Assets\Scripts\HintPage\HintData.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\VectorEntity.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\SmoothLineModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\KDTree.cs" />
@@ -419,11 +424,6 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\DeviceLocationProviderAndroidNative.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\ImageDataFetcher.cs" />
-     <Compile Include="Assets\Scripts\ChatPage\ChatAlarm.cs" />
-     <Compile Include="Assets\Scripts\ChatPage\SetChatDatas.cs" />
-     <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
-     <Compile Include="Assets\Scripts\HintPage\SetHintDatas.cs" />
-     <Compile Include="Assets\Scripts\HintPage\HintData.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
@@ -698,58 +698,58 @@
         <HintPath>C:\Users\SangEun\Downloads\2021.3.4f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
     </Reference>
     <Reference Include="MapboxAccountsUnity">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\Mapbox\MapboxAccounts\net35\MapboxAccountsUnity.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\Mapbox\MapboxAccounts\net35\MapboxAccountsUnity.dll</HintPath>
     </Reference>
     <Reference Include="ReportGeneratorMerged">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.App">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Firebase.App.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.Json">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\ThirdParty\Mapbox.Json\Net35\Mapbox.Json.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\ThirdParty\Mapbox.Json\Net35\Mapbox.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.VectorTile.VectorTileReader">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.VectorTileReader.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.VectorTileReader.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.IO.Compression">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\ThirdParty\Mapbox.IO.Compression\net35\Mapbox.IO.Compression.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\ThirdParty\Mapbox.IO.Compression\net35\Mapbox.IO.Compression.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Firestore">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Firebase.Firestore.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.TaskExtension">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Firebase.TaskExtension.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\PackageCache\com.unity.visualscripting@1.7.8\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.VectorTile.ExtensionMethods">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.ExtensionMethods.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.VectorTile.PbfReader">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.PbfReader.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.PbfReader.dll</HintPath>
     </Reference>
     <Reference Include="Google.MiniJson">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Google.MiniJson.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Platform">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Firebase.Platform.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Tasks">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Parse\Plugins\dotNet45\Unity.Tasks.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Parse\Plugins\dotNet45\Unity.Compat.dll</HintPath>
     </Reference>
     <Reference Include="Mapbox.VectorTile.Geometry">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.Geometry.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Mapbox\Core\Plugins\Mapbox\vector-tile-cs\net46\Mapbox.VectorTile.Geometry.dll</HintPath>
     </Reference>
     <Reference Include="Firebase.Auth">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Assets\Firebase\Plugins\Firebase.Auth.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
         <HintPath>C:\Users\SangEun\Downloads\2021.3.4f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -1124,82 +1124,82 @@
         <HintPath>C:\Users\SangEun\Downloads\2021.3.4f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Core">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
     </Reference>
     <Reference Include="Unity.EditorCoroutines.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Analytics">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Services.Core.Environments">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Services.Core.Environments.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
