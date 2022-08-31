@@ -1,0 +1,281 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+MERGED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:2:1-77:12
+MERGED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:support-core-ui-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\46ddb058abeadb581d126a78d679fa08\support-core-ui-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:2:1-18:12
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\722ccff209d3a74ff1cc3750caf4b09e\appcompat-v7-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:support-media-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a96adb7ec4a57daba4c734fd45f17abd\support-media-compat-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:support-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dc8821bfb2a9cf29c40f849948e071fb\support-compat-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:support-core-utils-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c9866e1d4202e82c7d13f26ff7f3bad8\support-core-utils-25.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\8de443b0305021dd4829e2356a0a2d43\support-vector-drawable-25.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:2:1-14:12
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:2:1-30:12
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\cd5bc6385a85f897cb3ce7d5aa13d24b\animated-vector-drawable-25.1.0\AndroidManifest.xml:17:1-24:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-111
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:112-158
+	android:versionCode
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:159-199
+supports-screens
+ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+MERGED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:5-75:19
+MERGED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:5-75:19
+MERGED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-ui-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\46ddb058abeadb581d126a78d679fa08\support-core-ui-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-ui-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\46ddb058abeadb581d126a78d679fa08\support-core-ui-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\722ccff209d3a74ff1cc3750caf4b09e\appcompat-v7-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\722ccff209d3a74ff1cc3750caf4b09e\appcompat-v7-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-media-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a96adb7ec4a57daba4c734fd45f17abd\support-media-compat-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-media-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a96adb7ec4a57daba4c734fd45f17abd\support-media-compat-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dc8821bfb2a9cf29c40f849948e071fb\support-compat-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dc8821bfb2a9cf29c40f849948e071fb\support-compat-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-utils-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c9866e1d4202e82c7d13f26ff7f3bad8\support-core-utils-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-core-utils-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c9866e1d4202e82c7d13f26ff7f3bad8\support-core-utils-25.1.0\AndroidManifest.xml:25:5-20
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\8de443b0305021dd4829e2356a0a2d43\support-vector-drawable-25.1.0\AndroidManifest.xml:23:5-20
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\8de443b0305021dd4829e2356a0a2d43\support-vector-drawable-25.1.0\AndroidManifest.xml:23:5-20
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:18:5-28:19
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:18:5-28:19
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\cd5bc6385a85f897cb3ce7d5aa13d24b\animated-vector-drawable-25.1.0\AndroidManifest.xml:22:5-20
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\cd5bc6385a85f897cb3ce7d5aa13d24b\animated-vector-drawable-25.1.0\AndroidManifest.xml:22:5-20
+	android:extractNativeLibs
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:18-50
+	android:label
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+	android:icon
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+uses-sdk
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+MERGED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:8:5-10:41
+MERGED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:21:5-23:54
+MERGED from [:support-core-ui-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\46ddb058abeadb581d126a78d679fa08\support-core-ui-25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [:support-core-ui-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\46ddb058abeadb581d126a78d679fa08\support-core-ui-25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:7:5-9:41
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\722ccff209d3a74ff1cc3750caf4b09e\appcompat-v7-25.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [:appcompat-v7-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\722ccff209d3a74ff1cc3750caf4b09e\appcompat-v7-25.1.0\AndroidManifest.xml:21:5-23:78
+MERGED from [:support-media-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a96adb7ec4a57daba4c734fd45f17abd\support-media-compat-25.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [:support-media-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a96adb7ec4a57daba4c734fd45f17abd\support-media-compat-25.1.0\AndroidManifest.xml:21:5-23:63
+MERGED from [:support-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dc8821bfb2a9cf29c40f849948e071fb\support-compat-25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [:support-compat-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dc8821bfb2a9cf29c40f849948e071fb\support-compat-25.1.0\AndroidManifest.xml:21:5-23:58
+MERGED from [:support-core-utils-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c9866e1d4202e82c7d13f26ff7f3bad8\support-core-utils-25.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [:support-core-utils-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c9866e1d4202e82c7d13f26ff7f3bad8\support-core-utils-25.1.0\AndroidManifest.xml:21:5-23:61
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\8de443b0305021dd4829e2356a0a2d43\support-vector-drawable-25.1.0\AndroidManifest.xml:21:5-43
+MERGED from [:support-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\8de443b0305021dd4829e2356a0a2d43\support-vector-drawable-25.1.0\AndroidManifest.xml:21:5-43
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:7:5-9:41
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\cd5bc6385a85f897cb3ce7d5aa13d24b\animated-vector-drawable-25.1.0\AndroidManifest.xml:20:5-44
+MERGED from [:animated-vector-drawable-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\cd5bc6385a85f897cb3ce7d5aa13d24b\animated-vector-drawable-25.1.0\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [:support-v4-25.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2996fe05706d92b4212ccf76e16fa63c\support-v4-25.1.0\AndroidManifest.xml:23:9-51
+	android:targetSdkVersion
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+uses-feature#0x00030000
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+uses-feature#android.hardware.vulkan.version
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-55
+uses-permission#android.permission.INTERNET
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:5-67
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:16:5-67
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:5-79
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:12:5-79
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:12:5-79
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:14:5-79
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:5-79
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:11:5-79
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:11:5-79
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:11:5-79
+MERGED from [:libcore-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\c387310e51d698f61abe9daad05cfb15\libcore-release\AndroidManifest.xml:11:5-79
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:13:5-79
+MERGED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:22-76
+uses-feature#android.hardware.location.gps
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:5-23:36
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:14:5-16:35
+MERGED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:14:5-16:35
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:9-53
+uses-feature#android.hardware.location
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-49
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:5-32:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:5-35:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:9-72
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:9-58:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:13-51
+	android:launchMode
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-48
+	android:resizeableActivity
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:13-47
+	android:configChanges
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-194
+	android:theme
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-54
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:13-50:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:17-77
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:27-74
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-54:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:17-57
+meta-data#android.notch_support
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-57:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:17-53
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:9-62:33
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:13-30
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:9-65:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:65:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:13-47
+meta-data#unity.launch-fullscreen
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:66:9-68:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:68:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:67:13-51
+meta-data#unity.allow-resizable-window
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:69:9-71:37
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:71:13-34
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:70:13-56
+meta-data#notch.config
+ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:72:9-74:50
+	android:value
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:74:13-47
+	android:name
+		ADDED from [:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:73:13-40
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:12:5-68
+	android:name
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:15:5-76
+	android:name
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:15:22-73
+provider#com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider
+ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:19:9-23:39
+	android:authorities
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:21:13-79
+	android:exported
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:22:13-37
+	android:initOrder
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:23:13-36
+	android:name
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:20:13-93
+service#com.mapbox.android.telemetry.crash.CrashReporterJobIntentService
+ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:25:9-27:72
+	android:permission
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:27:13-69
+	android:name
+		ADDED from [:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:26:13-92

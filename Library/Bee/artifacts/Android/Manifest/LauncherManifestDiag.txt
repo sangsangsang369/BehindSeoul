@@ -1,0 +1,2 @@
+Using template 'C:/Users/SangEun/Downloads/2021.3.4f1/Editor/Data/PlaybackEngines/AndroidPlayer\Apk\LauncherManifest.xml'
+

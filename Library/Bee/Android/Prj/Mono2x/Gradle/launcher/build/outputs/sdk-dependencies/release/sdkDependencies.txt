@@ -1,0 +1,171 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    artifactId: "support-v4-25.1.0"
+  }
+  digests {
+    sha256: "\355L\332|u/Q\323?\233\275\377\363B+B[2=5l\321\275\311xj\244\023\311\022\345\224"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-core-ui-25.1.0"
+  }
+  digests {
+    sha256: "\001I\265O\323\274\237K;-2\037\365<\021\202\0331\242\354\241\346d\320\316\342$\350\3650s\326"
+  }
+}
+library {
+  maven_library {
+    artifactId: "com.mapbox.android.unity-debug"
+  }
+  digests {
+    sha256: "Iv\255\317\030\271\330\021\240\263x\244\313\216\265\233\234\263}\220\023,SZ$\241]\a\2070|\336"
+  }
+}
+library {
+  maven_library {
+    artifactId: "appcompat-v7-25.1.0"
+  }
+  digests {
+    sha256: "\264\213\375^\374\024\332\223\213\240d\177\230\224\252}=\220\360\266\030\026vR\243\030\366\3636\3570>"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-media-compat-25.1.0"
+  }
+  digests {
+    sha256: "\215j\032[\243\331\353\032%\313\217!\2731*\306(\002\002\343\322\220\f\260\264G\320e\320\330\241%"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-compat-25.1.0"
+  }
+  digests {
+    sha256: "\350\200\373\022\t\303?\313C\342\262W\026\200\216\032n\vM1p\325\250\334w\004\341P\204B\217\210"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-core-utils-25.1.0"
+  }
+  digests {
+    sha256: "\247d\236\030\300AC\335\344\f!\214\\\351\2400\347\256g@\211\315{\030\306\317\216\322\242,\360\032"
+  }
+}
+library {
+  maven_library {
+    artifactId: "support-vector-drawable-25.1.0"
+  }
+  digests {
+    sha256: "&\227P=>\216p\220#\256\027k\245\333\177\230\312\n\240\264\346)\n\355\313<7\031\004\200k\367"
+  }
+}
+library {
+  maven_library {
+    artifactId: "libcore-release"
+  }
+  digests {
+    sha256: "\0315\270\201\340\355N\313\025v6\022o\3108` \330}\245\347y\343u\224\016y\312\312s\345\355"
+  }
+}
+library {
+  maven_library {
+    artifactId: "libtelemetry-full-release"
+  }
+  digests {
+    sha256: "h\321#\246\247\375\0344\366\003u=\356\003Y5\002\030\r\017d\214\276@\200Zq\370\265\0371\374"
+  }
+}
+library {
+  maven_library {
+    artifactId: "animated-vector-drawable-25.1.0"
+  }
+  digests {
+    sha256: "m\005\313c\321\366\211\000\"\017\205\305m\376\020f\251\273\031\313\016\301$|\306\217\302\2722\366\264\247"
+  }
+}
+library {
+  digests {
+    sha256: "\246\252\301\353\"\341N\247\362\020[:r\222g\277\034\023\250EuhqE\177\317\345\321\207\203m\243"
+  }
+}
+library {
+  digests {
+    sha256: "\031\341\333Qxw\026\377\000F\372\031\344\b\3734\3552\246\'K\252\f\aG[\367$\264\353h\000"
+  }
+}
+library {
+  digests {
+    sha256: "#:\001I\3746\\\237n\333\326\203\317\342f\261\233\334w;\351\216\253\332\366\263\311$\264\216}\201"
+  }
+}
+library {
+  digests {
+    sha256: "sBi\303\353\305\t\016;#Vm\265X\364!\360\264\002rw\307\232\325\321v\270\354\026\213\270P"
+  }
+}
+library {
+  digests {
+    sha256: "\330\207\334%\343\261\177\347X7l\206\230FW\206\220c\265\016\032F\023 \250\263}\re?\320`"
+  }
+}
+library_dependencies {
+}
+library_dependencies {
+  library_index: 1
+}
+library_dependencies {
+  library_index: 2
+}
+library_dependencies {
+  library_index: 3
+}
+library_dependencies {
+  library_index: 4
+}
+library_dependencies {
+  library_index: 5
+}
+library_dependencies {
+  library_index: 6
+}
+library_dependencies {
+  library_index: 7
+}
+library_dependencies {
+  library_index: 8
+}
+library_dependencies {
+  library_index: 9
+}
+library_dependencies {
+  library_index: 10
+}
+library_dependencies {
+  library_index: 11
+}
+library_dependencies {
+  library_index: 12
+}
+library_dependencies {
+  library_index: 13
+}
+library_dependencies {
+  library_index: 14
+}
+library_dependencies {
+  library_index: 15
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 11
+  dependency_index: 12
+  dependency_index: 13
+  dependency_index: 14
+  dependency_index: 15
+}

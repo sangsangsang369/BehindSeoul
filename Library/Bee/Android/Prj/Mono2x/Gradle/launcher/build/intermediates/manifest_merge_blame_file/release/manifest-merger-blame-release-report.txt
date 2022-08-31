@@ -1,0 +1,187 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.DefaultCompany.Behind_Seoul"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="26"
+9-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="30" />
+10-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+18
+19    <uses-feature android:glEsVersion="0x00030000" />
+19-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
+19-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+20    <uses-feature
+20-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:13:5-15:36
+21        android:name="android.hardware.vulkan.version"
+21-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:9-55
+22        android:required="false" />
+22-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:9-33
+23
+24    <uses-permission android:name="android.permission.INTERNET" />
+24-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:5-67
+24-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:17:22-64
+25    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+25-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:5-79
+25-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:22-76
+26    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+26-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:5-79
+26-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:22-76
+27
+28    <uses-feature
+28-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:5-23:36
+29        android:name="android.hardware.location.gps"
+29-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:9-53
+30        android:required="true" />
+30-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-33
+31    <uses-feature
+31-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-26:36
+32        android:name="android.hardware.location"
+32-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-49
+33        android:required="false" />
+33-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:9-33
+34    <uses-feature
+34-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:5-29:36
+35        android:name="android.hardware.touchscreen"
+35-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-52
+36        android:required="false" />
+36-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:9-33
+37    <uses-feature
+37-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:5-32:36
+38        android:name="android.hardware.touchscreen.multitouch"
+38-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:9-63
+39        android:required="false" />
+39-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:9-33
+40    <uses-feature
+40-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:33:5-35:36
+41        android:name="android.hardware.touchscreen.multitouch.distinct"
+41-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:9-72
+42        android:required="false" />
+42-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:35:9-33
+43
+44    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Required for CrashReporterJobIntentService on API levels below 25 -->
+44-->[:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:12:5-81
+44-->[:com.mapbox.android.unity-debug:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\0a06a07f429d9a0e653ff078db9f173d\com.mapbox.android.unity-debug\AndroidManifest.xml:12:22-78
+45    <uses-permission android:name="android.permission.WAKE_LOCK" />
+45-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:12:5-68
+45-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:12:22-65
+46    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+46-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:15:5-76
+46-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:15:22-73
+47
+48    <application
+48-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+49        android:extractNativeLibs="true"
+49-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:18-50
+50        android:icon="@mipmap/app_icon"
+50-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+51        android:label="@string/app_name" >
+51-->C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+52        <activity
+52-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:9-58:20
+53            android:name="com.unity3d.player.UnityPlayerActivity"
+53-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:13-66
+54            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+54-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:13-194
+55            android:hardwareAccelerated="false"
+55-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:13-48
+56            android:launchMode="singleTask"
+56-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:42:13-44
+57            android:resizeableActivity="false"
+57-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:13-47
+58            android:screenOrientation="fullSensor"
+58-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:13-51
+59            android:theme="@style/UnityThemeSelector" >
+59-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-54
+60            <intent-filter>
+60-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:13-50:29
+61                <action android:name="android.intent.action.MAIN" />
+61-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:17-69
+61-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:25-66
+62
+63                <category android:name="android.intent.category.LAUNCHER" />
+63-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:17-77
+63-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:27-74
+64            </intent-filter>
+65
+66            <meta-data
+66-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-54:40
+67                android:name="unityplayer.UnityActivity"
+67-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:17-57
+68                android:value="true" />
+68-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:17-37
+69            <meta-data
+69-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:55:13-57:40
+70                android:name="android.notch_support"
+70-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:17-53
+71                android:value="true" />
+71-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:57:17-37
+72        </activity>
+73
+74        <meta-data
+74-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:9-62:33
+75            android:name="unity.splash-mode"
+75-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:13-45
+76            android:value="0" />
+76-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:13-30
+77        <meta-data
+77-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:9-65:36
+78            android:name="unity.splash-enable"
+78-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:13-47
+79            android:value="True" />
+79-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:65:13-33
+80        <meta-data
+80-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:66:9-68:36
+81            android:name="unity.launch-fullscreen"
+81-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:67:13-51
+82            android:value="True" />
+82-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:68:13-33
+83        <meta-data
+83-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:69:9-71:37
+84            android:name="unity.allow-resizable-window"
+84-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:70:13-56
+85            android:value="False" />
+85-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:71:13-34
+86        <meta-data
+86-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:72:9-74:50
+87            android:name="notch.config"
+87-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:73:13-40
+88            android:value="portrait|landscape" />
+88-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\Behind_Seoul\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:74:13-47
+89
+90        <provider
+90-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:19:9-23:39
+91            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+91-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:20:13-93
+92            android:authorities="com.DefaultCompany.Behind_Seoul.mapboxtelemetryinitprovider"
+92-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:21:13-79
+93            android:exported="false"
+93-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:22:13-37
+94            android:initOrder="100" />
+94-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:23:13-36
+95
+96        <service
+96-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:25:9-27:72
+97            android:name="com.mapbox.android.telemetry.crash.CrashReporterJobIntentService"
+97-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:26:13-92
+98            android:permission="android.permission.BIND_JOB_SERVICE" />
+98-->[:libtelemetry-full-release:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a424024968c45983e8871d1ef2bb2db6\libtelemetry-full-release\AndroidManifest.xml:27:13-69
+99    </application>
+100
+101</manifest>
