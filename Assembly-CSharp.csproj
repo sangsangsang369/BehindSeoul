@@ -51,6 +51,7 @@
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerRealisticStyle.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\SnapTerrainRaycastModifier.cs" />
      <Compile Include="Assets\Scripts\ChatPage\ChatRoom.cs" />
+     <Compile Include="Assets\Scripts\Managers\SixSpotsManager.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\SQLiteCache\Tilesets.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerStyle.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyleAtlas.cs" />
@@ -323,6 +324,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RawPngRasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Conversions.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifier.cs" />
+     <Compile Include="Assets\Scripts\EraseMask.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\LayerPerformanceOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\AndroidSettings.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\MapVisualizerPerformance.cs" />
@@ -355,6 +357,7 @@
      <Compile Include="Assets\Mapbox\Examples\Scripts\ReloadMap.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerCustomStyleAtlas.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Overview.cs" />
+     <Compile Include="Assets\Scripts\Managers\IsangHomePage.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Interfaces\IMapPlacementStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\VectorLayer.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyleOptions.cs" />
@@ -395,6 +398,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\CachingWebFileSource.cs" />
      <Compile Include="Assets\Scripts\ReadyPage\LoginManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapboxEnums.cs" />
+     <Compile Include="Assets\Scripts\Managers\TongInManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\IMapboxLocationService.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\DirectionsFactory.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\ElevationRequiredOptions.cs" />
@@ -424,9 +428,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\DeviceLocationProviderAndroidNative.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\ImageDataFetcher.cs" />
-     <Compile Include="Assets\Scripts\Managers\SixSpotsManager.cs" />
-     <Compile Include="Assets\Scripts\Managers\IsangHomePage.cs" />
-     <Compile Include="Assets\Scripts\Managers\TongInManager.cs" />
+     <Compile Include="Assets\Scripts\SignDraw.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />

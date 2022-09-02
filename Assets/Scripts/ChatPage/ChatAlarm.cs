@@ -39,8 +39,8 @@ public class ChatAlarm : ChatData
 
     void ChatAlarmBtnFunc_PrevChatter()
     {
-        chatMng.chatRoomList[ChatData.goblinNamesIndex].GetComponent<ChatRoom>().GetBubbleText();
         chatMng.chatPage.SetActive(true);
+        chatMng.chatRoomList[ChatData.goblinNamesIndex].GetComponent<ChatRoom>().GetBubbleText();
         Destroy(this.gameObject);
     }
 }

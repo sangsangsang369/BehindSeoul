@@ -47,7 +47,8 @@ public class ChatRoom : ChatData
             stringIndex = 0;
             ++chatDatasId;
         }
-        
+        ScrollDown();
+
         if(chatDatasId % 2 == 1)
         {
             while(chatDatas.ContainsKey(chatDatasId) && stringIndex < chatDatas[chatDatasId].Length)
@@ -62,7 +63,7 @@ public class ChatRoom : ChatData
             stringIndex = 0;
             ++chatDatasId;
         }
-        Invoke("ScrollDelay", 0.05f);
+        ScrollDown();
         if(!chatDatas.ContainsKey(chatDatasId))
         {
             gameMng.nextBtnsAfterCheckedChat[gameMng.nextBtnIndex].SetActive(true);
@@ -92,7 +93,12 @@ public class ChatRoom : ChatData
     }
 
     void Fit(RectTransform Rect) => LayoutRebuilder.ForceRebuildLayoutImmediate(Rect);
-    void ScrollDelay() => sb.value = 0;
+
+    public void ScrollDown()
+    {
+        Invoke("ScrollDelay", 0.04f);
+    }
+    public void ScrollDelay() => sb.value = 0;
 
     int GetChatRoomNum()
     {

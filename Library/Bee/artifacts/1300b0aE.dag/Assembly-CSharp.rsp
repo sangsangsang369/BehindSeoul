@@ -740,6 +740,7 @@
 "Assets/Scripts/Common/ChasaData.cs"
 "Assets/Scripts/Common/PageChangeBtn.cs"
 "Assets/Scripts/Common/ScrollMenu.cs"
+"Assets/Scripts/EraseMask.cs"
 "Assets/Scripts/HintPage/HintData.cs"
 "Assets/Scripts/HintPage/SetHintDatas.cs"
 "Assets/Scripts/Locker.cs"
@@ -757,6 +758,7 @@
 "Assets/Scripts/ReadyPage/LoginManager.cs"
 "Assets/Scripts/ReadyPage/SignUpManager.cs"
 "Assets/Scripts/ReadyPage/UserInfo.cs"
+"Assets/Scripts/SignDraw.cs"
 -langversion:9.0
 
 /deterministic

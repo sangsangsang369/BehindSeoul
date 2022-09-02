@@ -13,7 +13,9 @@ public class SixSpotsManager : MonoBehaviour
     [SerializeField]
     GameObject afterSixSpotsPage;
     int currPage = 0;
+    EraseMask eraseMask;
     
+
     public void GoToNextAfterSixSpotsPage()
     {
         afterSixSpotsPage.transform.GetChild(currPage).gameObject.SetActive(false);
@@ -33,4 +35,6 @@ public class SixSpotsManager : MonoBehaviour
         }
         spawnOnMap._spawnedObjects[8].SetActive(true);
     }
+
+
 }

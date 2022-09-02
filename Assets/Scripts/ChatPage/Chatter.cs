@@ -35,6 +35,7 @@ public class Chatter : MonoBehaviour
     public void ChatRoomOn()
     {
         chatMng.chatRoomList[chatNum].SetActive(true);
+        chatRoom.ScrollDown();
     }
 
     void SetChatterText(int id)
