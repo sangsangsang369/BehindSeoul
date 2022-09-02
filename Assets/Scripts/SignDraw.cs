@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SignDraw : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class SignDraw : MonoBehaviour
     
         if(Input.GetMouseButtonDown(0))
         {
-                pressed = true;
+            pressed = true;
         }
         else if(Input.GetMouseButtonUp(0))
         {
@@ -35,6 +36,7 @@ public class SignDraw : MonoBehaviour
 
     public void CopySign()
     {
+        signBtn.GetComponent<Button>().enabled = false;
         GameObject miniSign = Instantiate(this.gameObject);
         miniSign.transform.SetParent(signBtn.transform, false);
         miniSign.transform.localScale = new Vector3(0.4f ,0.4f ,0.4f);

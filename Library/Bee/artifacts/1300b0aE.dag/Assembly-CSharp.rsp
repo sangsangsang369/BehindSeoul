@@ -749,6 +749,7 @@
 "Assets/Scripts/Managers/GameManager.cs"
 "Assets/Scripts/Managers/GuidePageManager.cs"
 "Assets/Scripts/Managers/IsangHomePage.cs"
+"Assets/Scripts/Managers/ParkNosuManager.cs"
 "Assets/Scripts/Managers/SixSpotsManager.cs"
 "Assets/Scripts/Managers/SungnyemunManager.cs"
 "Assets/Scripts/Managers/TongInManager.cs"
