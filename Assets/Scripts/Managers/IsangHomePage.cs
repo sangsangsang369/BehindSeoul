@@ -17,23 +17,27 @@ public class IsangHomePage : MonoBehaviour
     [SerializeField]
     GameObject isangHomePage,
                 wrongText;
-    int currPage = 0;
+    [SerializeField]
+    List<TMP_Text>  nameContainTexts; 
+    int isangCurrPage = 0;
+    DataManager data;
+    SaveDataClass saveData;
     
-    public void GoToNextIsangHomePage()
-    {
-        isangHomePage.transform.GetChild(currPage).gameObject.SetActive(false);
-        isangHomePage.transform.GetChild(++currPage).gameObject.SetActive(true);
+    void Start() 
+    {   
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+        isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(true);
+        foreach (TMP_Text t in nameContainTexts)
+        {
+            t.text = t.text.Replace("name", ChasaData.chasaName);
+        }
     }
 
-    public void GotoTongInMap()
+    public void GoToNextIsangHomePage()
     {
-        abstMap = FindObjectOfType<AbstractMap>();    
-        spawnOnMap = FindObjectOfType<SpawnOnMap>();
-        string locString = "37.58077, 126.97004";
-        Vector2d latlon = Conversions.StringToLatLon(locString);
-        abstMap.Initialize(latlon, 16);
-        spawnOnMap._spawnedObjects[8].SetActive(false);
-        spawnOnMap._spawnedObjects[9].SetActive(true);
+        isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(false);
+        isangHomePage.transform.GetChild(++isangCurrPage).gameObject.SetActive(true);
     }
 
     public void AnswerSubmitBtnFunc()
@@ -47,5 +51,11 @@ public class IsangHomePage : MonoBehaviour
         {
             GoToNextIsangHomePage();
         }
+    }
+
+    public void IsangPageSaveData()
+    {
+        saveData.pagesIndex = 6;
+        data.Save();
     }
 }

@@ -1,0 +1,94 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\SangEun\\Documents\\GitHub\\BehindSeoul\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-uz\\values-uz.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\0e3f4b92cdfe1f27ebe42738bdc2b14c\\jetified-androidx.browser.browser-1.4.0\\res\\values-uz\\values-uz.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,173,282,392",
+                        "endColumns": "117,108,109,105",
+                        "endOffsets": "168,277,387,493"
+                    },
+                    "to": {
+                        "startLines": "25,26,27,28",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2813,2931,3040,3150",
+                        "endColumns": "117,108,109,105",
+                        "endOffsets": "2926,3035,3145,3251"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\4527d81fa1dab2c4adef56282f6f51b4\\androidx.core.core-1.2.0\\res\\values-uz\\values-uz.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3256",
+                        "endColumns": "100",
+                        "endOffsets": "3352"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\ae4e63aee2448ed4859dc95da47269f5\\arcore_client\\res\\values-uz\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,243,297,443,596",
+                        "endColumns": "52,53,145,152,90",
+                        "endOffsets": "242,296,442,595,686"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,112,170,320,477",
+                        "endColumns": "56,57,149,156,94",
+                        "endOffsets": "107,165,315,472,567"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\2fe805d0724c6f9ee6d19b9f01d50392\\jetified-com.google.android.gms.play-services-base-18.1.0\\res\\values-uz\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,294,440,565,670,811,940,1056,1158,1326,1430,1585,1713,1863,2021,2083,2140",
+                        "endColumns": "100,145,124,104,140,128,115,101,167,103,154,127,149,157,61,56,75",
+                        "endOffsets": "293,439,564,669,810,939,1055,1157,1325,1429,1584,1712,1862,2020,2082,2139,2215"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "572,677,827,956,1065,1210,1343,1463,1719,1891,1999,2158,2290,2444,2606,2672,2733",
+                        "endColumns": "104,149,128,108,144,132,119,105,171,107,158,131,153,161,65,60,79",
+                        "endOffsets": "672,822,951,1060,1205,1338,1458,1564,1886,1994,2153,2285,2439,2601,2667,2728,2808"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\dae4d6ab41d2d582b03ac5a214336f6a\\jetified-com.google.android.gms.play-services-basement-18.1.0\\res\\values-uz\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "145",
+                        "endOffsets": "340"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "1569",
+                        "endColumns": "149",
+                        "endOffsets": "1714"
+                    }
+                }
+            ]
+        }
+    ]
+}

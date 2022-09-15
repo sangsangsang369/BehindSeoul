@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="__arcore_cancel">Cancelar</string>
+    <string name="__arcore_continue">Continuar</string>
+    <string name="__arcore_install_app">Este app precisa da versão mais recente do Google Play Services para RA.</string>
+    <string name="__arcore_install_feature">Este recurso precisa da versão mais recente do Google Play Services para RA.</string>
+    <string name="__arcore_installing">Instalando o Google Play Services para RA…</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link copiado para a área de transferência"</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar link"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir no navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartilhar link"</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+</resources>

@@ -59,12 +59,14 @@
      <Compile Include="Assets\Mapbox\Examples\Scripts\PoiLabelTextSetter.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\ObjectPool.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\TileProcessFinishedEventArgs.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightIntensityFade.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerCustomStyleTiled.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Components\FeatureBehaviour.cs" />
      <Compile Include="Assets\Mapbox\Unity\MapboxAccess.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapLocationOptions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\Map.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\JsonConverters\BboxToGeoCoordinateBoundsConverter.cs" />
+     <Compile Include="Assets\Scripts\Managers\ParkNosuManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\MapboxStylesColorModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\AngleSmoothing\AngleSmoothingAverage.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\HeroBuildingSelectionUserInput.cs" />
@@ -85,8 +87,10 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\JsonConverters\LonLatToGeoCoordinateConverter.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\TileErrorHandler.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\LocationArrayEditorLocationProvider.cs" />
+     <Compile Include="Assets\Scripts\Managers\HamManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\TerrainStrategies\FlatSphereTerrainStrategy.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\PoiMarkerHelper.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoRotate.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\LabelTextSetter.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Strategies\MapScalingAtWorldScaleStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerColorStyle.cs" />
@@ -102,6 +106,7 @@
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ILayer.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\UnityLayerOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\DebugTools\SceneData.cs" />
+     <Compile Include="Assets\Scripts\Managers\GwangManager.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\TileErrorEventArgs.cs" />
      <Compile Include="Assets\Scripts\Common\ScrollMenu.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\TrafficUvAnimator.cs" />
@@ -109,6 +114,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\IAsyncRequest.cs" />
      <Compile Include="Assets\Scripts\Managers\BagManager.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\MapMatching\MapMatchingParameters.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_AutoStopLoopedEffect.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\TileCover.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\AbstractTileFactory.cs" />
      <Compile Include="Assets\Mapbox\Examples\4_ReplaceFeatures\Scripts\BlinkLight.cs" />
@@ -123,6 +129,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\HTTPRequestThreaded.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerTexturing.cs" />
      <Compile Include="Assets\Mapbox\Examples\5_Playground\Scripts\VectorTileExample.cs" />
+     <Compile Include="Assets\Scripts\Managers\AfterSixSpotsManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\CameraBoundsTileProviderOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\DebugTools\ScenesList.cs" />
      <Compile Include="Assets\Scripts\Locker.cs" />
@@ -144,6 +151,7 @@
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\MapboxLocationServiceUnityWrapper.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\DistanceFunctions.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ImageryLayer.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDir.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\TerrainLayer.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\MapMatching\Tracepoint.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\ModifierStack.cs" />
@@ -156,12 +164,13 @@
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Interfaces\IFeaturePropertySettable.cs" />
      <Compile Include="Assets\Mapbox\Examples\7_Globe\Scripts\SpawnOnGlobeExample.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\PolylineUtils.cs" />
-     <Compile Include="Assets\Mapbox\Unity\DataContainers\TileStatsFetcher.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\EditorLocationProviderLocationLog.cs" />
+     <Compile Include="Assets\Mapbox\Unity\DataContainers\TileStatsFetcher.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerDarkStyle.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\ReverseGeocodeUserInput.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\TileResource.cs" />
      <Compile Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\AstronautMouseController.cs" />
+     <Compile Include="Assets\Scripts\Common\ScrollGuideImg.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\TerrainStrategies\LowPolyTerrainStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\IntervalHeap.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerColliderOptions.cs" />
@@ -194,15 +203,17 @@
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\MaterialModifier.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\MapMatching\MapMatcher.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\LayerSourceOptions.cs" />
+     <Compile Include="Assets\Scripts\Managers\JungManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\AbstractLocationProvider.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\MapboxDefaultVector.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\AbstractEditorLocationProvider.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapPlacementOptions.cs" />
      <Compile Include="Assets\Mapbox\Examples\6_ZoomableMap\Scripts\SpawnOnMap.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\NodeEditorElementAttribute.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_AutoDestructShuriken.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Components\VertexDebuggerGizmo.cs" />
-     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\SQLiteCache\Tiles.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Filters\TypeFilter.cs" />
+     <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\SQLiteCache\Tiles.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerSimpleStyle.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Strategies\MapPlacementAtTileCenterStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Interfaces\ITileProvider.cs" />
@@ -228,6 +239,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\ReverseGeocodeResource.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\LocationSmoothing\KalmanFilter.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyle.cs" />
+     <Compile Include="Assets\Scripts\ARSceneSlider.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\HTTPRequestNonThreaded.cs" />
      <Compile Include="Assets\Scripts\ChatPage\Chatter.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\NearestNeighbour.cs" />
@@ -241,6 +253,7 @@
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Filters\HeightFilter.cs" />
      <Compile Include="Assets\Scripts\HintPage\SetHintDatas.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\IReplacementCriteria.cs" />
+     <Compile Include="Assets\Scripts\ARPrefab.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MergedModifierStack.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\GeometryMaterialOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerDarkStyle.cs" />
@@ -248,7 +261,9 @@
      <Compile Include="Assets\Mapbox\Unity\DataContainers\TerrainSideWallOptions.cs" />
      <Compile Include="Assets\Scripts\SignDraw.cs" />
      <Compile Include="Assets\Mapbox\Core\Plugins\Android\UniAndroidPermission\UniAndroidPermission.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
      <Compile Include="Assets\Scripts\Managers\DeoksugungManager.cs" />
+     <Compile Include="Assets\Scripts\ARTrackingManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Singleton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\RangeTileProvider.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\ImmediatePositionWithLocationProvider.cs" />
@@ -263,6 +278,7 @@
      <Compile Include="Assets\Mapbox\Unity\Styling\ScriptablePalette.cs" />
      <Compile Include="Assets\Mapbox\Examples\5_Playground\Scripts\ReverseGeocoderExample.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\Interfaces\IUnifiedMap.cs" />
+     <Compile Include="Assets\Scripts\Managers\SeokManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Runnable.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapExtentOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\MapImageFactory.cs" />
@@ -297,10 +313,12 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\BearingFilter.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\ObjectInspectorModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\ColliderOptions.cs" />
+     <Compile Include="Assets\Scripts\SaveLoad\JsonManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapOptions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\UnixTimestampUtils.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\ColliderModifier.cs" />
      <Compile Include="Assets\Scripts\Common\ChasaData.cs" />
+     <Compile Include="Assets\Scripts\SaveLoad\DataManager.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\DirectionsResponse.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\MapboxDefaultElevation.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\UnifiedMapOptions.cs" />
@@ -318,6 +336,7 @@
      <Compile Include="Assets\Mapbox\Unity\Utilities\PolygonUtils.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerLineGeometryOptions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\GeoCoordinateBounds.cs" />
+     <Compile Include="Assets\Scripts\Managers\ZukManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\LayerProperties\VectorFilterOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\LineMeshModifier.cs" />
      <Compile Include="Assets\Scripts\ReadyPage\SignUpManager.cs" />
@@ -329,6 +348,7 @@
      <Compile Include="Assets\Mapbox\Unity\DataContainers\LayerPerformanceOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\AndroidSettings.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\MapVisualizerPerformance.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RandomDirectionTranslate.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyleTiled.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\TerrainStrategies\ElevatedTerrainWithSidesStrategy.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\RangeTileProviderOptions.cs" />
@@ -367,10 +387,12 @@
      <Compile Include="Assets\Mapbox\Unity\Map\AbstractMapVisualizer.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\QuadTreeCameraMovement.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Utils\CircularBuffer.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_Translate.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifier.cs" />
      <Compile Include="Assets\Scripts\ReadyPage\UserInfo.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\AbstractLayer.cs" />
      <Compile Include="Assets\Mapbox\Unity\Constants.cs" />
+     <Compile Include="Assets\Scripts\Managers\JunManager.cs" />
      <Compile Include="Assets\Mapbox\Core\probe-extractor-cs\Probe.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\AddToCollectionModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\SubLayerColorStyle.cs" />
@@ -395,6 +417,7 @@
      <Compile Include="Assets\Mapbox\Unity\DataContainers\LineGeometryOptions.cs" />
      <Compile Include="Assets\Mapbox\Examples\8_VoxelMap\Scripts\VoxelFetcher.cs" />
      <Compile Include="Assets\Scripts\MapPage\Spots.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_New.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerBehaviorModifiers.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\CachingWebFileSource.cs" />
      <Compile Include="Assets\Scripts\ReadyPage\LoginManager.cs" />
@@ -402,6 +425,7 @@
      <Compile Include="Assets\Scripts\Managers\TongInManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\IMapboxLocationService.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\DirectionsFactory.cs" />
+     <Compile Include="Assets\JMO Assets\Cartoon FX\Scripts\CFX_LightFlicker.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\ElevationRequiredOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\ExtentOptions.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\DirectionResource.cs" />
@@ -421,6 +445,7 @@
      <Compile Include="Assets\Mapbox\Unity\Location\EditorLocationProvider.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MeshModifiers\Earcut.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\TileJsonData.cs" />
+     <Compile Include="Assets\Scripts\SaveLoad\SaveDataClass.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\Cache\SQLiteCache\SQLiteCache.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\AngleSmoothing\AngleSmoothingLowPass.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\GlobeTileProvider.cs" />
@@ -429,20 +454,22 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\DeviceLocationProviderAndroidNative.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Factories\ImageDataFetcher.cs" />
-     <Compile Include="Assets\Scripts\Managers\ParkNosuManager.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Astronaut\ProjectorLight.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFX3 Multiply Color.shader" />
      <None Include="Assets\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderAndroidNative.txt" />
      <None Include="Assets\Mapbox\Examples\2_AstronautGame\AstronautGame\Building\CharacterBuildingShader.shader" />
      <None Include="Assets\Mapbox\Shaders\MapboxStylesPerRenderer.shader" />
      <None Include="Assets\Mapbox\Unity\Location\ExampleGpsTraces\LocationProviderUnity.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\CartoonFX Free.txt" />
      <None Include="Assets\Mapbox\link.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-firestore-unity\maven-metadata.xml" />
      <None Include="Assets\Resources\Mapbox\MapboxConfiguration.txt" />
+     <None Include="Assets\JMO Assets\Cartoon FX Easy Editor\CartoonFX Easy Editor Readme.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Mapbox\Shaders\MapboxStyles.shader" />
      <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
@@ -460,6 +487,7 @@
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Mapbox\Core\Plugins\link.xml" />
      <None Include="Assets\Mapbox\Shaders\RasterWithTransparencyShader.shader" />
+     <None Include="Assets\JMO Assets\Cartoon FX\Shaders\CFXM_MobileParticleAdd_Alpha8.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Mapbox\Fonts\OpenSansLic.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
@@ -1141,11 +1169,14 @@
     <Reference Include="Unity.Performance.Profile-Analyzer.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Performance.Profile-Analyzer.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Model">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+    <Reference Include="Unity.XR.Management.Editor">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.Management.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
@@ -1162,8 +1193,14 @@
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.SettingsProvider.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.ARCore.Editor">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARCore.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Subsystem.Registration">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Subsystem.Registration.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
@@ -1176,6 +1213,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpatialTracking">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
@@ -1192,6 +1232,9 @@
     <Reference Include="Unity.Services.Core.Analytics">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Services.Core.Analytics.dll</HintPath>
     </Reference>
+    <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.VisualScripting.Shared.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.Shared.Editor.dll</HintPath>
     </Reference>
@@ -1201,11 +1244,35 @@
     <Reference Include="Unity.Timeline.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.XR.ARSubsystems.Editor">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARSubsystems.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.Management">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.Management.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARCore">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARCore.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARSubsystems">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARSubsystems.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation.Editor">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARFoundation.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SpatialTracking">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\UnityEditor.SpatialTracking.dll</HintPath>
+    </Reference>
     <Reference Include="Unity.TestTools.CodeCoverage.Editor">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.XR.ARFoundation">
+        <HintPath>C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\ScriptAssemblies\Unity.XR.ARFoundation.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

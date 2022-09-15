@@ -1,0 +1,60 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\SangEun\\Documents\\GitHub\\BehindSeoul\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-en-rXC\\values-en-rXC.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\4527d81fa1dab2c4adef56282f6f51b4\\androidx.core.core-1.2.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "203",
+                        "endOffsets": "254"
+                    },
+                    "to": {
+                        "startLines": "11",
+                        "startColumns": "4",
+                        "startOffsets": "1824",
+                        "endColumns": "203",
+                        "endOffsets": "2023"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\0e3f4b92cdfe1f27ebe42738bdc2b14c\\jetified-androidx.browser.browser-1.4.0\\res\\values-en-rXC\\values-en-rXC.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,255,454,665",
+                        "endColumns": "199,198,210,201",
+                        "endOffsets": "250,449,660,862"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "1012,1212,1411,1622",
+                        "endColumns": "199,198,210,201",
+                        "endOffsets": "1207,1406,1617,1819"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\ae4e63aee2448ed4859dc95da47269f5\\arcore_client\\res\\values-en-rXC\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "194,344,498,723,945",
+                        "endColumns": "149,153,224,221,185",
+                        "endOffsets": "343,497,722,944,1130"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,209,367,596,822",
+                        "endColumns": "153,157,228,225,189",
+                        "endOffsets": "204,362,591,817,1007"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,7 +1,23 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - ARPrefab
+    - ARSceneSlider
+    - BagManager
+    - Bubble
+    - CFX_AutoDestructShuriken
+    - ChatAlarm
+    - ChatManager
+    - ChatRoom
+    - Chatter
+    - DeoksugungManager
     - DistanceBetweenTwoPoints
+    - EraseMask
+    - GameManager
+    - GuidePageManager
+    - IsangHomePage
+    - Locker
+    - LoginManager
     - MapCameraMove
     - Mapbox.Examples.CameraBillboard
     - Mapbox.Examples.DragableDirectionWaypoint
@@ -24,7 +40,6 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.Location.LocationProviderFactory
     - Mapbox.Unity.Location.TransformLocationProvider
     - Mapbox.Unity.Map.AbstractMap
-    - Mapbox.Unity.Map.MapVisualizer
     - Mapbox.Unity.MeshGeneration.Data.AtlasInfo
     - Mapbox.Unity.MeshGeneration.Factories.DirectionsFactory
     - Mapbox.Unity.MeshGeneration.Modifiers.LoftModifier
@@ -34,18 +49,53 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.MeshGeneration.Modifiers.ReplaceFeatureCollectionModifier
     - Mapbox.Unity.Utilities.DebugTools.SceneData
     - Mapbox.Unity.Utilities.DebugTools.ScenesList
-    - Mapbox.Unity.Utilities.Runnable
     - PageChangeBtn
+    - ParkNosuManager
     - ScriptablePalette
+    - ScrollGuideImg
     - ScrollMenu
+    - SetChatDatas
+    - SetHintDatas
+    - SignDraw
+    - SignUpManager
+    - SixSpotsManager
+    - Spots
+    - SungnyemunManager
+    - TongInManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
+    - TMPro.TMP_InputField
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
+    Unity.XR.ARCore.Editor.dll:
+    - UnityEditor.XR.ARCore.ARCoreSettings
+    Unity.XR.ARCore.dll:
+    - UnityEngine.XR.ARCore.ARCoreLoader
+    Unity.XR.ARFoundation.dll:
+    - UnityEngine.XR.ARFoundation.ARCameraBackground
+    - UnityEngine.XR.ARFoundation.ARCameraManager
+    - UnityEngine.XR.ARFoundation.ARInputManager
+    - UnityEngine.XR.ARFoundation.ARPoseDriver
+    - UnityEngine.XR.ARFoundation.ARSession
+    - UnityEngine.XR.ARFoundation.ARSessionOrigin
+    - UnityEngine.XR.ARFoundation.ARTrackedImageManager
+    Unity.XR.ARSubsystems.dll:
+    - UnityEngine.XR.ARSubsystems.XRReferenceImageLibrary
+    Unity.XR.Management.Editor.dll:
+    - UnityEditor.XR.Management.XRGeneralSettingsPerBuildTarget
+    Unity.XR.Management.dll:
+    - UnityEngine.XR.Management.XRGeneralSettings
+    - UnityEngine.XR.Management.XRManagerSettings
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -57,12 +107,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
@@ -118,11 +171,21 @@ ScriptsOnlyBuild:
     - TMPro.TMP_GlyphAdjustmentRecord
     - TMPro.TMP_GlyphPairAdjustmentRecord
     - TMPro.TMP_GlyphValueRecord
+    - TMPro.TMP_InputField/OnChangeEvent
+    - TMPro.TMP_InputField/SelectionEvent
+    - TMPro.TMP_InputField/SubmitEvent
+    - TMPro.TMP_InputField/TextSelectionEvent
+    - TMPro.TMP_InputField/TouchScreenKeyboardEvent
     - TMPro.TMP_Sprite
     - TMPro.TMP_SpriteCharacter
     - TMPro.TMP_SpriteGlyph
     - TMPro.TMP_Style
     - TMPro.VertexGradient
+    Unity.XR.ARSubsystems:
+    - UnityEngine.XR.ARSubsystems.SerializableDictionary`2/KeyValuePair[System.String,System.Byte[]]
+    - UnityEngine.XR.ARSubsystems.SerializableDictionary`2[System.String,System.Byte[]]
+    - UnityEngine.XR.ARSubsystems.SerializableGuid
+    - UnityEngine.XR.ARSubsystems.XRReferenceImage
     UnityEngine.CoreModule:
     - UnityEngine.Events.ArgumentCache
     - UnityEngine.Events.PersistentCallGroup
@@ -142,8 +205,21 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.Scrollbar/ScrollEvent
+    - UnityEngine.UI.Slider/SliderEvent
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
+  - assembly: Assembly-CSharp
+    fullTypeName: Locker
+    methodName: itemInfoPageOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Chatter
+    methodName: ChatRoomOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Locker
+    methodName: itemInfoPageOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -154,8 +230,413 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DistanceBetweenTwoPoints
+    methodName: IsDistanceUnder500m
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOff
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartGwangPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartHamPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartSeokPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartZukPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartJunPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartJungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartIsangPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartYoonDongJuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: RestSpotsOn
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartDeokPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: Spots
+    methodName: StartParkNoSuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: DeoksugungManager
+    methodName: GoToNextDeokPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: InitInt
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: LoginManager
+    methodName: LoginBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: IsangHomePage
+    methodName: GoToNextIsangHomePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GotoDeoksugungMap
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GotoDeoksugungMap
+  - assembly: Assembly-CSharp
+    fullTypeName: ARSceneSlider
+    methodName: GetSliderValue
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: SeokAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextHamPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: Answer1SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GetLockerInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: IsangHomePage
+    methodName: AnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: JungAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GoToNextNosuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextHamPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DeoksugungManager
+    methodName: GotoSixSpotsMap
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToNextTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: DoorImgFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: InitInt
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: Answer2SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: ARSceneSlider
+    methodName: GetSliderValue
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SignDraw
+    methodName: CopySign
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GwangAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: InitInt
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextSeokPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -163,8 +644,245 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GotoParkNoSuMap
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToNextTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: LoginManager
+    methodName: ChangePasswordBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: IsangHomePage
+    methodName: GotoTongInMap
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: EraseMask
+    methodName: DestroyEraseMasks
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextGwangPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: Answer2SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: InitInt
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: Answer2SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GotoIsangHomeMap
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GoToNextNosuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextJunPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: Answer1SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GotoYoonDongJuMap
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToNextTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: LoginManager
+    methodName: LogOutBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: AnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DeoksugungManager
+    methodName: GoToNextDeokPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: GetCourseInCollection
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: HamAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToNextTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: AnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SignUpManager
+    methodName: SignUpBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextJungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: IsangHomePage
+    methodName: GoToNextIsangHomePage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: InitInt
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: Answer2SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: JunAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: EndedSpotOff_Check
+  - assembly: Assembly-CSharp
+    fullTypeName: SixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GotoDeoksugungMap
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GetHorirInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
   sceneClasses:
     Assets/Scenes/MainScene.unity:
     - Class: 1
@@ -206,113 +924,189 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1638}
-    - Class: 114
-      Script: {instanceID: 1640}
-    - Class: 114
-      Script: {instanceID: 1642}
-    - Class: 114
-      Script: {instanceID: 1644}
-    - Class: 114
-      Script: {instanceID: 1832}
-    - Class: 114
-      Script: {instanceID: 1836}
-    - Class: 114
       Script: {instanceID: 1868}
     - Class: 114
-      Script: {instanceID: 1952}
+      Script: {instanceID: 1870}
+    - Class: 114
+      Script: {instanceID: 1872}
+    - Class: 114
+      Script: {instanceID: 1874}
+    - Class: 114
+      Script: {instanceID: 1876}
+    - Class: 114
+      Script: {instanceID: 1878}
+    - Class: 114
+      Script: {instanceID: 2036}
+    - Class: 114
+      Script: {instanceID: 2094}
+    - Class: 114
+      Script: {instanceID: 2128}
+    - Class: 114
+      Script: {instanceID: 2172}
+    - Class: 114
+      Script: {instanceID: 2192}
     - Class: 114
       Script: {instanceID: 2218}
     - Class: 114
-      Script: {instanceID: 2358}
+      Script: {instanceID: 2222}
     - Class: 114
-      Script: {instanceID: 2398}
+      Script: {instanceID: 2418}
     - Class: 114
-      Script: {instanceID: 2444}
+      Script: {instanceID: 2532}
     - Class: 114
-      Script: {instanceID: 2582}
+      Script: {instanceID: 2696}
     - Class: 114
-      Script: {instanceID: 2660}
+      Script: {instanceID: 2740}
     - Class: 114
-      Script: {instanceID: 2694}
+      Script: {instanceID: 2792}
     - Class: 114
-      Script: {instanceID: 2852}
+      Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 3032}
     - Class: 114
-      Script: {instanceID: 2898}
+      Script: {instanceID: 3074}
     - Class: 114
-      Script: {instanceID: 2974}
+      Script: {instanceID: 3252}
     - Class: 114
-      Script: {instanceID: 3054}
+      Script: {instanceID: 3296}
     - Class: 114
-      Script: {instanceID: 3476}
+      Script: {instanceID: 3304}
     - Class: 114
-      Script: {instanceID: 3568}
+      Script: {instanceID: 3386}
     - Class: 114
-      Script: {instanceID: 3692}
+      Script: {instanceID: 3472}
     - Class: 114
-      Script: {instanceID: 3726}
+      Script: {instanceID: 3620}
     - Class: 114
-      Script: {instanceID: 3940}
+      Script: {instanceID: 3848}
     - Class: 114
-      Script: {instanceID: 4322}
+      Script: {instanceID: 3968}
     - Class: 114
-      Script: {instanceID: 4334}
+      Script: {instanceID: 4072}
     - Class: 114
-      Script: {instanceID: 4422}
+      Script: {instanceID: 4092}
     - Class: 114
-      Script: {instanceID: 4706}
+      Script: {instanceID: 4216}
     - Class: 114
-      Script: {instanceID: 4856}
+      Script: {instanceID: 4220}
     - Class: 114
-      Script: {instanceID: 4982}
+      Script: {instanceID: 4262}
     - Class: 114
-      Script: {instanceID: 5008}
+      Script: {instanceID: 4324}
     - Class: 114
-      Script: {instanceID: 5772}
+      Script: {instanceID: 4500}
     - Class: 114
-      Script: {instanceID: 5802}
+      Script: {instanceID: 4752}
     - Class: 114
-      Script: {instanceID: 5890}
+      Script: {instanceID: 4824}
     - Class: 114
-      Script: {instanceID: 5932}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 6026}
+      Script: {instanceID: 4946}
     - Class: 114
-      Script: {instanceID: 6214}
+      Script: {instanceID: 5044}
     - Class: 114
-      Script: {instanceID: 6246}
+      Script: {instanceID: 5348}
     - Class: 114
-      Script: {instanceID: 6256}
+      Script: {instanceID: 5368}
     - Class: 114
-      Script: {instanceID: 6330}
+      Script: {instanceID: 5542}
     - Class: 114
-      Script: {instanceID: 6432}
+      Script: {instanceID: 5578}
     - Class: 114
-      Script: {instanceID: 6604}
+      Script: {instanceID: 5696}
     - Class: 114
-      Script: {instanceID: 6774}
+      Script: {instanceID: 5724}
     - Class: 114
-      Script: {instanceID: 6996}
+      Script: {instanceID: 5752}
     - Class: 114
-      Script: {instanceID: 7174}
+      Script: {instanceID: 6006}
     - Class: 114
-      Script: {instanceID: 7186}
+      Script: {instanceID: 6030}
     - Class: 114
-      Script: {instanceID: 7682}
+      Script: {instanceID: 6186}
     - Class: 114
-      Script: {instanceID: 7838}
+      Script: {instanceID: 6234}
     - Class: 114
-      Script: {instanceID: 8084}
+      Script: {instanceID: 6372}
     - Class: 114
-      Script: {instanceID: 8264}
+      Script: {instanceID: 6400}
     - Class: 114
-      Script: {instanceID: 8880}
+      Script: {instanceID: 6438}
     - Class: 114
-      Script: {instanceID: 9204}
+      Script: {instanceID: 6536}
     - Class: 114
-      Script: {instanceID: 9308}
+      Script: {instanceID: 6552}
+    - Class: 114
+      Script: {instanceID: 6590}
+    - Class: 114
+      Script: {instanceID: 6612}
+    - Class: 114
+      Script: {instanceID: 6626}
+    - Class: 114
+      Script: {instanceID: 6694}
+    - Class: 114
+      Script: {instanceID: 6724}
+    - Class: 114
+      Script: {instanceID: 6772}
+    - Class: 114
+      Script: {instanceID: 6840}
+    - Class: 114
+      Script: {instanceID: 6886}
+    - Class: 114
+      Script: {instanceID: 7092}
+    - Class: 114
+      Script: {instanceID: 7130}
+    - Class: 114
+      Script: {instanceID: 7140}
+    - Class: 114
+      Script: {instanceID: 7218}
+    - Class: 114
+      Script: {instanceID: 7338}
+    - Class: 114
+      Script: {instanceID: 7518}
+    - Class: 114
+      Script: {instanceID: 7556}
+    - Class: 114
+      Script: {instanceID: 7710}
+    - Class: 114
+      Script: {instanceID: 7964}
+    - Class: 114
+      Script: {instanceID: 8132}
+    - Class: 114
+      Script: {instanceID: 8158}
+    - Class: 114
+      Script: {instanceID: 8170}
+    - Class: 114
+      Script: {instanceID: 8300}
+    - Class: 114
+      Script: {instanceID: 8546}
+    - Class: 114
+      Script: {instanceID: 8738}
+    - Class: 114
+      Script: {instanceID: 8904}
+    - Class: 114
+      Script: {instanceID: 8932}
+    - Class: 114
+      Script: {instanceID: 9060}
+    - Class: 114
+      Script: {instanceID: 9186}
+    - Class: 114
+      Script: {instanceID: 9384}
+    - Class: 114
+      Script: {instanceID: 9574}
+    - Class: 114
+      Script: {instanceID: 9894}
+    - Class: 114
+      Script: {instanceID: 9998}
+    - Class: 114
+      Script: {instanceID: 10060}
+    - Class: 114
+      Script: {instanceID: 10102}
+    - Class: 114
+      Script: {instanceID: 10474}
+    - Class: 114
+      Script: {instanceID: 10580}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -324,6 +1118,10 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 212
       Script: {instanceID: 0}
@@ -346,12 +1144,6 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
-  - hash:
-      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -364,10 +1156,22 @@ ScriptsOnlyBuild:
     className: Image
   - hash:
       serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -376,10 +1180,28 @@ ScriptsOnlyBuild:
     className: PanelRaycaster
   - hash:
       serializedVersion: 2
+      Hash: e8733e39efa851172df1c9eaef062265
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlane
+  - hash:
+      serializedVersion: 2
       Hash: a7c91ead796087612ab9b5731410c7c5
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: LocationStatus
+  - hash:
+      serializedVersion: 2
+      Hash: 04e4a8b0447477cc4e933d9e5311188f
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: ArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARInputManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -398,12 +1220,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Utilities
     className: DontDestroyOnLoad
-  - hash:
-      serializedVersion: 2
-      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: LayoutElement
   - hash:
       serializedVersion: 2
       Hash: 89d2c9019dc18bce3f4d02d01a1afefd
@@ -430,10 +1246,22 @@ ScriptsOnlyBuild:
     className: SnapTerrainRaycastModifier
   - hash:
       serializedVersion: 2
+      Hash: 8a20858c68b5e22d17731d29fcb3fca4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatRoom
+  - hash:
+      serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: ff60bda4f83ff2c02edd6b89b6f571e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SixSpotsManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -442,10 +1270,22 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 1398c14740a4b0d63c3eea621f5187e0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
       Hash: d4954bb7e3dcb8c453804d4ecb3d31c1
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: PoiLabelTextSetter
+  - hash:
+      serializedVersion: 2
+      Hash: 660deb0ce569359218f0ba85b7ce0e3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightIntensityFade
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -458,6 +1298,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Components
     className: FeatureBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: c9b725084ced8748d0f026b6d168f432
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ParkNosuManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 2a0f18826295e1d9d0b8f77c1ab8f6d5
@@ -494,6 +1346,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: MakiHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 524a8f7c9b60f50a1c6bbe7185c0207e
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARHumanBodyManager
   - hash:
       serializedVersion: 2
       Hash: 800c50acba124432abb4cf0d47202e06
@@ -562,6 +1420,12 @@ ScriptsOnlyBuild:
     className: TileErrorHandler
   - hash:
       serializedVersion: 2
+      Hash: 9b6303c7164a38e06044ec2036c18b6b
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARParticipantManager
+  - hash:
+      serializedVersion: 2
       Hash: 92c0ccf5c78f40e4cdd0bcc89b96f8e3
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Location
@@ -572,6 +1436,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: PoiMarkerHelper
+  - hash:
+      serializedVersion: 2
+      Hash: dad3a1f1e1ecb4691721bab721edd60a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoRotate
   - hash:
       serializedVersion: 2
       Hash: 42b2fdf293c62c25afaabcfdfd18a742
@@ -596,6 +1466,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Interfaces
     className: VectorLayerVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFace
   - hash:
       serializedVersion: 2
       Hash: 4db78b5d23bd2de1843c33dedf6ca0d7
@@ -664,6 +1540,12 @@ ScriptsOnlyBuild:
     className: TrafficUvAnimator
   - hash:
       serializedVersion: 2
+      Hash: 0c5108545fb925730d4d5887ebcdd20c
+    assemblyName: Unity.XR.ARSubsystems.dll
+    namespaceName: UnityEngine.XR.ARSubsystems
+    className: XRReferenceObjectLibrary
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -674,6 +1556,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestRunner.Utils
     className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: a3b1cf051050d67ff3b85189a43894c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BagManager
   - hash:
       serializedVersion: 2
       Hash: f40fedccd4adbc76605bea6d67537e4b
@@ -692,6 +1580,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 1d0beb1a2d4edee4c06b6835632e83a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoStopLoopedEffect
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -718,10 +1612,28 @@ ScriptsOnlyBuild:
     className: BlinkLight
   - hash:
       serializedVersion: 2
+      Hash: 1268406d3f2e4b2c2b670b560b6db769
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: AREnvironmentProbeManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnDropdownValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 297baaeded98a56f55539fb61333e2df
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: AROcclusionManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1da4eafb4c638916fa1f6085f8dbf04d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatManager
   - hash:
       serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
@@ -761,6 +1673,12 @@ ScriptsOnlyBuild:
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Locker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseDragMessageListener
@@ -776,6 +1694,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: cbe6deff75fc0987595a61e9510f7917
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARCameraBackground
   - hash:
       serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
@@ -808,6 +1732,12 @@ ScriptsOnlyBuild:
     className: TextureSideWallModifier
   - hash:
       serializedVersion: 2
+      Hash: 84ca7baaf2cb5b2ad232c60e14f6cc19
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetChatDatas
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
@@ -838,6 +1768,18 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedImage
+  - hash:
+      serializedVersion: 2
+      Hash: 4aac268d7e435f7a65add91aaba819a4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RandomDir
+  - hash:
+      serializedVersion: 2
       Hash: 0855a9d1fe3a81abf4812b7ac80389b6
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
@@ -848,6 +1790,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnControllerColliderHitMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRGeneralSettings
   - hash:
       serializedVersion: 2
       Hash: 27ec3360f0c0a6803ba71cc3106480b8
@@ -886,6 +1834,12 @@ ScriptsOnlyBuild:
     className: SpawnOnGlobeExample
   - hash:
       serializedVersion: 2
+      Hash: 8ab9295d94483c961936d82d233d3df2
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRManagerSettings
+  - hash:
+      serializedVersion: 2
       Hash: 0486b2d53a38dd980e5d3062b4e30fa4
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Location
@@ -904,10 +1858,28 @@ ScriptsOnlyBuild:
     className: AstronautMouseController
   - hash:
       serializedVersion: 2
+      Hash: 7f5c55cb7b3151ce240452eb85500d32
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlaneManager
+  - hash:
+      serializedVersion: 2
+      Hash: eeada4f3f879474a79ee0417aab9f61c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScrollGuideImg
+  - hash:
+      serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
     assemblyName: Unity.VisualScripting.Flow.dll
     namespaceName: Unity.VisualScripting
     className: ScriptGraphAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 625e4fd6f88b90d1ee9e7c089c3f450d
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARSession
   - hash:
       serializedVersion: 2
       Hash: 57218997c1c8facfc9c494649a7995ac
@@ -920,6 +1892,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoaderSettings
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -982,6 +1960,12 @@ ScriptsOnlyBuild:
     className: VariablesSaver
   - hash:
       serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARRaycast
+  - hash:
+      serializedVersion: 2
       Hash: 18c222bef9ae745ce69ddde9b74337ca
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -1006,10 +1990,28 @@ ScriptsOnlyBuild:
     className: TMP_Settings
   - hash:
       serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARHumanBody
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnJointBreak2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: ef705ae677d649d6c0ff3b4060963abd
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedObjectManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudParticleVisualizer
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
@@ -1030,13 +2032,31 @@ ScriptsOnlyBuild:
     className: MaterialModifier
   - hash:
       serializedVersion: 2
+      Hash: e4e1db177a7eab8c1341e463f5f32dc4
+    assemblyName: Unity.XR.ARSubsystems.dll
+    namespaceName: UnityEngine.XR.ARSubsystems
+    className: XRReferenceImageLibrary
+  - hash:
+      serializedVersion: 2
       Hash: 6980e81ddc615a861309d2d659cc3760
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: cdef73addc62b40e1ee33ef601d0aa9d
+      Hash: 1bc03a501323d00d0037a6b76d25a3ba
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARMeshManager
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARParticipant
+  - hash:
+      serializedVersion: 2
+      Hash: 6e73ec434ed892095b0470882fb96164
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
     className: SpawnOnMap
@@ -1054,10 +2074,22 @@ ScriptsOnlyBuild:
     className: UnityOnCancelMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 5d27c6e85ec89cfab8577e9e26695e88
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_AutoDestructShuriken
+  - hash:
+      serializedVersion: 2
       Hash: 1d222ac1091b93ea5b45bd898fb5c209
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Components
     className: VertexDebuggerGizmo
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARAnchor
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1078,10 +2110,28 @@ ScriptsOnlyBuild:
     className: TagModifier
   - hash:
       serializedVersion: 2
+      Hash: 0535c7e7c34dd1cdfc5b1f8ffce1aebe
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedImageManager
+  - hash:
+      serializedVersion: 2
+      Hash: 3d427ba090aeea313b13187d289b649e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GuidePageManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 7aca2ed5db1ec69c720a56d56f56bf9f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatAlarm
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1108,6 +2158,18 @@ ScriptsOnlyBuild:
     className: UnityOnEndDragMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 24c74cc0d527a06113f2b967042769f0
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEditor.XR.LegacyInputHelpers
+    className: CameraOffset
+  - hash:
+      serializedVersion: 2
+      Hash: bd46a96e92ba337d11e38c09a9c4bae9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARSceneSlider
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1120,10 +2182,22 @@ ScriptsOnlyBuild:
     className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 051ce9b80a0691b95e4b641b58bfae63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Chatter
+  - hash:
+      serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 52bcb9c2a78bdd8d98a59e915c346e75
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: TransitionArmModel
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1150,6 +2224,18 @@ ScriptsOnlyBuild:
     className: Toggle
   - hash:
       serializedVersion: 2
+      Hash: edf35db7f37157adc6ced6ccc5ea2d9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetHintDatas
+  - hash:
+      serializedVersion: 2
+      Hash: 0e49c2ad0a964e6eab41ad3a647df749
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARPrefab
+  - hash:
+      serializedVersion: 2
       Hash: 8c362ed1d3d229b03c8cd704cd15ca04
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
@@ -1168,6 +2254,12 @@ ScriptsOnlyBuild:
     className: GlobalMessageListener
   - hash:
       serializedVersion: 2
+      Hash: efa4c095cd35b4ffbc1ec9c62dbab4f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SignDraw
+  - hash:
+      serializedVersion: 2
       Hash: 3164bc883ff663a5cdb32d1ef7e7c0c5
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -1180,16 +2272,34 @@ ScriptsOnlyBuild:
     className: UniAndroidPermission
   - hash:
       serializedVersion: 2
+      Hash: 3f5031037e63abe5dcf87c278e01a4de
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RotateCamera
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnCollisionEnter2DMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 91ae46182ac7c10d8b9f897c14f7809f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DeoksugungManager
+  - hash:
+      serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: c9ef01482833879ecfbb73c320b3c07f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARTrackingManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1216,10 +2326,22 @@ ScriptsOnlyBuild:
     className: Console
   - hash:
       serializedVersion: 2
+      Hash: 68ba7496530f5cb0865b6960ad8b52a5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Bubble
+  - hash:
+      serializedVersion: 2
       Hash: 2acabf02c14dc80d6483eab675c8db2d
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Utilities
     className: TelemetryConfigurationButton
+  - hash:
+      serializedVersion: 2
+      Hash: aaecedc35fbd9f361ccc634e5a4c5e46
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatData
   - hash:
       serializedVersion: 2
       Hash: bc7929c5b6cab4174185754e71e4e1f1
@@ -1342,6 +2464,12 @@ ScriptsOnlyBuild:
     className: HeightModifier
   - hash:
       serializedVersion: 2
+      Hash: 37a13922678947e6d144f41a7195154a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARCameraManager
+  - hash:
+      serializedVersion: 2
       Hash: ba6ef9e2082e09d9399eaef28d94d812
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
@@ -1360,6 +2488,12 @@ ScriptsOnlyBuild:
     className: AspectRatioFitter
   - hash:
       serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedObject
+  - hash:
+      serializedVersion: 2
       Hash: 760787567e1b60d64a3e421ab83ee14a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -1370,6 +2504,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: ColliderModifier
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChasaData
+  - hash:
+      serializedVersion: 2
+      Hash: 5b4733ee821ed45976bf89bfb03a3ac6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HintData
   - hash:
       serializedVersion: 2
       Hash: 5054d242fa21f2ec4c034da5ef77baab
@@ -1400,6 +2546,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: LineMeshModifier
+  - hash:
+      serializedVersion: 2
+      Hash: cef5098bc9b1844da263c8d5925fa5e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SignUpManager
   - hash:
       serializedVersion: 2
       Hash: 882cf6c339f4c054931094616d66766f
@@ -1444,10 +2596,34 @@ ScriptsOnlyBuild:
     className: GameObjectModifier
   - hash:
       serializedVersion: 2
+      Hash: 16dacd04869a876ea4bea0d1d2e77e34
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloudManager
+  - hash:
+      serializedVersion: 2
+      Hash: 5adfa91c3e140861dfac27bb02c00415
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EraseMask
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: AREnvironmentProbe
+  - hash:
+      serializedVersion: 2
       Hash: f2f2883bb6002e274434d8fe1421a30a
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Utilities
     className: MapVisualizerPerformance
+  - hash:
+      serializedVersion: 2
+      Hash: e70e7b311a1620c2e899545b2e1fdfae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_RandomDirectionTranslate
   - hash:
       serializedVersion: 2
       Hash: 4fd8bf02e3089425d3502e26c44ba31a
@@ -1468,10 +2644,28 @@ ScriptsOnlyBuild:
     className: NoiseOffsetModifier
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Firebase.Platform.dll
+    namespaceName: Firebase.Platform
+    className: FirebaseMonoBehaviour
+  - hash:
+      serializedVersion: 2
       Hash: 0909bc52453e138a9962458847ac1eb1
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Utilities
     className: OpenUrlOnButtonClick
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 1d9b53318825332126b0fd6da2d962fb
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARAnchorManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1516,6 +2710,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: d251bf88db6c95a6b1aa0b69298da9ef
+    assemblyName: UnityEngine.SpatialTracking.dll
+    namespaceName: UnityEngine.SpatialTracking
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1544,6 +2744,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
     className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 53274b4a229cab03b5dd4e3760ffc408
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SungnyemunManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1580,6 +2786,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerDownMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f7ed725fa78136b2ace4f24522f028e9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IsangHomePage
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1624,6 +2836,12 @@ ScriptsOnlyBuild:
     className: UnityOnSubmitMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 671420ad2c33f1ddaf6d076461adf15a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_Translate
+  - hash:
+      serializedVersion: 2
       Hash: ba6ef9e2082e09d9399eaef28d94d812
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
@@ -1634,6 +2852,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARBackgroundRendererFeature
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1666,6 +2890,12 @@ ScriptsOnlyBuild:
     className: TransformLocationProvider
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoader
+  - hash:
+      serializedVersion: 2
       Hash: 8c362ed1d3d229b03c8cd704cd15ca04
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
@@ -1694,6 +2924,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Modifiers
     className: TextureModifier
+  - hash:
+      serializedVersion: 2
+      Hash: e1c35cdce946e9da77fe80a39c261608
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARSessionOrigin
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1726,6 +2962,24 @@ ScriptsOnlyBuild:
     className: VoxelFetcher
   - hash:
       serializedVersion: 2
+      Hash: 893dbdbfe611d62e230a686ea89f1efd
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: SwingArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Spots
+  - hash:
+      serializedVersion: 2
+      Hash: 421b20ccd7815ebee5e2b14a986d2efc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_Demo_New
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -1736,6 +2990,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseOverMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 0f6f4f1ce7683bf65f069290e69feecb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LoginManager
   - hash:
       serializedVersion: 2
       Hash: 2574ac7d50617d23cdefe4ad22f5e1ad
@@ -1750,10 +3010,28 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
+      Hash: d27d0fd8d7c90df2e1bc120ce920e252
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TongInManager
+  - hash:
+      serializedVersion: 2
       Hash: ac76d55abf505fa94c4a8aa75d72f770
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Factories
     className: DirectionsFactory
+  - hash:
+      serializedVersion: 2
+      Hash: e4db0ddf42150a3b60bd39cf2bc3def2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CFX_LightFlicker
+  - hash:
+      serializedVersion: 2
+      Hash: f854959258a7825068ea909cc9effa21
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPlaneMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1766,6 +3044,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: d39905ff8fda75afed4d688761c322e1
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceManager
   - hash:
       serializedVersion: 2
       Hash: 8116e8a4b7b643c32959cb890be677da
@@ -1784,6 +3068,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.MeshGeneration.Interfaces
     className: LocationPrefabsLayerVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: c1aa24dc179be0cb7c6d49f66fc0db8a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARRaycastManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1814,6 +3104,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Location
     className: EditorLocationProvider
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPointCloud
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARFaceMeshVisualizer
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744
@@ -1877,4 +3179,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/Scenes/MainScene.unity
-  playerPath: C:/apktest/Behind_Seoul_test.apk
+  playerPath: C:/Users/SangEun/Documents/BehindSeoulaab/BehindSeoul_2.aab

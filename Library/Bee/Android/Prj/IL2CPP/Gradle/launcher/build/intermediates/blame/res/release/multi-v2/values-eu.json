@@ -1,0 +1,94 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\SangEun\\Documents\\GitHub\\BehindSeoul\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-eu\\values-eu.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\0e3f4b92cdfe1f27ebe42738bdc2b14c\\jetified-androidx.browser.browser-1.4.0\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,155,257,370",
+                        "endColumns": "99,101,112,104",
+                        "endOffsets": "150,252,365,470"
+                    },
+                    "to": {
+                        "startLines": "25,26,27,28",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "2829,2929,3031,3144",
+                        "endColumns": "99,101,112,104",
+                        "endOffsets": "2924,3026,3139,3244"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\4527d81fa1dab2c4adef56282f6f51b4\\androidx.core.core-1.2.0\\res\\values-eu\\values-eu.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "29",
+                        "startColumns": "4",
+                        "startOffsets": "3249",
+                        "endColumns": "100",
+                        "endOffsets": "3345"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\ae4e63aee2448ed4859dc95da47269f5\\arcore_client\\res\\values-eu\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8",
+                        "startColumns": "0,0,0,0,0",
+                        "startOffsets": "190,235,290,428,566",
+                        "endColumns": "44,54,137,137,102",
+                        "endOffsets": "234,289,427,565,668"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,104,163,305,447",
+                        "endColumns": "48,58,141,141,106",
+                        "endOffsets": "99,158,300,442,549"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\dae4d6ab41d2d582b03ac5a214336f6a\\jetified-com.google.android.gms.play-services-basement-18.1.0\\res\\values-eu\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "195",
+                        "endColumns": "138",
+                        "endOffsets": "333"
+                    },
+                    "to": {
+                        "startLines": "15",
+                        "startColumns": "4",
+                        "startOffsets": "1572",
+                        "endColumns": "142",
+                        "endOffsets": "1710"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\SangEun\\.gradle\\caches\\transforms-2\\files-2.1\\2fe805d0724c6f9ee6d19b9f01d50392\\jetified-com.google.android.gms.play-services-base-18.1.0\\res\\values-eu\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "193,293,461,581,686,834,955,1075,1179,1353,1457,1616,1740,1890,2046,2108,2169",
+                        "endColumns": "99,167,119,104,147,120,119,103,173,103,158,123,149,155,61,60,87",
+                        "endOffsets": "292,460,580,685,833,954,1074,1178,1352,1456,1615,1739,1889,2045,2107,2168,2256"
+                    },
+                    "to": {
+                        "startLines": "7,8,9,10,11,12,13,14,16,17,18,19,20,21,22,23,24",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "554,658,830,954,1063,1215,1340,1464,1715,1893,2001,2164,2292,2446,2606,2672,2737",
+                        "endColumns": "103,171,123,108,151,124,123,107,177,107,162,127,153,159,65,64,91",
+                        "endOffsets": "653,825,949,1058,1210,1335,1459,1567,1888,1996,2159,2287,2441,2601,2667,2732,2824"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5700310514230116495}
   - component: {fileID: 3474397727509037216}
   - component: {fileID: 2810367284683754096}
+  - component: {fileID: 3904073495297434737}
   m_Layer: 0
   m_Name: StartBtn
   m_TagString: Untagged
@@ -134,6 +135,46 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3904073495297434737}
+        m_TargetAssemblyTypeName: PageChangeBtn, Assembly-CSharp
+        m_MethodName: GoToNextPage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1949958493417524374}
+        m_TargetAssemblyTypeName: Spots, Assembly-CSharp
+        m_MethodName: RestSpotsOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3904073495297434737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964517308022961495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6557c156711c4ad40b7e5bd059f04fcd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prevPage:
+  - {fileID: 8836593766585248840}
+  nextPage:
+  - {fileID: 2605390573345010649}
 --- !u!1 &1626759915402694624
 GameObject:
   m_ObjectHideFlags: 0

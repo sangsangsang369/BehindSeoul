@@ -1,0 +1,388 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.Biseosil.BehindSeoul"
+4    android:installLocation="preferExternal"
+5    android:versionCode="1"
+6    android:versionName="0.1" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="29"
+9-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="31" />
+10-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml
+11
+12    <supports-screens
+12-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+13        android:anyDensity="true"
+13-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+14        android:largeScreens="true"
+14-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+15        android:normalScreens="true"
+15-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+16        android:smallScreens="true"
+16-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+17        android:xlargeScreens="true" />
+17-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+18
+19    <uses-feature android:glEsVersion="0x00030000" />
+19-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:5-54
+19-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:12:19-51
+20
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:5-67
+21-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:14:22-64
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:5-79
+22-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:15:22-76
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:5-81
+23-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:16:22-78
+24
+25    <uses-feature
+25-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:18:5-20:36
+26        android:name="android.hardware.location.gps"
+26-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:19:9-53
+27        android:required="true" />
+27-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:20:9-33
+28    <uses-feature
+28-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:21:5-23:36
+29        android:name="android.hardware.location"
+29-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:22:9-49
+30        android:required="false" />
+30-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:23:9-33
+31    <uses-feature
+31-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:24:5-26:36
+32        android:name="android.hardware.touchscreen"
+32-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:25:9-52
+33        android:required="false" />
+33-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:26:9-33
+34    <uses-feature
+34-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:27:5-29:36
+35        android:name="android.hardware.touchscreen.multitouch"
+35-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:28:9-63
+36        android:required="false" />
+36-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:29:9-33
+37    <uses-feature
+37-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:30:5-32:36
+38        android:name="android.hardware.touchscreen.multitouch.distinct"
+38-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:31:9-72
+39        android:required="false" />
+39-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:32:9-33
+40
+41    <uses-permission android:name="android.permission.CAMERA" />
+41-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:5-65
+41-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:34:22-62
+42
+43    <uses-feature
+43-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:36:5-38:35
+44        android:name="android.hardware.camera.ar"
+44-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:37:9-50
+45        android:required="true" />
+45-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:38:9-32
+46    <uses-feature
+46-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:39:5-41:35
+47        android:name="com.google.ar.core.depth"
+47-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:40:9-48
+48        android:required="true" />
+48-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:41:9-32
+49
+50    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+50-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:5-79
+50-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:24:22-76
+51    <uses-permission android:name="android.permission.WAKE_LOCK" />
+51-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:5-68
+51-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:25:22-65
+52    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+52-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:5-110
+52-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:26:22-107
+53    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+53-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:5-79
+53-->[:com.google.android.gms.play-services-measurement-impl-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\b166e4f8dc54adf78302f516b10c6e8e\jetified-com.google.android.gms.play-services-measurement-impl-21.1.0\AndroidManifest.xml:27:22-76
+54
+55    <queries>
+55-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:29:5-31:15
+56        <package android:name="com.google.ar.core" />
+56-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:30:9-54
+56-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:30:18-51
+57    </queries>
+58
+59    <application
+59-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+60        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+60-->[:androidx.core.core-1.2.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\4527d81fa1dab2c4adef56282f6f51b4\androidx.core.core-1.2.0\AndroidManifest.xml:24:18-86
+61        android:extractNativeLibs="true"
+61-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:43:18-50
+62        android:icon="@mipmap/app_icon"
+62-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+63        android:label="@string/app_name" >
+63-->C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+64        <activity
+64-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:44:9-65:20
+65            android:name="com.unity3d.player.UnityPlayerActivity"
+65-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:45:13-66
+66            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+66-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:46:13-194
+67            android:exported="true"
+67-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:47:13-36
+68            android:hardwareAccelerated="false"
+68-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:48:13-48
+69            android:launchMode="singleTask"
+69-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:49:13-44
+70            android:resizeableActivity="false"
+70-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:50:13-47
+71            android:screenOrientation="portrait"
+71-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:51:13-49
+72            android:theme="@style/UnityThemeSelector" >
+72-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:52:13-54
+73            <intent-filter>
+73-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:53:13-57:29
+74                <action android:name="android.intent.action.MAIN" />
+74-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:17-69
+74-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:54:25-66
+75
+76                <category android:name="android.intent.category.LAUNCHER" />
+76-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:17-77
+76-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:56:27-74
+77            </intent-filter>
+78
+79            <meta-data
+79-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:59:13-61:40
+80                android:name="unityplayer.UnityActivity"
+80-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:60:17-57
+81                android:value="true" />
+81-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:61:17-37
+82            <meta-data
+82-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:62:13-64:40
+83                android:name="android.notch_support"
+83-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:63:17-53
+84                android:value="true" />
+84-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:64:17-37
+85        </activity>
+86
+87        <meta-data
+87-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:67:9-69:33
+88            android:name="unity.splash-mode"
+88-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:68:13-45
+89            android:value="0" />
+89-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:69:13-30
+90        <meta-data
+90-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:70:9-72:36
+91            android:name="unity.splash-enable"
+91-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:71:13-47
+92            android:value="True" />
+92-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:72:13-33
+93        <meta-data
+93-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:73:9-75:36
+94            android:name="unity.launch-fullscreen"
+94-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:74:13-51
+95            android:value="True" />
+95-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:75:13-33
+96        <meta-data
+96-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:76:9-78:37
+97            android:name="unity.allow-resizable-window"
+97-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:77:13-56
+98            android:value="False" />
+98-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:78:13-34
+99        <meta-data
+99-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:79:9-81:50
+100            android:name="notch.config"
+100-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:80:13-40
+101            android:value="portrait|landscape" />
+101-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:81:13-47
+102        <meta-data
+102-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:82:9-84:36
+103            android:name="unityplayer.SkipPermissionsDialog"
+103-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:83:13-61
+104            android:value="true" />
+104-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:84:13-33
+105        <meta-data
+105-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:85:9-87:40
+106            android:name="com.google.ar.core"
+106-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:86:13-46
+107            android:value="required" /> <!-- The minimal version code of ARCore APK required for an app using this SDK. -->
+107-->[:unityLibrary] C:\Users\SangEun\Documents\GitHub\BehindSeoul\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\library_manifest\release\AndroidManifest.xml:87:13-37
+108        <meta-data
+108-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:36:9-38:41
+109            android:name="com.google.ar.core.min_apk_version"
+109-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:37:13-62
+110            android:value="210910000" /> <!-- This activity is critical for installing ARCore when it is not already present. -->
+110-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:38:13-38
+111        <activity
+111-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:40:9-46:80
+112            android:name="com.google.ar.core.InstallActivity"
+112-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:41:13-62
+113            android:configChanges="keyboardHidden|orientation|screenSize"
+113-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:42:13-74
+114            android:excludeFromRecents="true"
+114-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:43:13-46
+115            android:exported="false"
+115-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:44:13-37
+116            android:launchMode="singleTop"
+116-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:45:13-43
+117            android:theme="@android:style/Theme.Material.Light.Dialog.Alert" />
+117-->[:arcore_client:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\ae4e63aee2448ed4859dc95da47269f5\arcore_client\AndroidManifest.xml:46:13-77
+118        <activity
+118-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:27:9-44:20
+119            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+119-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:28:13-80
+120            android:excludeFromRecents="true"
+120-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:29:13-46
+121            android:exported="true"
+121-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:30:13-36
+122            android:launchMode="singleTask"
+122-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:31:13-44
+123            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+123-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:32:13-72
+124            <intent-filter>
+124-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:33:13-43:29
+125                <action android:name="android.intent.action.VIEW" />
+125-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:34:17-69
+125-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:34:25-66
+126
+127                <category android:name="android.intent.category.DEFAULT" />
+127-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:36:17-76
+127-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:36:27-73
+128                <category android:name="android.intent.category.BROWSABLE" />
+128-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:37:17-78
+128-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:37:27-75
+129
+130                <data
+130-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:39:17-42:51
+131                    android:host="firebase.auth"
+131-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:40:21-49
+132                    android:path="/"
+132-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:41:21-37
+133                    android:scheme="genericidp" />
+133-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:42:21-48
+134            </intent-filter>
+135        </activity>
+136        <activity
+136-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:45:9-62:20
+137            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+137-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:46:13-79
+138            android:excludeFromRecents="true"
+138-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:47:13-46
+139            android:exported="true"
+139-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:48:13-36
+140            android:launchMode="singleTask"
+140-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:49:13-44
+141            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+141-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:50:13-72
+142            <intent-filter>
+142-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:51:13-61:29
+143                <action android:name="android.intent.action.VIEW" />
+143-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:34:17-69
+143-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:34:25-66
+144
+145                <category android:name="android.intent.category.DEFAULT" />
+145-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:36:17-76
+145-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:36:27-73
+146                <category android:name="android.intent.category.BROWSABLE" />
+146-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:37:17-78
+146-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:37:27-75
+147
+148                <data
+148-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:39:17-42:51
+149                    android:host="firebase.auth"
+149-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:40:21-49
+150                    android:path="/"
+150-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:41:21-37
+151                    android:scheme="recaptcha" />
+151-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:42:21-48
+152            </intent-filter>
+153        </activity>
+154
+155        <service
+155-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:64:9-70:19
+156            android:name="com.google.firebase.components.ComponentDiscoveryService"
+156-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:65:13-84
+157            android:directBootAware="true"
+157-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:21:86-116
+158            android:exported="false" >
+158-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:66:13-37
+159            <meta-data
+159-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:67:13-69:85
+160                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+160-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:68:17-109
+161                android:value="com.google.firebase.components.ComponentRegistrar" />
+161-->[:com.google.firebase.firebase-auth-21.0.7:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2e23cab945c1d0d76afdd498888129e5\jetified-com.google.firebase.firebase-auth-21.0.7\AndroidManifest.xml:69:17-82
+162            <meta-data
+162-->[:com.google.android.gms.play-services-measurement-api-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\e23e94a334da31b4265e429a971fe296\jetified-com.google.android.gms.play-services-measurement-api-21.1.0\AndroidManifest.xml:31:13-33:85
+163                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+163-->[:com.google.android.gms.play-services-measurement-api-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\e23e94a334da31b4265e429a971fe296\jetified-com.google.android.gms.play-services-measurement-api-21.1.0\AndroidManifest.xml:32:17-139
+164                android:value="com.google.firebase.components.ComponentRegistrar" />
+164-->[:com.google.android.gms.play-services-measurement-api-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\e23e94a334da31b4265e429a971fe296\jetified-com.google.android.gms.play-services-measurement-api-21.1.0\AndroidManifest.xml:33:17-82
+165            <meta-data
+165-->[:com.google.firebase.firebase-firestore-24.2.2:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\021d612beae002fd6338c4ac937eaf05\jetified-com.google.firebase.firebase-firestore-24.2.2\AndroidManifest.xml:20:13-22:85
+166                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+166-->[:com.google.firebase.firebase-firestore-24.2.2:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\021d612beae002fd6338c4ac937eaf05\jetified-com.google.firebase.firebase-firestore-24.2.2\AndroidManifest.xml:21:17-111
+167                android:value="com.google.firebase.components.ComponentRegistrar" />
+167-->[:com.google.firebase.firebase-firestore-24.2.2:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\021d612beae002fd6338c4ac937eaf05\jetified-com.google.firebase.firebase-firestore-24.2.2\AndroidManifest.xml:22:17-82
+168            <meta-data
+168-->[:com.google.firebase.firebase-installations-17.0.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\d575652e0196f6e060dfc7efd05108d5\jetified-com.google.firebase.firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+169                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+169-->[:com.google.firebase.firebase-installations-17.0.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\d575652e0196f6e060dfc7efd05108d5\jetified-com.google.firebase.firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+170                android:value="com.google.firebase.components.ComponentRegistrar" />
+170-->[:com.google.firebase.firebase-installations-17.0.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\d575652e0196f6e060dfc7efd05108d5\jetified-com.google.firebase.firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+171        </service>
+172
+173        <activity
+173-->[:com.google.android.gms.play-services-base-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2fe805d0724c6f9ee6d19b9f01d50392\jetified-com.google.android.gms.play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
+174            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+174-->[:com.google.android.gms.play-services-base-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2fe805d0724c6f9ee6d19b9f01d50392\jetified-com.google.android.gms.play-services-base-18.1.0\AndroidManifest.xml:20:19-85
+175            android:exported="false"
+175-->[:com.google.android.gms.play-services-base-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2fe805d0724c6f9ee6d19b9f01d50392\jetified-com.google.android.gms.play-services-base-18.1.0\AndroidManifest.xml:22:19-43
+176            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+176-->[:com.google.android.gms.play-services-base-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\2fe805d0724c6f9ee6d19b9f01d50392\jetified-com.google.android.gms.play-services-base-18.1.0\AndroidManifest.xml:21:19-78
+177
+178        <meta-data
+178-->[:com.google.android.gms.play-services-basement-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dae4d6ab41d2d582b03ac5a214336f6a\jetified-com.google.android.gms.play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+179            android:name="com.google.android.gms.version"
+179-->[:com.google.android.gms.play-services-basement-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dae4d6ab41d2d582b03ac5a214336f6a\jetified-com.google.android.gms.play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+180            android:value="@integer/google_play_services_version" />
+180-->[:com.google.android.gms.play-services-basement-18.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\dae4d6ab41d2d582b03ac5a214336f6a\jetified-com.google.android.gms.play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+181
+182        <provider
+182-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:5-230
+183            android:name="com.google.firebase.provider.FirebaseInitProvider"
+183-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:15-79
+184            android:authorities="com.Biseosil.BehindSeoul.firebaseinitprovider"
+184-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:80-147
+185            android:directBootAware="true"
+185-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:148-178
+186            android:exported="false"
+186-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:179-203
+187            android:initOrder="100" />
+187-->[:com.google.firebase.firebase-common-20.1.1:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\625aa104bb9867b7e3f3d63e39d3e7b9\com.google.firebase.firebase-common-20.1.1\AndroidManifest.xml:20:204-227
+188
+189        <receiver
+189-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:29:9-33:20
+190            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+190-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:30:13-85
+191            android:enabled="true"
+191-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:31:13-35
+192            android:exported="false" >
+192-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:32:13-37
+193        </receiver>
+194
+195        <service
+195-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:35:9-38:40
+196            android:name="com.google.android.gms.measurement.AppMeasurementService"
+196-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:36:13-84
+197            android:enabled="true"
+197-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:37:13-35
+198            android:exported="false" />
+198-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:38:13-37
+199        <service
+199-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:39:9-43:72
+200            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+200-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:40:13-87
+201            android:enabled="true"
+201-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:41:13-35
+202            android:exported="false"
+202-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:42:13-37
+203            android:permission="android.permission.BIND_JOB_SERVICE" />
+203-->[:com.google.android.gms.play-services-measurement-21.1.0:] C:\Users\SangEun\.gradle\caches\transforms-2\files-2.1\a20bbbca0d30361d4d10ef9994692d80\jetified-com.google.android.gms.play-services-measurement-21.1.0\AndroidManifest.xml:43:13-69
+204    </application>
+205
+206</manifest>

@@ -12,33 +12,30 @@ public class TongInManager : MonoBehaviour
     AbstractMap abstMap;
     SpawnOnMap spawnOnMap;
     [SerializeField]
-    TMP_InputField  answerInput;
+    TMP_InputField  answerInput,
+                    answer2Input;
     [SerializeField]
     GameObject  tongInPage,
-                wrongText;
-    int currPage = 0;
+                wrongText,
+                wrongText2;
     GameManager gameMng;
+    public int tonginCurrPage = 0;
+
+    DataManager data;
+    SaveDataClass saveData;
 
     void Start() 
     {
-        gameMng = FindObjectOfType<GameManager>();     
+        gameMng = FindObjectOfType<GameManager>();   
+        data = DataManager.singleTon;
+        saveData = data.saveData; 
+        tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(true); 
     }
 
     public void GoToNextTongInPage()
     {
-        tongInPage.transform.GetChild(currPage).gameObject.SetActive(false);
-        tongInPage.transform.GetChild(++currPage).gameObject.SetActive(true);
-    }
-
-    public void GotoParkNoSuMap()
-    {
-        abstMap = FindObjectOfType<AbstractMap>();    
-        spawnOnMap = FindObjectOfType<SpawnOnMap>();
-        string locString = "37.5813, 126.9668";
-        Vector2d latlon = Conversions.StringToLatLon(locString);
-        abstMap.Initialize(latlon, 16);
-        spawnOnMap._spawnedObjects[9].SetActive(false);
-        spawnOnMap._spawnedObjects[10].SetActive(true);
+        tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(false);
+        tongInPage.transform.GetChild(++tonginCurrPage).gameObject.SetActive(true);
     }
 
     public void AnswerSubmitBtnFunc()
@@ -53,5 +50,24 @@ public class TongInManager : MonoBehaviour
             GoToNextTongInPage();
             gameMng.hintBtn.SetActive(false);
         }
+    }
+
+    public void Answer2SubmitBtnFunc()
+    {
+        wrongText2.SetActive(false);
+        if(answer2Input.text == "새" || answer2Input.text == "까치")
+        {
+            GoToNextTongInPage();
+        }
+        else
+        {
+            wrongText2.SetActive(true);
+        }
+    }
+
+    public void TonginPageSaveData()
+    {
+        saveData.pagesIndex = 7;
+        data.Save();
     }
 }

@@ -10,30 +10,29 @@ public class DeoksugungManager : MonoBehaviour
 {
     [SerializeField]
     GameObject  deokPagesParent;
-    int currPage = 0;
     AbstractMap abstMap;
     SpawnOnMap spawnOnMap;
-    
+    int deokCurrPage = 0;
 
+    DataManager data;
+    SaveDataClass saveData;
+
+    void Start() 
+    {   
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+        deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(true);
+    }
 
     public void GoToNextDeokPage()
     {
-        deokPagesParent.transform.GetChild(currPage).gameObject.SetActive(false);
-        deokPagesParent.transform.GetChild(++currPage).gameObject.SetActive(true);
+        deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(false);
+        deokPagesParent.transform.GetChild(++deokCurrPage).gameObject.SetActive(true);
     }
 
-    public void GotoSixSpotsMap()
+    public void DeokPageSaveData()
     {
-        abstMap = FindObjectOfType<AbstractMap>();    
-        spawnOnMap = FindObjectOfType<SpawnOnMap>();
-        string locString = "37.565913, 126.975286";
-        Vector2d latlon = Conversions.StringToLatLon(locString);
-        abstMap.Initialize(latlon, 16);
-        spawnOnMap._spawnedObjects[1].SetActive(false);
-        for(int i = 2; i < 8; i++)
-        {
-            spawnOnMap._spawnedObjects[i].SetActive(true);
-        }
-        
+        saveData.pagesIndex = 3;
+        data.Save();
     }
 }

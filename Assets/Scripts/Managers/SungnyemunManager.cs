@@ -13,36 +13,42 @@ public class SungnyemunManager : MonoBehaviour
     [SerializeField]
     TMP_InputField  answer1Input,
                     answer2Input;
-    
-    [SerializeField]
-    TMP_Text    textOne; 
 
     [SerializeField]
     GameObject  sungPagesParent,
                 bagOfflineContent,
                 couponPrefab,
                 wrong1Text,
-                wrong2Text;
-    int currPage = 0;
+                wrong2Text,
+                popup;
     AbstractMap abstMap;
     SpawnOnMap spawnOnMap;
     GameManager gameMng;
+    [SerializeField]
+    List<TMP_Text>  nameContainTexts; 
+    int sungCurrPage = 0;
+    
+    DataManager data;
+    SaveDataClass saveData;
+    
 
     void Start() 
     {
-        gameMng = FindObjectOfType<GameManager>();     
-    }
+        gameMng = FindObjectOfType<GameManager>();    
+        data = DataManager.singleTon;
+        saveData = data.saveData;
 
+        sungPagesParent.transform.GetChild(sungCurrPage).gameObject.SetActive(true);
+        foreach (TMP_Text t in nameContainTexts)
+        {
+            t.text = t.text.Replace("name", ChasaData.chasaName);
+        }
+    }
 
     public void GoToNextSungPage()
     {
-        sungPagesParent.transform.GetChild(currPage).gameObject.SetActive(false);
-        sungPagesParent.transform.GetChild(++currPage).gameObject.SetActive(true);
-    }
-
-    public void TextRepalceToChasaName()
-    {
-        textOne.text = textOne.text.Replace("name", ChasaData.chasaName);
+        sungPagesParent.transform.GetChild(sungCurrPage).gameObject.SetActive(false);
+        sungPagesParent.transform.GetChild(++sungCurrPage).gameObject.SetActive(true);
     }
 
     public void Answer1SubmitBtnFunc()
@@ -68,7 +74,8 @@ public class SungnyemunManager : MonoBehaviour
         else
         {
             GetCouponInBag(couponPrefab);
-            GoToNextSungPage();
+            popup.SetActive(true);
+            gameMng.GetCourseInCollection("숭례문");
             gameMng.hintBtn.SetActive(false);
         }
     }
@@ -79,14 +86,9 @@ public class SungnyemunManager : MonoBehaviour
         locker.transform.SetParent(bagOfflineContent.transform, false); 
     }
 
-    public void GotoDeoksugungMap()
+    public void SungPageSaveData()
     {
-        abstMap = FindObjectOfType<AbstractMap>();    
-        spawnOnMap = FindObjectOfType<SpawnOnMap>();
-        string locString = "37.566015, 126.9750175";
-        Vector2d latlon = Conversions.StringToLatLon(locString);
-        abstMap.Initialize(latlon, 16);
-        spawnOnMap._spawnedObjects[0].SetActive(false);
-        spawnOnMap._spawnedObjects[1].SetActive(true);
+        saveData.pagesIndex = 2;
+        data.Save();
     }
 }

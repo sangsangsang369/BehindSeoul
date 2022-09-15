@@ -8,7 +8,6 @@ public class Spots : MonoBehaviour
     GameManager gameMng;
     SpawnOnMap spawnOnMap;
 
-
     private void Start() 
     {
         gameMng = FindObjectOfType<GameManager>();      
@@ -82,7 +81,13 @@ public class Spots : MonoBehaviour
         gameMng.mapScene.SetActive(false);
         gameMng.parkNoSuPage.SetActive(true);
     }
-    
+    public void StartYoonDongJuPage()
+    {
+        gameMng.canvasCam.SetActive(true);
+        gameMng.mapScene.SetActive(false);
+        gameMng.yoonPage.SetActive(true);
+    }
+
     public void RestSpotsOff()
     {
         for (int i = 2; i < 8; i++)
@@ -104,5 +109,5 @@ public class Spots : MonoBehaviour
             }
         }
     }
-  
+    
 }

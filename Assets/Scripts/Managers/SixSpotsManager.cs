@@ -5,36 +5,30 @@ using Mapbox.Unity.Map;
 using Mapbox.Utils;
 using Mapbox.Unity.Utilities;
 using Mapbox.Examples;
+using TMPro;
 
 public class SixSpotsManager : MonoBehaviour
 {
     AbstractMap abstMap;
     SpawnOnMap spawnOnMap;
-    [SerializeField]
-    GameObject afterSixSpotsPage;
-    int currPage = 0;
-    EraseMask eraseMask;
+    GameManager gMng;
+    public int endedSpotsNum = 0;
+
+
+    void Awake()
+    {
+        gMng = FindObjectOfType<GameManager>();     
+    }
     
-
-    public void GoToNextAfterSixSpotsPage()
+    public void EndedSpotOff_Check(int i)
     {
-        afterSixSpotsPage.transform.GetChild(currPage).gameObject.SetActive(false);
-        afterSixSpotsPage.transform.GetChild(++currPage).gameObject.SetActive(true);
-    }
-
-    public void GotoIsangHomeMap()
-    {
-        abstMap = FindObjectOfType<AbstractMap>();    
         spawnOnMap = FindObjectOfType<SpawnOnMap>();
-        string locString = "37.5786, 126.9709";
-        Vector2d latlon = Conversions.StringToLatLon(locString);
-        abstMap.Initialize(latlon, 16);
-        for(int i = 2; i < 8; i++)
+        spawnOnMap._spawnedObjects[i].transform.GetChild(0).gameObject.SetActive(false);
+        endedSpotsNum++;
+        
+        if(endedSpotsNum == 6)
         {
-            spawnOnMap._spawnedObjects[i].SetActive(false);
+            gMng.afterSpotsPage.SetActive(true);
         }
-        spawnOnMap._spawnedObjects[8].SetActive(true);
     }
-
-
 }

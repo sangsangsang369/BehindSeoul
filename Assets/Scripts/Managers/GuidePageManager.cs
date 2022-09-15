@@ -12,6 +12,7 @@ public class GuidePageManager : MonoBehaviour
     
     [SerializeField]
     TMP_Text    textOne,
+                textTwo,
                 textThree;
 
     [SerializeField]
@@ -23,27 +24,43 @@ public class GuidePageManager : MonoBehaviour
                 wrong1Text,
                 wrong2Text;
     public string chasaName;
-    int currPage = 0;
     int knockingCount = 0;
+    GameManager gameMng;   
+    [SerializeField]
+    List<TMP_Text>  nameContainTexts; 
+    public int guideCurrPage = 0;
+    public int nextBtnIndex = 0;
+
+    DataManager data;
+    SaveDataClass saveData;
     
+    private void Awake() 
+    {
+        gameMng = FindObjectOfType<GameManager>(); 
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+    }
 
     void Start() 
     {
-        nameInput.characterLimit = 14;    
+        guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(true); 
+        nameInput.characterLimit = 14;  
     }
 
     public void NameSubmitBtnFunc()
     {
         ChasaData.chasaName = nameInput.text;
         chasaName = nameInput.text;
-        textOne.text = textOne.text.Replace("name", chasaName);
-        textThree.text = textThree.text.Replace("name", chasaName);
+        foreach (TMP_Text t in nameContainTexts)
+        {
+            t.text = t.text.Replace("name", nameInput.text);
+        }
     }
 
     public void GoToNextGuidePage()
     {
-        guidePagesParent.transform.GetChild(currPage).gameObject.SetActive(false);
-        guidePagesParent.transform.GetChild(++currPage).gameObject.SetActive(true);
+        guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(false);
+        guidePagesParent.transform.GetChild(++guideCurrPage).gameObject.SetActive(true);
     }
 
     public void Answer1SubmitBtnFunc()
@@ -90,5 +107,11 @@ public class GuidePageManager : MonoBehaviour
     {
         GameObject locker = Instantiate(lockerPrefab);
         locker.transform.SetParent(bagOnlineContent.transform, false); 
+    }
+
+    public void GuidePageSaveData()
+    {
+        saveData.pagesIndex = 1;
+        data.Save();
     }
 }

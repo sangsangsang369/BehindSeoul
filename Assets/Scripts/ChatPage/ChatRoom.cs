@@ -64,11 +64,11 @@ public class ChatRoom : ChatData
             ++chatDatasId;
         }
         ScrollDown();
-        if(!chatDatas.ContainsKey(chatDatasId))
+        /*if(!chatDatas.ContainsKey(chatDatasId))
         {
             gameMng.nextBtnsAfterCheckedChat[gameMng.nextBtnIndex].SetActive(true);
             gameMng.nextBtnIndex++;
-        }
+        }*/
     }
 
     public void ReplyBubbleFunc(Bubble b)

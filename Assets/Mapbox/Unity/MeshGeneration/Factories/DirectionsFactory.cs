@@ -52,8 +52,6 @@ namespace Mapbox.Unity.MeshGeneration.Factories
 
 		public void Start()
 		{
-
-
 			spawnOnMap = FindObjectOfType<SpawnOnMap>();
 			_waypoints.Add(spawnOnMap._spawnedObjects[0].transform);
 			
@@ -69,7 +67,7 @@ namespace Mapbox.Unity.MeshGeneration.Factories
 				modifier.Initialize();
 			}
 
-			btn.onClick.AddListener(DrawRoute);  
+			//btn.onClick.AddListener(DrawRoute);  
 		}
 
 		public void DrawRoute()
