@@ -11,13 +11,17 @@ public class SixSpotsManager : MonoBehaviour
 {
     AbstractMap abstMap;
     SpawnOnMap spawnOnMap;
-    GameManager gMng;
     public int endedSpotsNum = 0;
 
-
-    void Awake()
+    GameManager gameMng;
+    DataManager data;
+    SaveDataClass saveData;
+    
+    private void Awake() 
     {
-        gMng = FindObjectOfType<GameManager>();     
+        gameMng = FindObjectOfType<GameManager>(); 
+        data = DataManager.singleTon;
+        saveData = data.saveData;
     }
     
     public void EndedSpotOff_Check(int i)
@@ -25,10 +29,15 @@ public class SixSpotsManager : MonoBehaviour
         spawnOnMap = FindObjectOfType<SpawnOnMap>();
         spawnOnMap._spawnedObjects[i].transform.GetChild(0).gameObject.SetActive(false);
         endedSpotsNum++;
-        
-        if(endedSpotsNum == 6)
+
+        saveData.endedSixSpots.Add(i);
+        data.Save();
+
+        if(endedSpotsNum == 6 || saveData.endedSixSpots.Count == 6)
         {
-            gMng.afterSpotsPage.SetActive(true);
+            gameMng.afterSpotsPage.SetActive(true);
+            saveData.pagesIndex = 4;
+            data.Save();
         }
     }
 }

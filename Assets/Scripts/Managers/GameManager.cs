@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
                         tongInPage,
                         parkNoSuPage,
                         yoonPage,
+
                         canvasCam,
                         mapScene,
                         mapPage,
@@ -31,7 +32,15 @@ public class GameManager : MonoBehaviour
                         whenImgTracked,
                         SuccessPopup,
                         courseContent,
-                        coursePrefab;
+
+                        course_Prefab,
+                        hori_Prefab,
+                        locker_Prefab,
+                        coupon_Prefab,
+                        
+                        bagOnlineContent,
+                        bagOfflineContent;
+
     public TMP_Text     hintText;
     public List<GameObject> pages;  
     
@@ -48,11 +57,56 @@ public class GameManager : MonoBehaviour
     {
         data = DataManager.singleTon;
         saveData = data.saveData;
+
+        if(saveData.bagItems.Count > 0)
+        {
+            foreach(string s in saveData.bagItems)
+            {
+                if(s == "Hori")
+                {
+                    GetItemsCouponInBag(hori_Prefab, bagOnlineContent);
+                }
+                else if(s == "Locker")
+                {
+                    GetItemsCouponInBag(locker_Prefab, bagOnlineContent);
+                }
+            }
+        }
+        if(saveData.bagCoupons.Count > 0)
+        {
+            foreach(string s in saveData.bagCoupons)
+            {
+                if(s == "One")
+                {
+                    GetItemsCouponInBag(coupon_Prefab, bagOfflineContent);
+                }
+            }
+        }
+        if(saveData.spotCollection.Count > 0)
+        {
+            foreach(string s in saveData.spotCollection)
+            {
+                if(s == "숭례문")
+                {
+                    GetCourseInCollection("숭례문");
+                }
+                else if(s == "덕수궁")
+                {
+                    GetCourseInCollection("덕수궁");
+                }
+            }
+        }
+    }
+
+    public void GetItemsCouponInBag(GameObject i, GameObject parent)
+    {
+        GameObject itm = Instantiate(i);
+        itm.transform.SetParent(parent.transform, false); 
     }
 
     public void GetCourseInCollection(string c)
     {
-        GameObject course = Instantiate(coursePrefab);
+        GameObject course = Instantiate(course_Prefab);
         course.transform.GetChild(0).GetComponent<TMP_Text>().text = c;
         course.transform.SetParent(courseContent.transform, false); 
     }
@@ -76,6 +130,10 @@ public class GameManager : MonoBehaviour
         {
             MapSceneInit();
             GotoSixSpotsMap();
+        }
+        else if(saveData.pagesIndex == 4)
+        {
+            afterSpotsPage.SetActive(true);
         }
         else if(saveData.pagesIndex == 5)
         {
@@ -129,6 +187,13 @@ public class GameManager : MonoBehaviour
         {
             spawnOnMap._spawnedObjects[i].SetActive(true);
         } 
+        if(saveData.endedSixSpots.Count > 0 && saveData.endedSixSpots.Count != 6)
+        {
+            foreach(int e in saveData.endedSixSpots)
+            {                    
+                spawnOnMap._spawnedObjects[e].transform.GetChild(0).gameObject.SetActive(false);
+            }
+        }
     }
 
     public void GotoIsangHomeMap()

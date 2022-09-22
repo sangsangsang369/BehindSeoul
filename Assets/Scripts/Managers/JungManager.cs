@@ -26,6 +26,12 @@ public class JungManager : MonoBehaviour
         jungPage.transform.GetChild(++jungCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevJungPage()
+    {
+        jungPage.transform.GetChild(jungCurrPage).gameObject.SetActive(false);
+        jungPage.transform.GetChild(--jungCurrPage).gameObject.SetActive(true);
+    }
+
     public void JungAnswerSubmitBtnFunc()
     {
         jungWrongText.SetActive(false);

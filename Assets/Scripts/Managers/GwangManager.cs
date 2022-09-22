@@ -26,6 +26,12 @@ public class GwangManager : MonoBehaviour
         gwangPage.transform.GetChild(++gwangCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevGwangPage()
+    {
+        gwangPage.transform.GetChild(gwangCurrPage).gameObject.SetActive(false);
+        gwangPage.transform.GetChild(--gwangCurrPage).gameObject.SetActive(true);
+    }
+
     public void GwangAnswerSubmitBtnFunc()
     {
         gwangWrongText.SetActive(false);

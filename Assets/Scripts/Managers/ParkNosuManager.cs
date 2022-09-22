@@ -35,6 +35,12 @@ public class ParkNosuManager : MonoBehaviour
         nosuPage.transform.GetChild(++nosuCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevNosuPage()
+    {
+        nosuPage.transform.GetChild(nosuCurrPage).gameObject.SetActive(false);
+        nosuPage.transform.GetChild(--nosuCurrPage).gameObject.SetActive(true);
+    }
+
     public void AnswerSubmitBtnFunc()
     {
         wrongText.SetActive(false);

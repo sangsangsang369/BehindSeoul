@@ -9,39 +9,39 @@ public class Chatter : MonoBehaviour
     public TMP_Text nameText, chatText;
     ChatManager chatMng;
     ChatRoom chatRoom;
-    int chatNum;
+    string chatterNameinChatter;
 
 
     private void Start() 
     {
         chatMng = FindObjectOfType<ChatManager>();
 
-        chatNum = GetChatNum();
+        chatterNameinChatter = GetChatterName();
         SetChatterText(ChatData.chatDatasId);
     }
     
-    int GetChatNum()
+    string GetChatterName()
     {
-        for(int i = 0; i < chatMng.chatterList.Count; i++)
+        foreach(string cn in chatMng.chatterList.Keys)
         {
-            if (chatMng.chatterList[i] == this.gameObject)
+            if (chatMng.chatterList[cn] == this.gameObject)
             {
-                return i;
+                return cn;
             }
         }
-        return 11;
+        return "null";
     }
 
     public void ChatRoomOn()
     {
-        chatMng.chatRoomList[chatNum].SetActive(true);
+        chatMng.chatRoomList[chatterNameinChatter].SetActive(true);
         chatRoom.ScrollDown();
     }
 
     void SetChatterText(int id)
     {
-        chatRoom = chatMng.chatRoomList[chatNum].transform.GetComponent<ChatRoom>();
-        nameText.text = chatRoom.goblinNames[ChatData.goblinNamesIndex];
+        chatRoom = chatMng.chatRoomList[chatterNameinChatter].transform.GetComponent<ChatRoom>();
+        nameText.text = chatterNameinChatter;
         chatText.text = chatRoom.GetChatDialogue(id,0).Substring(0,17).Replace("/n", " ").Replace("name", ChasaData.chasaName) + " ..."; 
     }
 }

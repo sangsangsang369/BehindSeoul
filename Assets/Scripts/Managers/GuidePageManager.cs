@@ -63,6 +63,12 @@ public class GuidePageManager : MonoBehaviour
         guidePagesParent.transform.GetChild(++guideCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevGuidePage()
+    {
+        guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(false);
+        guidePagesParent.transform.GetChild(--guideCurrPage).gameObject.SetActive(true);
+    }
+
     public void Answer1SubmitBtnFunc()
     {
         wrong1Text.SetActive(false);
@@ -101,17 +107,21 @@ public class GuidePageManager : MonoBehaviour
     {
         GameObject locker = Instantiate(horiPrefab);
         locker.transform.SetParent(bagOnlineContent.transform, false); 
+        
     }
 
     public void GetLockerInBag()
     {
         GameObject locker = Instantiate(lockerPrefab);
-        locker.transform.SetParent(bagOnlineContent.transform, false); 
+        locker.transform.SetParent(bagOnlineContent.transform, false);
+        
     }
 
     public void GuidePageSaveData()
     {
         saveData.pagesIndex = 1;
+        saveData.bagItems.Add("Hori");
+        saveData.bagItems.Add("Locker");
         data.Save();
     }
 }

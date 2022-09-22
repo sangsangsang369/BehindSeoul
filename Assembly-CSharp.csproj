@@ -121,6 +121,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\ForwardGeocodeResource.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerSimpleStyle.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Directions\Response\Intersection.cs" />
+     <Compile Include="Assets\Scripts\ChatPage\ChatAlarmParent.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\Logging\LocationLogReader.cs" />
      <Compile Include="Assets\Scripts\ChatPage\ChatManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerModeling.cs" />
@@ -356,6 +357,7 @@
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifiers\NoiseOffsetModifier.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\OpenUrlOnButtonClick.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapScalingOptions.cs" />
+     <Compile Include="Assets\Scripts\Common\UndoBtnOffPage.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\MapboxLocationInfoMock.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\Response\Geometry.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\CameraMovement.cs" />

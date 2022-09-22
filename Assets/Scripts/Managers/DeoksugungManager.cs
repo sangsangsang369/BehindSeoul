@@ -28,6 +28,14 @@ public class DeoksugungManager : MonoBehaviour
     {
         deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(false);
         deokPagesParent.transform.GetChild(++deokCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = deokCurrPage;
+        data.Save();
+    }
+
+    public void GoToPrevDeokPage()
+    {
+        deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(false);
+        deokPagesParent.transform.GetChild(--deokCurrPage).gameObject.SetActive(true);
     }
 
     public void DeokPageSaveData()

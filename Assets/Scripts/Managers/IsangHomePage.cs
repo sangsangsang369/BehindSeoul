@@ -40,6 +40,12 @@ public class IsangHomePage : MonoBehaviour
         isangHomePage.transform.GetChild(++isangCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevIsangHomePage()
+    {
+        isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(false);
+        isangHomePage.transform.GetChild(--isangCurrPage).gameObject.SetActive(true);
+    }
+
     public void AnswerSubmitBtnFunc()
     {
         wrongText.SetActive(false);

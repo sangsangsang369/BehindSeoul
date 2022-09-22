@@ -24,6 +24,12 @@ public class SeokManager : MonoBehaviour
         seokPage.transform.GetChild(++seokCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevSeokPage()
+    {
+        seokPage.transform.GetChild(seokCurrPage).gameObject.SetActive(false);
+        seokPage.transform.GetChild(--seokCurrPage).gameObject.SetActive(true);
+    }
+
     public void SeokAnswerSubmitBtnFunc()
     {
         seokWrongText.SetActive(false);

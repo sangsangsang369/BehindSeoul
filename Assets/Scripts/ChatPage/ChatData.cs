@@ -5,17 +5,13 @@ using UnityEngine;
 public class ChatData : MonoBehaviour
 {
     public Dictionary<int, string[]> chatDatas;
-    public List<string> goblinNames;
-    public static int goblinNamesIndex = 0;
     public static int chatDatasId = 0;
     public static bool chatChecked = false;
     
     private void Awake() 
     {
         chatDatas = new Dictionary<int, string[]>();
-        goblinNames = new List<string>();
-        GenerateData();    
-        GenerateName();
+        GenerateData();   
     }
 
     void GenerateData()
@@ -30,14 +26,20 @@ public class ChatData : MonoBehaviour
         chatDatas.Add(13, new string[] { "알겠어 그럼 나는 뭘 하면 될까??"});                                 
         chatDatas.Add(14, new string[] { "이제 너의 임무는 어명을 받아 이 일대의 모든 괴물을 봉인한 후 흩어진 신의 영혼을 모아 원래대로 돌려놓는거야.",
                                          "여기 어명을 전달해줄게. /n지령을 나가서 확인해봐."});
+        
+        
         // 2n = 지원 도깨비
         chatDatas.Add(20, new string[] { "나야 나 도깨비. /n /n덕수궁까지 잘 도착했구나. /n나는 지원 담당 도깨비야. /n수류견이 덕수궁으로 도망쳤다는 소식을 듣고 온거지?",
                                          "그래서 나도 지원을 나왔는데, 이미 수류견이 덕수궁의 원래 이름을 불태우고 여기를 떠났어.",
                                          "여기, 신들의 어명을 줄게. /n영혼차사 name! 불타버린 덕수궁의 이름을 찾아줄래?"});
         chatDatas.Add(21, new string[] { "나한테 맡겨줘!"});
+
+
         //2nn = 지원도깨비에서 이어지는 부분
         chatDatas.Add(202, new string[] { "내가 도술로 수류견이 불태우고 간 장소들의 위치를 활성화시켰어!",
                                           "글자들이 흩어진 장소들을 방문해서 덕수궁의 옛이름을 돌려놔줘"});
+
+        ///////////////////////////////
         chatDatas.Add(206, new string[] { "여기까지 잘찾아왔어! /n /n 여기는 전통 재래시장인 통인시장이야. /n독특하게 현대 화폐를 엽전으로 바꿔서 이용할 수 있어!",
                                           "수류견은 이곳을 거쳐서 다른 곳으로 이미 가버린 것 같아.."});
         chatDatas.Add(207, new string[] { "우리가 늦었네.."});
@@ -47,22 +49,34 @@ public class ChatData : MonoBehaviour
         chatDatas.Add(209, new string[] { "거기가 대체 어디지?"});    
         chatDatas.Add(210, new string[] { "예전에 내가 물어봤을 때 정보도깨비가 줬던 힌트는 통인시장 주변의 간판을 잘 보고 다니라고 한 거였어",
                                           "통인시장을 잘 살펴보자!"});
+
+        ///////////////////////////////                                  
         chatDatas.Add(220, new string[] { "내가 먼저 도착해서 미술관의 실내랑 실외를 둘러봤어. 실내는 수상한 점이 없는 거 같은데 실외에선 이런 쪽지를 발견했어!",
                                           "근데 도저히 나 혼자서는 해독이 안되네..."});
         chatDatas.Add(221, new string[] { "뭘 뜻하는 걸까?"});
         chatDatas.Add(222, new string[] { "글쎄.. 실외에 있었던걸 보면 실외에 있는 것들을 사용해서 풀이하는 하는 것 같아",
                                           "다양한 조각상들이 있으니 활용해보는게 어떨까?"});
 
+        //3n = 정보 도깨비
+        chatDatas.Add(30, new string[] { "그럼 숭례문 주변장소들을 추천해줄게! /n /n내가 추천하는 장소들은 이 근처를 방문한 사람들의 상위데이터를 종합한 장소들이야. /n영혼차사 너가 더 좋은 장소를 방문할 수 있도록 모아봤어!",
+                                         "식당으로는 여기를 추천해줄게! /n /n진주회관(한식)",
+                                         "카페도 추천해줄게! /n /n 1. 한옥카페 /n /n2. 커피앤시가렛",
+                                         "특히 이 중 한옥카페는 대한민국 근대문화유산으로 문화재청의 보호를 받고 있는 문화재야!",
+                                         "이곳에서 충분한 휴식을 취하고 다음 지역으로 넘어가는걸 추천해!/n곧 등장할 보상도깨비가 위 장소들과 연계되는 쿠폰을 줄 수도 있으니, 쿠폰함을 잘 확인하고 방문해봐!"});
+        chatDatas.Add(31, new string[] { "고마워 정보도깨비!"});
+
+        //3nn = 정보도깨비에서 이어지는 부분
+        chatDatas.Add(302, new string[] { "자! 덕수궁의 주변장소들을 추천해줄게! /n이번엔 덕수궁 근처와 덕수궁 건너편에 있는 서울광장 근처로 나누어서 추천해줄거야.",
+                                         "덕수궁 근처는 카페들을 추천해줄게! /n /n1. 덕수궁 리에제와플 /n /n2. 루소랩/n /n 3. 르풀/n /n 4. 라운드앤드",
+                                         "덕수궁 추천 카페 중 ‘루소랩’과 ‘르풀’은 브런치카페로 간단한 식사를 하고싶다면 이용하기 좋아!/n ‘리에제와플’과 ‘라운드앤드’도 디저트가 다양해서 가벼운 식사로 추천할게!",
+                                         "덕수궁 정문으로 나가면 건너편에 바로 서울광장이 있어. 이 근처의 식당들도 추천해줄게! /n1. 부민옥(한식) /n2. 남포면옥(한식) /n3. 라칸티나(양식) /n4. 무교동 북어국집(한식)",
+                                         "서울광장 근처의 카페들도 추천해줄게! /n /n1. 바캉스커피 /n /n2. 커피스니퍼 /n /n3. 적당",
+                                         "이번에도 추천장소에서 충분한 휴식을 취하고 다음 지역으로 넘어가는걸 추천해. /n이번에는 숭례문보다 장소가 다양해졌으니 너의 취향대로 방문해봐!"});
+        chatDatas.Add(303, new string[] { "고마워 정보도깨비!"});
     }
 
     public string GetChatDialogue(int id, int chatDatasIndex)
     {
         return chatDatas[id][chatDatasIndex];
     } 
-
-    void GenerateName()
-    {
-        goblinNames.Add("설명 도깨비");
-        goblinNames.Add("지원 도깨비");
-    }
 }

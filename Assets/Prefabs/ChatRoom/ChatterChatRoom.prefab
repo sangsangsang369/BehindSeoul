@@ -407,11 +407,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff70d80e8daa66a4fba802ed399e4518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblinNames: []
   stringIndex: 0
-  chatRoomNum: 0
+  chatRoomName: 
   bubbleContent: {fileID: 9180061209506670193}
   replyContent: {fileID: 7177383200946463863}
+  nameText: {fileID: 3269462048581320782}
   sb: {fileID: 4416747744946569107}
 --- !u!1 &7177383200946463863
 GameObject:
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC124\uBA85 \uB3C4\uAE68\uBE44"
+  m_text: "\uB3C4\uAE68\uBE44"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 384d3ac61fcb64043a704a5dc1be2c83, type: 2}
   m_sharedMaterial: {fileID: -4940977603372843590, guid: 384d3ac61fcb64043a704a5dc1be2c83, type: 2}

@@ -38,6 +38,12 @@ public class TongInManager : MonoBehaviour
         tongInPage.transform.GetChild(++tonginCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevTongInPage()
+    {
+        tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(false);
+        tongInPage.transform.GetChild(--tonginCurrPage).gameObject.SetActive(true);
+    }
+
     public void AnswerSubmitBtnFunc()
     {
         wrongText.SetActive(false);

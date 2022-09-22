@@ -33,4 +33,5 @@ public class PageChangeBtn : MonoBehaviour
             page.SetActive(false);
         } 
     }
+    
 }

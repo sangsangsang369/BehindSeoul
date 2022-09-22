@@ -24,6 +24,12 @@ public class HamManager : MonoBehaviour
         hamPage.transform.GetChild(++hamCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevHamPage()
+    {
+        hamPage.transform.GetChild(hamCurrPage).gameObject.SetActive(false);
+        hamPage.transform.GetChild(--hamCurrPage).gameObject.SetActive(true);
+    }
+
     public void HamAnswerSubmitBtnFunc()
     {
         hamWrongText.SetActive(false);

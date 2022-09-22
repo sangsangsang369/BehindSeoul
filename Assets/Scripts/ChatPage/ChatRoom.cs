@@ -2,75 +2,92 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ChatRoom : ChatData
 {
+    //대화방 창 프리펩에 들어가는 스크립트
+
     [HideInInspector]
-    public int stringIndex, chatRoomNum;
+    public int stringIndex;
+    public string chatRoomName;
     [SerializeField] 
     GameObject bubbleContent, replyContent;
+    public TMP_Text nameText;
     [SerializeField]
     Scrollbar sb;
     ChatManager chatMng;
     Chatter chatter;
     GameManager gameMng;
+
+    DataManager data;
+    SaveDataClass saveData;
     
     private void Start() 
     {
         chatMng = FindObjectOfType<ChatManager>();
         gameMng = FindObjectOfType<GameManager>();
+        data = DataManager.singleTon;
+        saveData = data.saveData;
         
-        chatRoomNum = GetChatRoomNum();
-        GetBubbleText();
+        chatRoomName = GetChatRoomName();
+        nameText.text = chatRoomName;
+        GetBubble();
     }
-
-    public void GetBubbleText()
+/////////////////////////////////////////////////////////////////////////
+    
+    //순서에 맞게 채팅 버블 생성
+    public void GetBubble()
     {   
-        SetChatterText();
+        SetChatterTextPreview();
 
         if(chatDatasId % 2 == 0)
         {
-            while(stringIndex < chatDatas[chatDatasId].Length)
-            {
-                Bubble bubble = Instantiate(chatMng.chatterBubblePrefab).GetComponent<Bubble>();
-                if(stringIndex > 0)
-                {
-                    bubble.nameText.gameObject.SetActive(false);
-                    bubble.UserImage.gameObject.SetActive(false);
-                }
-                bubble.transform.SetParent(bubbleContent.transform);
-                Fit(bubble.GetComponent<RectTransform>());
-                bubble.nameText.text = goblinNames[goblinNamesIndex];
-                bubble.chatText.text = GetChatDialogue(chatDatasId,stringIndex).Replace("/n", "\n").Replace("name", ChasaData.chasaName); 
-                stringIndex++;   
-            }
-            stringIndex = 0;
-            ++chatDatasId;
+            GetChatterBubble();
+            chatDatasId++;
         }
-        ScrollDown();
-
         if(chatDatasId % 2 == 1)
         {
-            while(chatDatas.ContainsKey(chatDatasId) && stringIndex < chatDatas[chatDatasId].Length)
-            {
-                Bubble replyBubble = Instantiate(chatMng.replyBubblePrefab).GetComponent<Bubble>();
-                replyBubble.transform.SetParent(replyContent.transform);
-                Fit(replyBubble.GetComponent<RectTransform>());
-                replyBubble.GetComponent<Button>().onClick.AddListener(()=> { ReplyBubbleFunc(replyBubble); }); 
-                replyBubble.chatText.text = GetChatDialogue(chatDatasId,stringIndex); 
-                stringIndex++;   
-            }
-            stringIndex = 0;
-            ++chatDatasId;
+            GetReplyBubbleButton();
+            chatDatasId++;
         }
-        ScrollDown();
-        /*if(!chatDatas.ContainsKey(chatDatasId))
+    }    
+
+    void GetChatterBubble()
+    {
+        //chatId는 setChatData에서 설정된거 가져온거
+        while(stringIndex < chatDatas[chatDatasId].Length)
         {
-            gameMng.nextBtnsAfterCheckedChat[gameMng.nextBtnIndex].SetActive(true);
-            gameMng.nextBtnIndex++;
-        }*/
+            Bubble bubble = Instantiate(chatMng.chatterBubblePrefab).GetComponent<Bubble>();
+            if(stringIndex > 0)
+            {
+                bubble.nameText.gameObject.SetActive(false);
+                bubble.UserImage.gameObject.SetActive(false);
+            }
+            bubble.transform.SetParent(bubbleContent.transform);
+            Fit(bubble.GetComponent<RectTransform>());
+            bubble.nameText.text = chatRoomName;
+            bubble.chatText.text = GetChatDialogue(chatDatasId,stringIndex).Replace("/n", "\n").Replace("name", ChasaData.chasaName); 
+            stringIndex++;   
+        }
+        stringIndex = 0;
+        ScrollDown();
     }
 
+    void GetReplyBubbleButton()
+    {
+        while(chatDatas.ContainsKey(chatDatasId) && stringIndex < chatDatas[chatDatasId].Length)
+        {
+            Bubble replyBubble = Instantiate(chatMng.replyBubblePrefab).GetComponent<Bubble>();
+            replyBubble.transform.SetParent(replyContent.transform);
+            Fit(replyBubble.GetComponent<RectTransform>());
+            replyBubble.GetComponent<Button>().onClick.AddListener(()=> { ReplyBubbleFunc(replyBubble); }); 
+            replyBubble.chatText.text = GetChatDialogue(chatDatasId,stringIndex); 
+            stringIndex++;   
+        }
+        stringIndex = 0;
+    }
+    
     public void ReplyBubbleFunc(Bubble b)
     {
         Bubble meBubble = Instantiate(chatMng.meBubblePrefab).GetComponent<Bubble>();
@@ -80,16 +97,23 @@ public class ChatRoom : ChatData
         ReplyBubbleDestroy();
         if(chatDatas.ContainsKey(chatDatasId))
         {
-            GetBubbleText();
+            GetBubble();
         }
+        ScrollDown();
     }
-
+///////////////////////////////////////////////////////////////////
     void ReplyBubbleDestroy()
     {
         for (int i = 0; i < replyContent.transform.childCount; i++)
         {    
             Destroy(replyContent.transform.GetChild(i).gameObject);
         }
+    }
+    
+    void SetChatterTextPreview()
+    {
+        chatter = chatMng.chatterList[chatRoomName].transform.GetComponent<Chatter>();
+        chatter.chatText.text = GetChatDialogue(chatDatasId,0).Substring(0,17).Replace("/n", " ").Replace("name", ChasaData.chasaName) + " ..."; 
     }
 
     void Fit(RectTransform Rect) => LayoutRebuilder.ForceRebuildLayoutImmediate(Rect);
@@ -100,21 +124,17 @@ public class ChatRoom : ChatData
     }
     public void ScrollDelay() => sb.value = 0;
 
-    int GetChatRoomNum()
+    string GetChatRoomName()
     {
-        for(int i = 0; i < chatMng.chatRoomList.Count; i++)
+        foreach(string cn in chatMng.chatRoomList.Keys)
         {
-            if (chatMng.chatRoomList[i] == this.gameObject)
+            if (chatMng.chatRoomList[cn] == this.gameObject)
             {
-                return i;
+                return cn;
             }
         }
-        return 11;
+        return "null";
     }
 
-    void SetChatterText()
-    {
-        chatter = chatMng.chatterList[chatRoomNum].transform.GetComponent<Chatter>();
-        chatter.chatText.text = GetChatDialogue(chatDatasId,0).Substring(0,17).Replace("/n", " ").Replace("name", ChasaData.chasaName) + " ..."; 
-    }
+    
 }

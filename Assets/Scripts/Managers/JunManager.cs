@@ -24,6 +24,12 @@ public class JunManager : MonoBehaviour
         junPage.transform.GetChild(++junCurrPage).gameObject.SetActive(true);
     }
 
+    public void GoToPrevJunPage()
+    {
+        junPage.transform.GetChild(junCurrPage).gameObject.SetActive(false);
+        junPage.transform.GetChild(--junCurrPage).gameObject.SetActive(true);
+    }
+
     public void JunAnswerSubmitBtnFunc()
     {
         junWrongText.SetActive(false);

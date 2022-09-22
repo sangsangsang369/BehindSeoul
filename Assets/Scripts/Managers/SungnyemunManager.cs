@@ -49,6 +49,14 @@ public class SungnyemunManager : MonoBehaviour
     {
         sungPagesParent.transform.GetChild(sungCurrPage).gameObject.SetActive(false);
         sungPagesParent.transform.GetChild(++sungCurrPage).gameObject.SetActive(true);
+        //saveData.pageChildIndex = sungCurrPage;
+        //data.Save();
+    }
+
+    public void GoToPrevSungPage()
+    {
+        sungPagesParent.transform.GetChild(sungCurrPage).gameObject.SetActive(false);
+        sungPagesParent.transform.GetChild(--sungCurrPage).gameObject.SetActive(true);
     }
 
     public void Answer1SubmitBtnFunc()
@@ -76,6 +84,7 @@ public class SungnyemunManager : MonoBehaviour
             GetCouponInBag(couponPrefab);
             popup.SetActive(true);
             gameMng.GetCourseInCollection("숭례문");
+            
             gameMng.hintBtn.SetActive(false);
         }
     }
@@ -84,11 +93,14 @@ public class SungnyemunManager : MonoBehaviour
     {
         GameObject locker = Instantiate(prefab);
         locker.transform.SetParent(bagOfflineContent.transform, false); 
+        
     }
 
     public void SungPageSaveData()
     {
         saveData.pagesIndex = 2;
+        saveData.spotCollection.Add("숭례문");
+        saveData.bagCoupons.Add("One");
         data.Save();
     }
 }
