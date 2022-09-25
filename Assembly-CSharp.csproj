@@ -240,7 +240,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\ReverseGeocodeResource.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\LocationSmoothing\KalmanFilter.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerCustomStyle.cs" />
-     <Compile Include="Assets\Scripts\ARSceneSlider.cs" />
+     <Compile Include="Assets\Scripts\AR\ARSceneSlider.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Platform\HTTPRequestNonThreaded.cs" />
      <Compile Include="Assets\Scripts\ChatPage\Chatter.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Data\KdTree\NearestNeighbour.cs" />
@@ -254,17 +254,17 @@
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Filters\HeightFilter.cs" />
      <Compile Include="Assets\Scripts\HintPage\SetHintDatas.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\IReplacementCriteria.cs" />
-     <Compile Include="Assets\Scripts\ARPrefab.cs" />
+     <Compile Include="Assets\Scripts\AR\ARPrefab.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\MergedModifierStack.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\GeometryMaterialOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\SourceLayers\ISubLayerDarkStyle.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\DragableDirectionWaypoint.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\TerrainSideWallOptions.cs" />
-     <Compile Include="Assets\Scripts\SignDraw.cs" />
+     <Compile Include="Assets\Scripts\Drawing\SignDraw.cs" />
      <Compile Include="Assets\Mapbox\Core\Plugins\Android\UniAndroidPermission\UniAndroidPermission.cs" />
      <Compile Include="Assets\JMO Assets\Cartoon FX\Demo\Assets\CFX_Demo_RotateCamera.cs" />
      <Compile Include="Assets\Scripts\Managers\DeoksugungManager.cs" />
-     <Compile Include="Assets\Scripts\ARTrackingManager.cs" />
+     <Compile Include="Assets\Scripts\AR\ARTrackingManager.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Singleton.cs" />
      <Compile Include="Assets\Mapbox\Unity\Map\TileProviders\RangeTileProvider.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\ImmediatePositionWithLocationProvider.cs" />
@@ -345,7 +345,7 @@
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Map\RawPngRasterTile.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\Conversions.cs" />
      <Compile Include="Assets\Mapbox\Unity\MeshGeneration\Modifiers\GameObjectModifier.cs" />
-     <Compile Include="Assets\Scripts\EraseMask.cs" />
+     <Compile Include="Assets\Scripts\Drawing\EraseMask.cs" />
      <Compile Include="Assets\Mapbox\Unity\DataContainers\LayerPerformanceOptions.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\AndroidSettings.cs" />
      <Compile Include="Assets\Mapbox\Unity\Utilities\MapVisualizerPerformance.cs" />
@@ -359,6 +359,7 @@
      <Compile Include="Assets\Mapbox\Unity\DataContainers\MapScalingOptions.cs" />
      <Compile Include="Assets\Scripts\Common\UndoBtnOffPage.cs" />
      <Compile Include="Assets\Mapbox\Unity\Location\UnityLocationWrappers\MapboxLocationInfoMock.cs" />
+     <Compile Include="Assets\Scripts\VideoManager.cs" />
      <Compile Include="Assets\Mapbox\Core\mapbox-sdk-cs\Geocoding\Response\Geometry.cs" />
      <Compile Include="Assets\Mapbox\Examples\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Mapbox\Unity\LayerProperties\VectorLayerProperties.cs" />

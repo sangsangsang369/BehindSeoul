@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">996191516088-lrlrr21k9guarmute4m8o66u9bpg84kt.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://behind-seoul-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">996191516088</string>
+    <string name="google_api_key" translatable="false">AIzaSyCHMEsL8zVq7QZAEZA9IB9Ih8-sYwzh1b0</string>
+    <string name="google_app_id" translatable="false">1:996191516088:android:80dfa71083adf7dea00b4d</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyCHMEsL8zVq7QZAEZA9IB9Ih8-sYwzh1b0</string>
+    <string name="google_storage_bucket" translatable="false">behind-seoul.appspot.com</string>
+    <string name="project_id" translatable="false">behind-seoul</string>
+</resources>

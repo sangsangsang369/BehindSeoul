@@ -7,17 +7,30 @@ public class JungManager : MonoBehaviour
 {
     [SerializeField]
     GameObject  jungPage,
-                jungWrongText;
+                jungWrongText,
+                nPrefab;
 
     [SerializeField]
     TMP_InputField  jungAnswerInput;
-    GameManager gMng;
+    GameManager gameMng;
+    DataManager data;
+    SaveDataClass saveData;
     int jungCurrPage = 0;
 
     void Start() 
     {     
-        gMng = FindObjectOfType<GameManager>();  
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+        gameMng = FindObjectOfType<GameManager>();  
         jungPage.transform.GetChild(jungCurrPage).gameObject.SetActive(true);
+    }
+
+    public void GetOInBag()
+    {
+        GameObject l = Instantiate(nPrefab);
+        l.transform.SetParent(gameMng.bagOnlineContent.transform, false); 
+        saveData.bagItems.Add("Letter_N");
+        data.Save();
     }
 
     public void GoToNextJungPage()
@@ -41,7 +54,7 @@ public class JungManager : MonoBehaviour
         }
         else
         {
-            gMng.hintBtn.SetActive(false);
+            gameMng.hintBtn.SetActive(false);
             GoToNextJungPage();
         }
     }

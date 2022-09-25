@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Chatter : MonoBehaviour
+public class Chatter : ChatData
 {
     //chatter 리스트에 들어가는 미리보기 프리펩 스크립트
     public TMP_Text nameText, chatText;
@@ -11,17 +11,45 @@ public class Chatter : MonoBehaviour
     ChatRoom chatRoom;
     string chatterNameinChatter;
 
+    DataManager data;
+    SaveDataClass saveData;
+
 
     private void Start() 
     {
         chatMng = FindObjectOfType<ChatManager>();
+        data = DataManager.singleTon;
+        saveData = data.saveData;
 
         chatterNameinChatter = GetChatterName();
-        SetChatterText(ChatData.chatDatasId);
+        
+        int chatDataFirstNum = 0;
+        for(int i = 0; i < chatMng.chatterNameList.Length; i++)
+        {
+            if(chatMng.chatterNameList[i] == chatterNameinChatter)
+            {
+                chatDataFirstNum = i+1;
+                break;
+            }
+        }
+
+        if(chatDataFirstNum == 1 && saveData.endedChatDataId_one.Count == 0)
+        {
+            SetChatterText(ChatData.chatDatasId);
+        }
+        else if(chatDataFirstNum == 2 && saveData.endedChatDataId_two.Count == 0)
+        {
+            SetChatterText(ChatData.chatDatasId);
+        }
+        else if(chatDataFirstNum == 3 && saveData.endedChatDataId_three.Count == 0)
+        {
+            SetChatterText(ChatData.chatDatasId);
+        }
     }
     
     string GetChatterName()
     {
+        chatMng = FindObjectOfType<ChatManager>();
         foreach(string cn in chatMng.chatterList.Keys)
         {
             if (chatMng.chatterList[cn] == this.gameObject)
@@ -34,14 +62,20 @@ public class Chatter : MonoBehaviour
 
     public void ChatRoomOn()
     {
+        chatRoom = chatMng.chatRoomList[chatterNameinChatter].transform.GetComponent<ChatRoom>();
         chatMng.chatRoomList[chatterNameinChatter].SetActive(true);
+        if(chatMng.clickedBychatAlarm)
+        {
+            chatMng.chatRoomList[chatterNameinChatter].GetComponent<ChatRoom>().GetBubble_Save();
+            chatMng.clickedBychatAlarm = false;
+        }
         chatRoom.ScrollDown();
     }
 
-    void SetChatterText(int id)
+    public void SetChatterText(int id)
     {
-        chatRoom = chatMng.chatRoomList[chatterNameinChatter].transform.GetComponent<ChatRoom>();
+        chatterNameinChatter = GetChatterName();
         nameText.text = chatterNameinChatter;
-        chatText.text = chatRoom.GetChatDialogue(id,0).Substring(0,17).Replace("/n", " ").Replace("name", ChasaData.chasaName) + " ..."; 
-    }
+        chatText.text = GetChatDialogue(id,0).Substring(0,17).Replace("/n", " ").Replace("name", ChasaData.chasaName) + " ..."; 
+    } 
 }

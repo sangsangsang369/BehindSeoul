@@ -6,6 +6,9 @@ using Mapbox.Unity.Map;
 using Mapbox.Utils;
 using Mapbox.Unity.Utilities;
 using Mapbox.Examples;
+#if PLATFORM_ANDROID
+using UnityEngine.Android;    
+#endif
 
 public class GameManager : MonoBehaviour
 {
@@ -37,6 +40,12 @@ public class GameManager : MonoBehaviour
                         hori_Prefab,
                         locker_Prefab,
                         coupon_Prefab,
+                        kPrefab,
+                        yPrefab,
+                        osPrefab,
+                        ozPrefab,
+                        wPrefab,
+                        nPrefab,
                         
                         bagOnlineContent,
                         bagOfflineContent;
@@ -53,6 +62,16 @@ public class GameManager : MonoBehaviour
 
     public int nextBtnIndex = 0;
 
+    private void Awake() 
+    {
+        #if PLATFORM_ANDROID
+        if (!Permission.HasUserAuthorizedPermission(Permission.FineLocation))
+        {
+            Permission.RequestUserPermission(Permission.FineLocation);
+        }
+        #endif
+    }
+    
     private void Start() 
     {
         data = DataManager.singleTon;
@@ -70,6 +89,32 @@ public class GameManager : MonoBehaviour
                 {
                     GetItemsCouponInBag(locker_Prefab, bagOnlineContent);
                 }
+                else if(s == "Letter_K")
+                {
+                    GetItemsCouponInBag(kPrefab, bagOnlineContent);
+                }
+                else if(s == "Letter_Y")
+                {
+                    GetItemsCouponInBag(yPrefab, bagOnlineContent);
+                }
+                else if(s == "Letter_O_s")
+                {
+                    GetItemsCouponInBag(osPrefab, bagOnlineContent);
+                }
+                else if(s == "Letter_O_z")
+                {
+                    GetItemsCouponInBag(ozPrefab, bagOnlineContent);
+                }
+                else if(s == "Letter_W")
+                {
+                    GetItemsCouponInBag(wPrefab, bagOnlineContent);
+                }
+                else if(s == "Letter_N")
+                {
+                    GetItemsCouponInBag(nPrefab, bagOnlineContent);
+                }
+
+                
             }
         }
         if(saveData.bagCoupons.Count > 0)
@@ -113,47 +158,89 @@ public class GameManager : MonoBehaviour
 
     public void StartwithSaveData()
     {
-        if(saveData.pagesIndex == 0)
+        if(saveData.pageChildIndex == 0)
         {
-            guidePage.SetActive(true);
+            if(saveData.pagesIndex == 0)
+            {
+                guidePage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 1)
+            {
+                MapSceneInit();
+            }
+            else if(saveData.pagesIndex == 2)
+            {
+                MapSceneInit();
+                GotoDeoksugungMap();
+            }
+            else if(saveData.pagesIndex == 3)
+            {
+                MapSceneInit();
+                GotoSixSpotsMap();
+            }
+            else if(saveData.pagesIndex == 4)
+            {
+                afterSpotsPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 5)
+            {
+                MapSceneInit();
+                GotoIsangHomeMap();
+            }
+            else if(saveData.pagesIndex == 6)
+            {
+                MapSceneInit();
+                GotoTongInMap();
+            }
+            else if(saveData.pagesIndex == 7)
+            {
+                MapSceneInit();
+                GotoParkNoSuMap();
+            }
+            else if(saveData.pagesIndex == 8)
+            {
+                MapSceneInit();
+                GotoYoonDongJuMap();
+            }
         }
-        else if(saveData.pagesIndex == 1)
+        else
         {
-            MapSceneInit();
-        }
-        else if(saveData.pagesIndex == 2)
-        {
-            MapSceneInit();
-            GotoDeoksugungMap();
-        }
-        else if(saveData.pagesIndex == 3)
-        {
-            MapSceneInit();
-            GotoSixSpotsMap();
-        }
-        else if(saveData.pagesIndex == 4)
-        {
-            afterSpotsPage.SetActive(true);
-        }
-        else if(saveData.pagesIndex == 5)
-        {
-            MapSceneInit();
-            GotoIsangHomeMap();
-        }
-        else if(saveData.pagesIndex == 6)
-        {
-            MapSceneInit();
-            GotoTongInMap();
-        }
-        else if(saveData.pagesIndex == 7)
-        {
-            MapSceneInit();
-            GotoParkNoSuMap();
-        }
-        else if(saveData.pagesIndex == 8)
-        {
-            MapSceneInit();
-            GotoYoonDongJuMap();
+            if(saveData.pagesIndex == 0)
+            {
+                guidePage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 1)
+            {
+                sungPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 2)
+            {
+                deokPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 3)
+            {
+                //sungPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 4)
+            {                
+                afterSpotsPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 5)
+            {
+                isangPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 6)
+            {
+                tongInPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 7)
+            {
+                parkNoSuPage.SetActive(true);
+            }
+            else if(saveData.pagesIndex == 8)
+            {
+                yoonPage.SetActive(true);
+            }
         }
     }
 
@@ -162,6 +249,16 @@ public class GameManager : MonoBehaviour
         mapScene.SetActive(true);
         mapPage.SetActive(true);
         canvasCam.SetActive(false);
+    }
+
+    public void GotoSungnyemungMap()
+    {
+        abstMap = FindObjectOfType<AbstractMap>();    
+        spawnOnMap = FindObjectOfType<SpawnOnMap>();
+        string locString = "37.559979, 126.9753025";
+        Vector2d latlon = Conversions.StringToLatLon(locString);
+        abstMap.Initialize(latlon, 16);
+        spawnOnMap._spawnedObjects[0].SetActive(true);
     }
 
     public void GotoDeoksugungMap()
@@ -182,6 +279,7 @@ public class GameManager : MonoBehaviour
         string locString = "37.565913, 126.975286";
         Vector2d latlon = Conversions.StringToLatLon(locString);
         abstMap.Initialize(latlon, 16);
+        spawnOnMap._spawnedObjects[0].SetActive(false);
         spawnOnMap._spawnedObjects[1].SetActive(false);
         for(int i = 2; i < 8; i++)
         {
@@ -207,6 +305,7 @@ public class GameManager : MonoBehaviour
         {
             spawnOnMap._spawnedObjects[i].SetActive(false);
         }
+        spawnOnMap._spawnedObjects[0].SetActive(false);
         spawnOnMap._spawnedObjects[8].SetActive(true);
     }
 
@@ -217,6 +316,7 @@ public class GameManager : MonoBehaviour
         string locString = "37.58077, 126.97004";
         Vector2d latlon = Conversions.StringToLatLon(locString);
         abstMap.Initialize(latlon, 16);
+        spawnOnMap._spawnedObjects[0].SetActive(false);
         spawnOnMap._spawnedObjects[8].SetActive(false);
         spawnOnMap._spawnedObjects[9].SetActive(true);
     }
@@ -228,6 +328,7 @@ public class GameManager : MonoBehaviour
         string locString = "37.5813, 126.9668";
         Vector2d latlon = Conversions.StringToLatLon(locString);
         abstMap.Initialize(latlon, 16);
+        spawnOnMap._spawnedObjects[0].SetActive(false);
         spawnOnMap._spawnedObjects[9].SetActive(false);
         spawnOnMap._spawnedObjects[10].SetActive(true);
     }
@@ -239,6 +340,7 @@ public class GameManager : MonoBehaviour
         string locString = "37.5814, 126.9657";
         Vector2d latlon = Conversions.StringToLatLon(locString);
         abstMap.Initialize(latlon, 17);
+        spawnOnMap._spawnedObjects[0].SetActive(false);
         spawnOnMap._spawnedObjects[10].SetActive(false);
         spawnOnMap._spawnedObjects[11].SetActive(true);
     }

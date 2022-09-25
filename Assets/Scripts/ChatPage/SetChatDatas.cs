@@ -9,6 +9,8 @@ public class SetChatDatas : MonoBehaviour
     public string chatterNameInSetChat;
     ChatManager chatMng;
     bool isChatAlarmPop = false;
+    public bool isThisChatIdInHistory = false;
+
     public GameObject NextBtnInThisPage;
     
     DataManager data;
@@ -27,17 +29,41 @@ public class SetChatDatas : MonoBehaviour
 
     void PopupChatAlarm()
     {
-        if(!isChatAlarmPop)
+        foreach(int i in saveData.endedChatDataId_one)
+        {
+            if(i == chatId)
+            {
+                isThisChatIdInHistory = true;
+                break;
+            }
+        }
+        foreach(int i in saveData.endedChatDataId_two)
+        {
+            if(i == chatId)
+            {
+                isThisChatIdInHistory = true;
+                break;
+            }
+        }
+        foreach(int i in saveData.endedChatDataId_three)
+        {
+            if(i == chatId)
+            {
+                isThisChatIdInHistory = true;
+                break;
+            }
+        }
+        if(!isChatAlarmPop && !isThisChatIdInHistory)
         {
             chatMng.chatAlarmParent.GetComponent<ChatAlarmParent>().chatterName = chatterNameInSetChat;
             chatMng.nextBtnInChatPage = NextBtnInThisPage;
             GameObject chatAlarm = Instantiate(chatMng.chatAlarmPrefab);
             chatAlarm.transform.SetParent(chatMng.chatAlarmParent.transform, false);
             isChatAlarmPop = true; 
-            
-            saveData.endedChatDataId.Add(chatId);
-            data.Save();
+        } 
+        else
+        {
+            NextBtnInThisPage.SetActive(true);
         }
-        
     }
 }

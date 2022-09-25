@@ -148,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8592f6c2435d5347bb4dbade5fcae75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goblinNames: []
   nameText: {fileID: 2441283612895933473}
   chatText: {fileID: 2441283612640697376}
 --- !u!1 &2441283612640697378

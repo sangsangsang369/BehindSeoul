@@ -26,6 +26,8 @@ public class ParkNosuManager : MonoBehaviour
         gameMng = FindObjectOfType<GameManager>();    
         data = DataManager.singleTon;
         saveData = data.saveData; 
+
+        nosuCurrPage = saveData.pageChildIndex;
         nosuPage.transform.GetChild(nosuCurrPage).gameObject.SetActive(true);
     }
 
@@ -33,12 +35,16 @@ public class ParkNosuManager : MonoBehaviour
     {
         nosuPage.transform.GetChild(nosuCurrPage).gameObject.SetActive(false);
         nosuPage.transform.GetChild(++nosuCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = nosuCurrPage;
+        data.Save();
     }
 
     public void GoToPrevNosuPage()
     {
         nosuPage.transform.GetChild(nosuCurrPage).gameObject.SetActive(false);
         nosuPage.transform.GetChild(--nosuCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = nosuCurrPage;
+        data.Save();
     }
 
     public void AnswerSubmitBtnFunc()
@@ -57,6 +63,7 @@ public class ParkNosuManager : MonoBehaviour
     public void NosuPageSaveData()
     {
         saveData.pagesIndex = 8;
+        saveData.pageChildIndex = 0;
         data.Save();
     }
 }

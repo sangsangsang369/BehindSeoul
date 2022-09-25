@@ -21,6 +21,8 @@ public class DeoksugungManager : MonoBehaviour
     {   
         data = DataManager.singleTon;
         saveData = data.saveData;
+        
+        deokCurrPage = saveData.pageChildIndex;
         deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(true);
     }
 
@@ -36,11 +38,14 @@ public class DeoksugungManager : MonoBehaviour
     {
         deokPagesParent.transform.GetChild(deokCurrPage).gameObject.SetActive(false);
         deokPagesParent.transform.GetChild(--deokCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = deokCurrPage;
+        data.Save();
     }
 
     public void DeokPageSaveData()
     {
         saveData.pagesIndex = 3;
+        saveData.pageChildIndex = 0;
         data.Save();
     }
 }

@@ -27,6 +27,8 @@ public class IsangHomePage : MonoBehaviour
     {   
         data = DataManager.singleTon;
         saveData = data.saveData;
+
+        isangCurrPage = saveData.pageChildIndex;
         isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(true);
         foreach (TMP_Text t in nameContainTexts)
         {
@@ -38,12 +40,16 @@ public class IsangHomePage : MonoBehaviour
     {
         isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(false);
         isangHomePage.transform.GetChild(++isangCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = isangCurrPage;
+        data.Save();
     }
 
     public void GoToPrevIsangHomePage()
     {
         isangHomePage.transform.GetChild(isangCurrPage).gameObject.SetActive(false);
         isangHomePage.transform.GetChild(--isangCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = isangCurrPage;
+        data.Save();
     }
 
     public void AnswerSubmitBtnFunc()
@@ -62,6 +68,7 @@ public class IsangHomePage : MonoBehaviour
     public void IsangPageSaveData()
     {
         saveData.pagesIndex = 6;
+        saveData.pageChildIndex = 0;
         data.Save();
     }
 }

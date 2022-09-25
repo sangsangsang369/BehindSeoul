@@ -2186,6 +2186,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_JsonUtility_FromJsonInternal();
 		Register_UnityEngine_JsonUtility_FromJsonInternal();
 
+		//System.String UnityEngine.JsonUtility::ToJsonInternal(System.Object,System.Boolean)
+		void Register_UnityEngine_JsonUtility_ToJsonInternal();
+		Register_UnityEngine_JsonUtility_ToJsonInternal();
+
 	//End Registrations for type : UnityEngine.JsonUtility
 
 	//Start Registrations for type : UnityEngine.Light
@@ -4511,6 +4515,14 @@ void RegisterAllStrippedInternalCalls()
 		Register_UnityEngine_UnityLogWriter_WriteStringToUnityLogImpl();
 
 	//End Registrations for type : UnityEngine.UnityLogWriter
+
+	//Start Registrations for type : UnityEngine.Video.VideoPlayer
+
+		//System.Void UnityEngine.Video.VideoPlayer::Play()
+		void Register_UnityEngine_Video_VideoPlayer_Play();
+		Register_UnityEngine_Video_VideoPlayer_Play();
+
+	//End Registrations for type : UnityEngine.Video.VideoPlayer
 
 	//Start Registrations for type : UnityEngine.XR.InputDevices
 

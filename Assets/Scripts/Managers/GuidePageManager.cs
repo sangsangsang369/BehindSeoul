@@ -43,6 +43,7 @@ public class GuidePageManager : MonoBehaviour
 
     void Start() 
     {
+        guideCurrPage = saveData.pageChildIndex;
         guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(true); 
         nameInput.characterLimit = 14;  
     }
@@ -61,12 +62,16 @@ public class GuidePageManager : MonoBehaviour
     {
         guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(false);
         guidePagesParent.transform.GetChild(++guideCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = guideCurrPage;
+        data.Save();
     }
 
     public void GoToPrevGuidePage()
     {
         guidePagesParent.transform.GetChild(guideCurrPage).gameObject.SetActive(false);
         guidePagesParent.transform.GetChild(--guideCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = guideCurrPage;
+        data.Save();
     }
 
     public void Answer1SubmitBtnFunc()
@@ -107,21 +112,21 @@ public class GuidePageManager : MonoBehaviour
     {
         GameObject locker = Instantiate(horiPrefab);
         locker.transform.SetParent(bagOnlineContent.transform, false); 
-        
+        saveData.bagItems.Add("Hori");
+        data.Save();
     }
 
     public void GetLockerInBag()
     {
         GameObject locker = Instantiate(lockerPrefab);
         locker.transform.SetParent(bagOnlineContent.transform, false);
-        
+        saveData.bagItems.Add("Locker");
+        data.Save();
     }
 
     public void GuidePageSaveData()
     {
         saveData.pagesIndex = 1;
-        saveData.bagItems.Add("Hori");
-        saveData.bagItems.Add("Locker");
-        data.Save();
+        saveData.pageChildIndex = 0;
     }
 }

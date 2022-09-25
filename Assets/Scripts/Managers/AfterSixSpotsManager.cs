@@ -28,6 +28,7 @@ public class AfterSixSpotsManager : MonoBehaviour
         data = DataManager.singleTon;
         saveData = data.saveData;
 
+        afterssCurrPage = saveData.pageChildIndex;
         afterSixSpotsPage.transform.GetChild(afterssCurrPage).gameObject.SetActive(true);
         foreach (TMP_Text t in nameContainTexts)
         {
@@ -47,17 +48,21 @@ public class AfterSixSpotsManager : MonoBehaviour
     {
         afterSixSpotsPage.transform.GetChild(afterssCurrPage).gameObject.SetActive(false);
         afterSixSpotsPage.transform.GetChild(--afterssCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = afterssCurrPage;
+        data.Save();
     }
 
     public void AddDeokToCollection()
     {
         gameMng.GetCourseInCollection("덕수궁");
+        saveData.spotCollection.Add("덕수궁");
+        data.Save();
     }
 
     public void AfterssPageSaveData()
     {
         saveData.pagesIndex = 5;
-        saveData.spotCollection.Add("덕수궁");
+        saveData.pageChildIndex = 0;
         data.Save();
     }
 }

@@ -7,15 +7,30 @@ public class HamManager : MonoBehaviour
 {
     [SerializeField]
     GameObject  hamPage,
-                hamWrongText;
+                hamWrongText,
+                yPrefab;
 
     [SerializeField]
     TMP_InputField  hamAnswerInput;
     int hamCurrPage = 0;
+    GameManager gameMng;
+    DataManager data;
+    SaveDataClass saveData;
 
     void Start() 
     {    
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+        gameMng = FindObjectOfType<GameManager>();  
         hamPage.transform.GetChild(hamCurrPage).gameObject.SetActive(true);
+    }
+
+    public void GetYInBag()
+    {
+        GameObject l = Instantiate(yPrefab);
+        l.transform.SetParent(gameMng.bagOnlineContent.transform, false); 
+        saveData.bagItems.Add("Letter_Y");
+        data.Save();
     }
 
     public void GoToNextHamPage()

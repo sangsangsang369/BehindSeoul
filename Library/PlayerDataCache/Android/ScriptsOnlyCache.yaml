@@ -3,19 +3,26 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - ARPrefab
     - ARSceneSlider
+    - AfterSixSpotsManager
     - BagManager
     - Bubble
     - CFX_AutoDestructShuriken
     - ChatAlarm
+    - ChatAlarmParent
     - ChatManager
     - ChatRoom
     - Chatter
+    - DataManager
     - DeoksugungManager
     - DistanceBetweenTwoPoints
     - EraseMask
     - GameManager
     - GuidePageManager
+    - GwangManager
+    - HamManager
     - IsangHomePage
+    - JunManager
+    - JungManager
     - Locker
     - LoginManager
     - MapCameraMove
@@ -49,11 +56,13 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.MeshGeneration.Modifiers.ReplaceFeatureCollectionModifier
     - Mapbox.Unity.Utilities.DebugTools.SceneData
     - Mapbox.Unity.Utilities.DebugTools.ScenesList
+    - Mapbox.Unity.Utilities.Runnable
     - PageChangeBtn
     - ParkNosuManager
     - ScriptablePalette
     - ScrollGuideImg
     - ScrollMenu
+    - SeokManager
     - SetChatDatas
     - SetHintDatas
     - SignDraw
@@ -62,6 +71,8 @@ ScriptsOnlyBuild:
     - Spots
     - SungnyemunManager
     - TongInManager
+    - VideoManager
+    - ZukManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -112,6 +123,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Scrollbar
@@ -161,6 +173,7 @@ ScriptsOnlyBuild:
     - Mapbox.Unity.MeshGeneration.Modifiers.FeatureBundle
     - Mapbox.Unity.MeshGeneration.Modifiers.MaterialList
     - Mapbox.Utils.Vector2d
+    - SaveDataClass
     Unity.TextMeshPro:
     - TMPro.FaceInfo_Legacy
     - TMPro.FontAssetCreationSettings
@@ -214,9 +227,6 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: Chatter
     methodName: ChatRoomOn
-  - assembly: Assembly-CSharp
-    fullTypeName: Locker
-    methodName: itemInfoPageOn
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
@@ -462,6 +472,21 @@ ScriptsOnlyBuild:
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: JunManager
+    methodName: GoToPrevJunPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
@@ -470,8 +495,8 @@ ScriptsOnlyBuild:
     fullTypeName: DeoksugungManager
     methodName: GoToNextDeokPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: InitInt
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
@@ -482,6 +507,15 @@ ScriptsOnlyBuild:
     fullTypeName: LoginManager
     methodName: LoginBtnFunc
   - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
+    methodName: GoToPrevAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
@@ -491,8 +525,14 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SungnyemunManager
-    methodName: GotoDeoksugungMap
+    fullTypeName: IsangHomePage
+    methodName: GoToPrevIsangHomePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
@@ -500,35 +540,74 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SungnyemunManager
+    fullTypeName: GameManager
     methodName: GotoDeoksugungMap
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: SungPageSaveData
   - assembly: Assembly-CSharp
     fullTypeName: ARSceneSlider
     methodName: GetSliderValue
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: SeokManager
     methodName: SeokAnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: GoToNextHamPage
-  - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
-    methodName: Answer1SubmitBtnFunc
+    methodName: NameSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToPrevSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: HamManager
+    methodName: GoToNextHamPage
+  - assembly: Assembly-CSharp
+    fullTypeName: IsangHomePage
+    methodName: GoToPrevIsangHomePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: Answer1SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
     methodName: GetLockerInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: IsangHomePage
     methodName: AnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: JungManager
     methodName: JungAnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: ParkNosuManager
     methodName: GoToNextNosuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -536,14 +615,20 @@ ScriptsOnlyBuild:
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: HamManager
+    methodName: GetYInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: HamManager
     methodName: GoToNextHamPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: DeoksugungManager
+    fullTypeName: GameManager
     methodName: GotoSixSpotsMap
+  - assembly: Assembly-CSharp
+    fullTypeName: DeoksugungManager
+    methodName: DeokPageSaveData
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -551,17 +636,29 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: TongInManager
-    methodName: GoToNextTongInPage
-  - assembly: Assembly-CSharp
     fullTypeName: SungnyemunManager
     methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: DeoksugungManager
+    methodName: GoToPrevDeokPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GoToPrevNosuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GoToPrevNosuPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
@@ -572,9 +669,6 @@ ScriptsOnlyBuild:
     fullTypeName: GuidePageManager
     methodName: DoorImgFunc
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: InitInt
-  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
@@ -584,14 +678,23 @@ ScriptsOnlyBuild:
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
+    fullTypeName: JungManager
+    methodName: GetOInBag
+  - assembly: Assembly-CSharp
     fullTypeName: SungnyemunManager
     methodName: Answer2SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
+    methodName: GoToPrevAfterSixSpotsPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: ARSceneSlider
     methodName: GetSliderValue
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GuidePageSaveData
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -608,8 +711,14 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: SungnyemunManager
+    methodName: GoToNextSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GwangManager
     methodName: GwangAnswerSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: NameSubmitBtnFunc
@@ -617,29 +726,86 @@ ScriptsOnlyBuild:
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: InitInt
-  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
+    fullTypeName: GwangManager
+    methodName: GetKInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
+    methodName: GoToPrevAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: VideoManager
+    methodName: VideoPlay
+  - assembly: Assembly-CSharp
+    fullTypeName: SeokManager
     methodName: GoToNextSeokPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: AfterSixSpotsManager
     methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: HamManager
+    methodName: GoToPrevHamPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: JungManager
+    methodName: GoToPrevJungPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -647,23 +813,53 @@ ScriptsOnlyBuild:
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
+    fullTypeName: JunManager
+    methodName: GetWInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: StartwithSaveData
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
     methodName: GoToNextAfterSixSpotsPage
   - assembly: Assembly-CSharp
     fullTypeName: SungnyemunManager
     methodName: GoToNextSungPage
   - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: TongInManager
+    fullTypeName: GameManager
     methodName: GotoParkNoSuMap
   - assembly: Assembly-CSharp
     fullTypeName: TongInManager
+    methodName: TonginPageSaveData
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
     methodName: GoToNextTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToPrevSungPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
@@ -674,10 +870,13 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: IsangHomePage
+    fullTypeName: GameManager
     methodName: GotoTongInMap
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: IsangHomePage
+    methodName: IsangPageSaveData
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
     methodName: GoToNextAfterSixSpotsPage
   - assembly: Assembly-CSharp
     fullTypeName: EraseMask
@@ -686,11 +885,8 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: GwangManager
     methodName: GoToNextGwangPage
-  - assembly: Assembly-CSharp
-    fullTypeName: TongInManager
-    methodName: Answer2SubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -698,20 +894,26 @@ ScriptsOnlyBuild:
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
+    fullTypeName: SeokManager
+    methodName: GetOsInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: InitInt
-  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
@@ -722,26 +924,8 @@ ScriptsOnlyBuild:
     fullTypeName: SungnyemunManager
     methodName: GoToNextSungPage
   - assembly: Assembly-CSharp
-    fullTypeName: PageChangeBtn
-    methodName: GoToNextPage
-  - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: GotoIsangHomeMap
-  - assembly: Assembly-CSharp
-    fullTypeName: ParkNosuManager
-    methodName: GoToNextNosuPage
-  - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: GoToNextJunPage
-  - assembly: Assembly-CSharp
-    fullTypeName: PageChangeBtn
-    methodName: JustSetActiveFPrevPage
-  - assembly: Assembly-CSharp
-    fullTypeName: PageChangeBtn
-    methodName: JustSetActiveFPrevPage
-  - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: GoToNextAfterSixSpotsPage
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
@@ -749,14 +933,71 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: GotoIsangHomeMap
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
+    methodName: AfterssPageSaveData
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: GoToNextNosuPage
+  - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToPrevTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: JunManager
+    methodName: GoToNextJunPage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
+    methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GameManager
+    methodName: StartwithSaveData
+  - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: JustSetActiveFPrevPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: SungnyemunManager
     methodName: Answer1SubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SungnyemunManager
+    methodName: GoToPrevSungPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: ParkNosuManager
+    fullTypeName: GameManager
     methodName: GotoYoonDongJuMap
+  - assembly: Assembly-CSharp
+    fullTypeName: ParkNosuManager
+    methodName: NosuPageSaveData
   - assembly: Assembly-CSharp
     fullTypeName: TongInManager
     methodName: GoToNextTongInPage
@@ -766,6 +1007,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: LoginManager
     methodName: LogOutBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: SeokManager
+    methodName: GoToPrevSeokPage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -785,16 +1029,22 @@ ScriptsOnlyBuild:
     fullTypeName: DeoksugungManager
     methodName: GoToNextDeokPage
   - assembly: Assembly-CSharp
+    fullTypeName: TongInManager
+    methodName: GoToPrevTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: GameManager
-    methodName: GetCourseInCollection
+    fullTypeName: AfterSixSpotsManager
+    methodName: AddDeokToCollection
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: HamManager
     methodName: HamAnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: AfterSixSpotsManager
     methodName: GoToNextAfterSixSpotsPage
   - assembly: Assembly-CSharp
     fullTypeName: TongInManager
@@ -812,20 +1062,35 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: TongInManager
     methodName: AnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: SignUpManager
     methodName: SignUpBtnFunc
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: JungManager
     methodName: GoToNextJungPage
   - assembly: Assembly-CSharp
     fullTypeName: IsangHomePage
     methodName: GoToNextIsangHomePage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
-    methodName: InitInt
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
@@ -833,8 +1098,17 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: GwangManager
+    methodName: GoToPrevGwangPage
+  - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: Answer2SubmitBtnFunc
@@ -842,17 +1116,53 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveTNextPage
   - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
     fullTypeName: SungnyemunManager
     methodName: GoToNextSungPage
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: TongInManager
+    methodName: GoToPrevTongInPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: JunManager
     methodName: JunAnswerSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: HamManager
+    methodName: GoToPrevHamPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToPrevGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
@@ -860,8 +1170,20 @@ ScriptsOnlyBuild:
     fullTypeName: SixSpotsManager
     methodName: EndedSpotOff_Check
   - assembly: Assembly-CSharp
-    fullTypeName: SixSpotsManager
+    fullTypeName: ZukManager
+    methodName: GetOzInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: AfterSixSpotsManager
     methodName: GoToNextAfterSixSpotsPage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
@@ -872,14 +1194,20 @@ ScriptsOnlyBuild:
     fullTypeName: PageChangeBtn
     methodName: GoToNextPage
   - assembly: Assembly-CSharp
-    fullTypeName: SungnyemunManager
-    methodName: GotoDeoksugungMap
+    fullTypeName: GuidePageManager
+    methodName: NameSubmitBtnFunc
   - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
+    fullTypeName: PageChangeBtn
+    methodName: GoToNextPage
+  - assembly: Assembly-CSharp
     fullTypeName: GuidePageManager
     methodName: GetHorirInBag
+  - assembly: Assembly-CSharp
+    fullTypeName: GuidePageManager
+    methodName: GoToNextGuidePage
   - assembly: Assembly-CSharp
     fullTypeName: PageChangeBtn
     methodName: JustSetActiveFPrevPage
@@ -910,6 +1238,8 @@ ScriptsOnlyBuild:
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 84
       Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
@@ -960,153 +1290,175 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2792}
     - Class: 114
+      Script: {instanceID: 2908}
+    - Class: 114
       Script: {instanceID: 2950}
     - Class: 114
-      Script: {instanceID: 3032}
+      Script: {instanceID: 2952}
     - Class: 114
-      Script: {instanceID: 3074}
+      Script: {instanceID: 3034}
     - Class: 114
-      Script: {instanceID: 3252}
+      Script: {instanceID: 3076}
     - Class: 114
-      Script: {instanceID: 3296}
+      Script: {instanceID: 3254}
     - Class: 114
-      Script: {instanceID: 3304}
+      Script: {instanceID: 3298}
     - Class: 114
-      Script: {instanceID: 3386}
+      Script: {instanceID: 3306}
     - Class: 114
-      Script: {instanceID: 3472}
+      Script: {instanceID: 3388}
     - Class: 114
-      Script: {instanceID: 3620}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3848}
+      Script: {instanceID: 3476}
     - Class: 114
-      Script: {instanceID: 3968}
+      Script: {instanceID: 3624}
     - Class: 114
-      Script: {instanceID: 4072}
+      Script: {instanceID: 3816}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 3854}
     - Class: 114
-      Script: {instanceID: 4216}
+      Script: {instanceID: 3974}
     - Class: 114
-      Script: {instanceID: 4220}
+      Script: {instanceID: 4038}
     - Class: 114
-      Script: {instanceID: 4262}
+      Script: {instanceID: 4080}
     - Class: 114
-      Script: {instanceID: 4324}
+      Script: {instanceID: 4100}
     - Class: 114
-      Script: {instanceID: 4500}
+      Script: {instanceID: 4224}
     - Class: 114
-      Script: {instanceID: 4752}
+      Script: {instanceID: 4228}
     - Class: 114
-      Script: {instanceID: 4824}
+      Script: {instanceID: 4270}
     - Class: 114
-      Script: {instanceID: 4932}
+      Script: {instanceID: 4332}
     - Class: 114
-      Script: {instanceID: 4946}
+      Script: {instanceID: 4508}
     - Class: 114
-      Script: {instanceID: 5044}
+      Script: {instanceID: 4760}
     - Class: 114
-      Script: {instanceID: 5348}
+      Script: {instanceID: 4832}
     - Class: 114
-      Script: {instanceID: 5368}
+      Script: {instanceID: 4940}
     - Class: 114
-      Script: {instanceID: 5542}
+      Script: {instanceID: 4954}
     - Class: 114
-      Script: {instanceID: 5578}
+      Script: {instanceID: 5052}
     - Class: 114
-      Script: {instanceID: 5696}
+      Script: {instanceID: 5356}
     - Class: 114
-      Script: {instanceID: 5724}
+      Script: {instanceID: 5376}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 5550}
     - Class: 114
-      Script: {instanceID: 6006}
+      Script: {instanceID: 5586}
     - Class: 114
-      Script: {instanceID: 6030}
+      Script: {instanceID: 5614}
     - Class: 114
-      Script: {instanceID: 6186}
+      Script: {instanceID: 5706}
     - Class: 114
-      Script: {instanceID: 6234}
+      Script: {instanceID: 5734}
     - Class: 114
-      Script: {instanceID: 6372}
+      Script: {instanceID: 5762}
     - Class: 114
-      Script: {instanceID: 6400}
+      Script: {instanceID: 6016}
     - Class: 114
-      Script: {instanceID: 6438}
+      Script: {instanceID: 6040}
     - Class: 114
-      Script: {instanceID: 6536}
+      Script: {instanceID: 6196}
     - Class: 114
-      Script: {instanceID: 6552}
+      Script: {instanceID: 6244}
     - Class: 114
-      Script: {instanceID: 6590}
+      Script: {instanceID: 6382}
     - Class: 114
-      Script: {instanceID: 6612}
+      Script: {instanceID: 6410}
     - Class: 114
-      Script: {instanceID: 6626}
+      Script: {instanceID: 6448}
     - Class: 114
-      Script: {instanceID: 6694}
+      Script: {instanceID: 6546}
     - Class: 114
-      Script: {instanceID: 6724}
+      Script: {instanceID: 6562}
     - Class: 114
-      Script: {instanceID: 6772}
+      Script: {instanceID: 6600}
     - Class: 114
-      Script: {instanceID: 6840}
+      Script: {instanceID: 6622}
     - Class: 114
-      Script: {instanceID: 6886}
+      Script: {instanceID: 6636}
     - Class: 114
-      Script: {instanceID: 7092}
+      Script: {instanceID: 6704}
     - Class: 114
-      Script: {instanceID: 7130}
+      Script: {instanceID: 6734}
     - Class: 114
-      Script: {instanceID: 7140}
+      Script: {instanceID: 6782}
     - Class: 114
-      Script: {instanceID: 7218}
+      Script: {instanceID: 6850}
     - Class: 114
-      Script: {instanceID: 7338}
+      Script: {instanceID: 6896}
     - Class: 114
-      Script: {instanceID: 7518}
+      Script: {instanceID: 6938}
     - Class: 114
-      Script: {instanceID: 7556}
+      Script: {instanceID: 7104}
     - Class: 114
-      Script: {instanceID: 7710}
+      Script: {instanceID: 7142}
     - Class: 114
-      Script: {instanceID: 7964}
+      Script: {instanceID: 7152}
     - Class: 114
-      Script: {instanceID: 8132}
+      Script: {instanceID: 7230}
     - Class: 114
-      Script: {instanceID: 8158}
+      Script: {instanceID: 7350}
     - Class: 114
-      Script: {instanceID: 8170}
+      Script: {instanceID: 7530}
     - Class: 114
-      Script: {instanceID: 8300}
+      Script: {instanceID: 7568}
     - Class: 114
-      Script: {instanceID: 8546}
+      Script: {instanceID: 7724}
     - Class: 114
-      Script: {instanceID: 8738}
+      Script: {instanceID: 7756}
     - Class: 114
-      Script: {instanceID: 8904}
+      Script: {instanceID: 7980}
     - Class: 114
-      Script: {instanceID: 8932}
+      Script: {instanceID: 8108}
     - Class: 114
-      Script: {instanceID: 9060}
+      Script: {instanceID: 8150}
     - Class: 114
-      Script: {instanceID: 9186}
+      Script: {instanceID: 8176}
     - Class: 114
-      Script: {instanceID: 9384}
+      Script: {instanceID: 8188}
     - Class: 114
-      Script: {instanceID: 9574}
+      Script: {instanceID: 8318}
     - Class: 114
-      Script: {instanceID: 9894}
+      Script: {instanceID: 8564}
     - Class: 114
-      Script: {instanceID: 9998}
+      Script: {instanceID: 8612}
     - Class: 114
-      Script: {instanceID: 10060}
+      Script: {instanceID: 8760}
     - Class: 114
-      Script: {instanceID: 10102}
+      Script: {instanceID: 8926}
     - Class: 114
-      Script: {instanceID: 10474}
+      Script: {instanceID: 8954}
     - Class: 114
-      Script: {instanceID: 10580}
+      Script: {instanceID: 9082}
+    - Class: 114
+      Script: {instanceID: 9208}
+    - Class: 114
+      Script: {instanceID: 9346}
+    - Class: 114
+      Script: {instanceID: 9408}
+    - Class: 114
+      Script: {instanceID: 9598}
+    - Class: 114
+      Script: {instanceID: 9918}
+    - Class: 114
+      Script: {instanceID: 10022}
+    - Class: 114
+      Script: {instanceID: 10084}
+    - Class: 114
+      Script: {instanceID: 10126}
+    - Class: 114
+      Script: {instanceID: 10500}
+    - Class: 114
+      Script: {instanceID: 10606}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1134,6 +1486,10 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    - Class: 328
+      Script: {instanceID: 0}
+    - Class: 329
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1246,7 +1602,7 @@ ScriptsOnlyBuild:
     className: SnapTerrainRaycastModifier
   - hash:
       serializedVersion: 2
-      Hash: 8a20858c68b5e22d17731d29fcb3fca4
+      Hash: 917b6cc8ecd5069e6fde8537bbe0ba6e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatRoom
@@ -1258,7 +1614,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: ff60bda4f83ff2c02edd6b89b6f571e2
+      Hash: 75f8968b624f9cf8ef3527a52a7d6195
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SixSpotsManager
@@ -1270,7 +1626,7 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionStayMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 1398c14740a4b0d63c3eea621f5187e0
+      Hash: 631b1f7d284bf8f3c6483dc05df55348
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -1300,7 +1656,7 @@ ScriptsOnlyBuild:
     className: FeatureBehaviour
   - hash:
       serializedVersion: 2
-      Hash: c9b725084ced8748d0f026b6d168f432
+      Hash: 31db0c6271af81dca8aca542e8610259
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ParkNosuManager
@@ -1432,6 +1788,12 @@ ScriptsOnlyBuild:
     className: LocationArrayEditorLocationProvider
   - hash:
       serializedVersion: 2
+      Hash: 5ea8c14ff536d1cae42d92d646a041ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HamManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples
@@ -1526,6 +1888,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Unity.Utilities.DebugTools
     className: SceneData
+  - hash:
+      serializedVersion: 2
+      Hash: ca03fead3d08ab0ee9bbde2c1c1917ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GwangManager
   - hash:
       serializedVersion: 2
       Hash: eeada4f3f879474a79ee0417aab9f61c
@@ -1624,13 +1992,19 @@ ScriptsOnlyBuild:
     className: UnityOnDropdownValueChangedMessageListener
   - hash:
       serializedVersion: 2
+      Hash: 859afa38b281260c1606831e76ff46ca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatAlarmParent
+  - hash:
+      serializedVersion: 2
       Hash: 297baaeded98a56f55539fb61333e2df
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AROcclusionManager
   - hash:
       serializedVersion: 2
-      Hash: 1da4eafb4c638916fa1f6085f8dbf04d
+      Hash: 35db6d0286d5cd1eccaff9cc8c61533f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatManager
@@ -1652,6 +2026,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples.Playground
     className: VectorTileExample
+  - hash:
+      serializedVersion: 2
+      Hash: 353879c07ffee4e6d00f2ad9dc2adfb8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AfterSixSpotsManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -1732,7 +2112,7 @@ ScriptsOnlyBuild:
     className: TextureSideWallModifier
   - hash:
       serializedVersion: 2
-      Hash: 84ca7baaf2cb5b2ad232c60e14f6cc19
+      Hash: 31f6edac2ea6586849f626a17b470fb8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SetChatDatas
@@ -2044,6 +2424,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
+      Hash: e1007569f12517dae643dd178d2fe0df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JungManager
+  - hash:
+      serializedVersion: 2
       Hash: 1bc03a501323d00d0037a6b76d25a3ba
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
@@ -2116,7 +2502,7 @@ ScriptsOnlyBuild:
     className: ARTrackedImageManager
   - hash:
       serializedVersion: 2
-      Hash: 3d427ba090aeea313b13187d289b649e
+      Hash: a1776fba7cda59436208b1556e433434
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GuidePageManager
@@ -2128,7 +2514,7 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 7aca2ed5db1ec69c720a56d56f56bf9f
+      Hash: 051ce9b80a0691b95e4b641b58bfae63
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatAlarm
@@ -2338,7 +2724,7 @@ ScriptsOnlyBuild:
     className: TelemetryConfigurationButton
   - hash:
       serializedVersion: 2
-      Hash: aaecedc35fbd9f361ccc634e5a4c5e46
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ChatData
@@ -2354,6 +2740,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: Mapbox.Examples.Playground
     className: ReverseGeocoderExample
+  - hash:
+      serializedVersion: 2
+      Hash: cc0851d12dcd0893b49c3b71bbc77701
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SeokManager
   - hash:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
@@ -2512,6 +2904,12 @@ ScriptsOnlyBuild:
     className: ChasaData
   - hash:
       serializedVersion: 2
+      Hash: 387666d0d6ffb2eb9314c40510588928
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataManager
+  - hash:
+      serializedVersion: 2
       Hash: 5b4733ee821ed45976bf89bfb03a3ac6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -2540,6 +2938,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
     className: UnityOnMouseUpAsButtonMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 44ba9748c7e696d047e8c5cbd921bf67
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ZukManager
   - hash:
       serializedVersion: 2
       Hash: ba6ef9e2082e09d9399eaef28d94d812
@@ -2668,6 +3072,18 @@ ScriptsOnlyBuild:
     className: ARAnchorManager
   - hash:
       serializedVersion: 2
+      Hash: 8e49e27c00f6500e6484fd85e19e7558
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UndoBtnOffPage
+  - hash:
+      serializedVersion: 2
+      Hash: 8f6ad48b1f41b01c8ec0f18dda190b63
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: VideoManager
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.VisualScripting.Core.dll
     namespaceName: Unity.VisualScripting
@@ -2746,7 +3162,7 @@ ScriptsOnlyBuild:
     className: Physics2DRaycaster
   - hash:
       serializedVersion: 2
-      Hash: 53274b4a229cab03b5dd4e3760ffc408
+      Hash: 86ee0b66b14e5676b52059aa85761449
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SungnyemunManager
@@ -2788,7 +3204,7 @@ ScriptsOnlyBuild:
     className: UnityOnPointerDownMessageListener
   - hash:
       serializedVersion: 2
-      Hash: f7ed725fa78136b2ace4f24522f028e9
+      Hash: 9abddd15a927f5df67d632c204478781
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: IsangHomePage
@@ -2858,6 +3274,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARBackgroundRendererFeature
+  - hash:
+      serializedVersion: 2
+      Hash: f6671a4a460953dc1aad0031dc204b83
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: JunManager
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -3010,7 +3432,7 @@ ScriptsOnlyBuild:
     className: StateMachine
   - hash:
       serializedVersion: 2
-      Hash: d27d0fd8d7c90df2e1bc120ce920e252
+      Hash: 85a8b877c8afcb92ea14169b16ad89bd
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TongInManager

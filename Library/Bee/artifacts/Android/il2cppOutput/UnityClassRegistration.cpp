@@ -66,6 +66,9 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_UnityWebRequest();
 	RegisterModule_UnityWebRequest();
 
+	void RegisterModule_Video();
+	RegisterModule_Video();
+
 	void RegisterModule_XR();
 	RegisterModule_XR();
 
@@ -155,12 +158,14 @@ namespace TextRenderingPrivate { class TextMesh; } template <> void RegisterUnit
 namespace UI { class Canvas; } template <> void RegisterUnityClass<UI::Canvas>(const char*);
 namespace UI { class CanvasGroup; } template <> void RegisterUnityClass<UI::CanvasGroup>(const char*);
 namespace UI { class CanvasRenderer; } template <> void RegisterUnityClass<UI::CanvasRenderer>(const char*);
+class VideoClip; template <> void RegisterUnityClass<VideoClip>(const char*);
+class VideoPlayer; template <> void RegisterUnityClass<VideoPlayer>(const char*);
 
 void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 76 non stripped classes
+	//Total: 78 non stripped classes
 	//0. Animator
 	RegisterUnityClass<Animator>("Animation");
 	//1. AnimatorController
@@ -313,5 +318,9 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<UI::CanvasGroup>("UI");
 	//75. CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
+	//76. VideoClip
+	RegisterUnityClass<VideoClip>("Video");
+	//77. VideoPlayer
+	RegisterUnityClass<VideoPlayer>("Video");
 
 }

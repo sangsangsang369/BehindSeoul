@@ -29,6 +29,8 @@ public class TongInManager : MonoBehaviour
         gameMng = FindObjectOfType<GameManager>();   
         data = DataManager.singleTon;
         saveData = data.saveData; 
+
+        tonginCurrPage = saveData.pageChildIndex;
         tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(true); 
     }
 
@@ -36,12 +38,16 @@ public class TongInManager : MonoBehaviour
     {
         tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(false);
         tongInPage.transform.GetChild(++tonginCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = tonginCurrPage;
+        data.Save();
     }
 
     public void GoToPrevTongInPage()
     {
         tongInPage.transform.GetChild(tonginCurrPage).gameObject.SetActive(false);
         tongInPage.transform.GetChild(--tonginCurrPage).gameObject.SetActive(true);
+        saveData.pageChildIndex = tonginCurrPage;
+        data.Save();
     }
 
     public void AnswerSubmitBtnFunc()
@@ -74,6 +80,7 @@ public class TongInManager : MonoBehaviour
     public void TonginPageSaveData()
     {
         saveData.pagesIndex = 7;
+        saveData.pageChildIndex = 0;
         data.Save();
     }
 }

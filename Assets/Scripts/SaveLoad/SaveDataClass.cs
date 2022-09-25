@@ -10,7 +10,12 @@ public class SaveDataClass
     public List<string> bagCoupons;
     public List<string> spotCollection;
     public List<int> endedSixSpots;
-    public List<int> endedChatDataId;
+    public List<int> endedChatDataId_one;
+    public bool ischatOneHavePrev;
+    public List<int> endedChatDataId_two;
+    public bool ischatTwoHavePrev;
+    public List<int> endedChatDataId_three;
+    public bool ischatThreeHavePrev;
 
 
 
@@ -23,6 +28,12 @@ public class SaveDataClass
         bagCoupons = new List<string>();
         spotCollection = new List<string>();
         endedSixSpots = new List<int>();
-        endedChatDataId = new List<int>();
+        endedChatDataId_one = new List<int>();
+        ischatOneHavePrev = false;
+        endedChatDataId_two = new List<int>();
+        ischatTwoHavePrev = false;
+        endedChatDataId_three = new List<int>();
+        ischatThreeHavePrev = false;
+
     }
 }

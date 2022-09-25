@@ -7,17 +7,31 @@ public class GwangManager : MonoBehaviour
 {
     [SerializeField]
     GameObject  gwangPage,
-                gwangWrongText;
+                gwangWrongText,
+                kPrefab;
 
     [SerializeField]
     TMP_InputField  gwangAnswerInput;
-    GameManager gMng;
+    GameManager gameMng;
     int gwangCurrPage = 0;
+    DataManager data;
+    SaveDataClass saveData;
 
-    void Start() 
+
+    void Start()  
     {   
-        gMng = FindObjectOfType<GameManager>();  
+        data = DataManager.singleTon;
+        saveData = data.saveData;
+        gameMng = FindObjectOfType<GameManager>();  
         gwangPage.transform.GetChild(gwangCurrPage).gameObject.SetActive(true);
+    }
+
+    public void GetKInBag()
+    {
+        GameObject l = Instantiate(kPrefab);
+        l.transform.SetParent(gameMng.bagOnlineContent.transform, false); 
+        saveData.bagItems.Add("Letter_K");
+        data.Save();
     }
 
     public void GoToNextGwangPage()
@@ -41,7 +55,7 @@ public class GwangManager : MonoBehaviour
         }
         else
         {
-            gMng.hintBtn.SetActive(false);
+            gameMng.hintBtn.SetActive(false);
             GoToNextGwangPage();
         }
     }

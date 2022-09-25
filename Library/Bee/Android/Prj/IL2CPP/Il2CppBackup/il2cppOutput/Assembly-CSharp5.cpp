@@ -7953,6 +7953,8 @@ inline void List_1__ctor_m38500C20418699AEC04B1946434E06EC96FB4B1C (List_1_t386E
 {
 	((  void (*) (List_1_t386E09F4F22DDE4D2AC41A8567FFF283C254537B*, const RuntimeMethod*))List_1__ctor_m7F078BB342729BDF11327FD89D7872265328F690_gshared)(__this, method);
 }
+// System.Void Mapbox.Unity.Map.AbstractMap::add_OnUpdated(System.Action)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AbstractMap_add_OnUpdated_mBDAF4BD9A1D21C47E359EF2E625C498E3DD63AD4 (AbstractMap_tCDA6BE7D0C129D87C40C22F693361F9391AF2049* __this, Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* ___value0, const RuntimeMethod* method) ;
 // Mapbox.Unity.Location.ILocationProvider Mapbox.Examples.ImmediatePositionWithLocationProvider::get_LocationProvider()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* ImmediatePositionWithLocationProvider_get_LocationProvider_m7B5D5CA2D41D789AABE1F585214C8BE094311AD6 (ImmediatePositionWithLocationProvider_tAC4A7A3536026A5F5A07CBA9C4E4A657B618386C* __this, const RuntimeMethod* method) ;
 // System.Boolean System.Collections.Generic.Dictionary`2<System.String,System.Object>::ContainsKey(TKey)
@@ -27812,7 +27814,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImmediatePositionWithLocationProvider_St
 		s_Il2CppMethodInitialized = true;
 	}
 	{
-		// LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
+		// LocationProviderFactory.Instance.mapManager.OnUpdated += () => _isInitialized = true;
 		LocationProviderFactory_t84D69F65F2D61F7420C41C3D47C09B3C6A39C693* L_0;
 		L_0 = LocationProviderFactory_get_Instance_m4D13CF8DAC0FED5F6C8E70A9113A710F7998DC3B_inline(NULL);
 		NullCheck(L_0);
@@ -27821,7 +27823,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImmediatePositionWithLocationProvider_St
 		NullCheck(L_2);
 		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_2, __this, (intptr_t)((void*)ImmediatePositionWithLocationProvider_U3CStartU3Eb__5_0_m2AA01E709C2B041A2D288A73A3483BFF6A7BFB30_RuntimeMethod_var), NULL);
 		NullCheck(L_1);
-		AbstractMap_add_OnInitialized_m59CCC0D27D1AB03B4DCCB8362E08BCA53EE6E648(L_1, L_2, NULL);
+		AbstractMap_add_OnUpdated_mBDAF4BD9A1D21C47E359EF2E625C498E3DD63AD4(L_1, L_2, NULL);
 		// }
 		return;
 	}
@@ -27886,7 +27888,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImmediatePositionWithLocationProvider__c
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ImmediatePositionWithLocationProvider_U3CStartU3Eb__5_0_m2AA01E709C2B041A2D288A73A3483BFF6A7BFB30 (ImmediatePositionWithLocationProvider_tAC4A7A3536026A5F5A07CBA9C4E4A657B618386C* __this, const RuntimeMethod* method) 
 {
 	{
-		// LocationProviderFactory.Instance.mapManager.OnInitialized += () => _isInitialized = true;
+		// LocationProviderFactory.Instance.mapManager.OnUpdated += () => _isInitialized = true;
 		__this->____isInitialized_4 = (bool)1;
 		return;
 	}

@@ -753,9 +753,9 @@
 "Assets/Mapbox/Unity/Utilities/TelemetryConfigurationButton.cs"
 "Assets/Mapbox/Unity/Utilities/VectorEntity.cs"
 "Assets/Mapbox/Unity/Utilities/VectorExtensions.cs"
-"Assets/Scripts/ARPrefab.cs"
-"Assets/Scripts/ARSceneSlider.cs"
-"Assets/Scripts/ARTrackingManager.cs"
+"Assets/Scripts/AR/ARPrefab.cs"
+"Assets/Scripts/AR/ARSceneSlider.cs"
+"Assets/Scripts/AR/ARTrackingManager.cs"
 "Assets/Scripts/ChatPage/Bubble.cs"
 "Assets/Scripts/ChatPage/ChatAlarm.cs"
 "Assets/Scripts/ChatPage/ChatAlarmParent.cs"
@@ -769,7 +769,8 @@
 "Assets/Scripts/Common/ScrollGuideImg.cs"
 "Assets/Scripts/Common/ScrollMenu.cs"
 "Assets/Scripts/Common/UndoBtnOffPage.cs"
-"Assets/Scripts/EraseMask.cs"
+"Assets/Scripts/Drawing/EraseMask.cs"
+"Assets/Scripts/Drawing/SignDraw.cs"
 "Assets/Scripts/HintPage/HintData.cs"
 "Assets/Scripts/HintPage/SetHintDatas.cs"
 "Assets/Scripts/Locker.cs"
@@ -798,7 +799,7 @@
 "Assets/Scripts/SaveLoad/DataManager.cs"
 "Assets/Scripts/SaveLoad/JsonManager.cs"
 "Assets/Scripts/SaveLoad/SaveDataClass.cs"
-"Assets/Scripts/SignDraw.cs"
+"Assets/Scripts/VideoManager.cs"
 -langversion:9.0
 
 /deterministic
